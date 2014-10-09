@@ -436,7 +436,7 @@ a.bg-success:hover {
 }
 .bg-info {
   color: #fff;
-  background-color: #1d6b76 !important;
+  background-color: #006188 !important;
 }
 a.bg-info:hover {
   background-color: #0e3339;
@@ -4750,11 +4750,20 @@ ul.thumbs {
   position: absolute;
   height: 100%;
   left: 50%;
-  border-left: 2px solid #c0372c;
+  border-left: 2px solid #c0372c;  
   top: 0;
   bottom: 0;
   z-index: 0;
 }
+
+
+@media (min-width: 768px) {
+  .timelime:after {
+  border-left: 2px solid #c0372c;
+  }
+}
+
+
 .timeline .btn-link {
   z-index: 2;
   position: relative;
@@ -4820,6 +4829,7 @@ ul.thumbs {
     margin: 80px 0 0 0;
   }
 }
+
 @media (min-width: 769px) {
   .box-post:after,
   .box-post:before {

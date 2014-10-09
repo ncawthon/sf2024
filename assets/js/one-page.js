@@ -290,12 +290,15 @@ $(document).ready(function () {
     $('#map').initMap({
         markers: {
             marker1: {
-                position: [37.4395881, -122.15977, 17]
+                position: [37.4395881, -122.15977, 14]
             }
         },
         options: {
-            zoom: 17,
-            scrollwheel: false
+            zoom: 14,
+            draggable: false,
+            scrollwheel: false,
+            disableDoubleClickZoom: true,
+            zoomControl: true            
         },
         type: 'roadmap',
         center: [37.4395881, -122.15977]
