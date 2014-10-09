@@ -1,0 +1,195 @@
+.timeline {
+    position: relative;
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 100%;
+        left: 50%;
+        border-left: 2px solid @primary;
+        top: 0;
+        bottom: 0;
+        z-index: 0;
+    }
+    .btn-link {
+        z-index: 2;
+        position: relative;
+    }
+}
+
+#loadNews {
+    cursor: pointer;
+    .transition(all 0.35s ease);
+}
+
+.label-month {
+    text-align: center;
+    background: @primary;
+    padding: 13px 20px;
+    border-radius: @border-radius;
+    color: @white;
+    text-transform: @text-up;
+    letter-spacing: 1px;
+    font-size: 16px;
+    width: 230px;
+    z-index: 1;
+    &:first-child {
+        position: absolute;
+        left: 50%;
+        top: -50px;
+        .transform(translateX(-50%));
+    }
+    &:not(:first-child) {
+        top: 80px;
+        position: relative;
+        overflow: hidden;
+        margin: auto auto 80px auto;
+    }
+    &:last-child {
+        top: 0;
+        margin-top: 80px;
+    }
+    a {
+        color: #fff;
+        &:hover {
+            color: #fff;
+        }
+    }
+    .i-plus {
+        font-weight: 300;
+        font-size: 1.25em;
+        line-height: 1;
+        vertical-align: top;
+    }
+}
+
+.box-post {
+    overflow: hidden;
+    background: #fff;
+    border-radius: @border-radius;
+    padding: 30px;
+    border-bottom: 2px solid @light;
+    @media (max-width: 768px) {
+        &.left,
+        &.right {
+            margin: 80px 0 0 0;
+        }
+    }
+    @media (min-width: 769px) {
+        &:after,
+        &:before {
+            content: "";
+            position: absolute;
+            display: block;
+        }
+        &:after {
+            width: 0;
+            height: 0;
+            border-top: 15px solid @trn;
+            border-bottom: 15px solid @trn;
+        }
+        &.left {
+            margin: 30px 30px 0 0;
+            &:after {
+                border-left: 15px solid #f9f9f9;
+                right: 30px;
+                top: 70px;
+            }
+        }
+        &.right {
+            margin: 80px 0 0 30px;
+            &:after {
+                border-right: 15px solid #f9f9f9;
+                left: 30px;
+                top: 120px;
+            }
+        }
+        &:before {
+            border-radius: 50%;
+            width: 16px;
+            z-index: 3;
+            height: 16px;
+            background: @primary;
+            border: 2px solid #fff;
+        }
+        &.right:before {
+            top: 127.5px;
+            left: -7px;
+        }
+        &.left:before {
+            top: 77.5px;
+            right: -8.5px;
+        }
+    }
+    h3 {
+        font-size: 28px;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    p {
+        margin-bottom: 15px;
+    }
+    > a {
+        text-transform: @text-up;
+        i {
+            font-size: 115%;
+        }
+    }
+}
+
+.box-load {
+    .transition(opacity 0.5s ease-out);
+    opacity: 0;
+    &.left {
+        transition-delay: 0.1s;
+    }
+    &.right {
+        transition-delay: 0.15s;
+    }
+}
+
+.post-gallery {
+    position: relative;
+    min-height: 67px;
+    top: -53px;
+    margin-bottom: -53px;
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        li {
+            display: inline-block;
+            max-height: 100px;
+            max-width: 100px;
+            position: relative;
+            .transition(all 0.35s ease-in-out);
+            box-shadow: 0.5px 0.5px 1px 0.5px rgba(0, 0, 0, 0.25);
+            &:nth-child(1) {
+                z-index: 10;
+                .transform(translate(195%, -13%));
+            }
+            &:nth-child(2) {
+                z-index: 9;
+                 .transform(translate(98%, -8%));
+            }
+            &:nth-child(3) {
+                z-index: 8;
+                 .transform(translateX(0%));
+            }
+        }
+    }
+     &:hover ul li {
+        &:nth-child(1) {
+            .transform(translate(0%, 0%));
+        }
+        &:nth-child(2) {
+            .transform(translate(0%, 0%));
+        }
+        &:nth-child(3) {
+             .transform(translateX(0%));
+        }
+    }
+}
