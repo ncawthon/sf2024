@@ -2982,7 +2982,7 @@ div:hover > .icon-o {
 }
 .navbar .navbar-open.navbar-toggle:hover,
 .navbar .navbar-open.navbar-toggle:focus {
-  background-color: transparent;
+  background-color: #fff;
 }
 .navbar .navbar-open.navbar-toggle .icon-bar {
   -webkit-transition: transform 0.25s ease;

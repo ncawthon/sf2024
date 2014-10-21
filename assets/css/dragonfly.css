@@ -2640,6 +2640,7 @@ div:hover > .icon-o {
 .navbar-trn.navbar,
 .navbar-fixed-top.navbar {
   margin-bottom: -70px;
+  background:rgba(255,255,255,0.5);
 }
 /*===   Dropdown menu   - for light/transparent navbar ===*/
 .dropdown-menu {
@@ -2814,7 +2815,7 @@ div:hover > .icon-o {
 }
 /* ===   Navbar Transparent  === */
 .navbar-trn {
-  background-color: transparent;
+  background:rgba(255,255,255,0.5);
   border-color: transparent;
 }
 .navbar-trn .dropdown-menu {
