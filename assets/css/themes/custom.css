@@ -3016,6 +3016,7 @@ div:hover > .icon-o {
   right: 0;
   top: 0;
 }
+
 @media (min-width: 1200px) {
   .nav > li > a {
     padding: 10px 30px;
@@ -3025,6 +3026,7 @@ div:hover > .icon-o {
 @media (min-width: 768px) {
   .navbar-height {
     transition: all 0.35s ease;
+    background:#fff;
   }
   .navbar-height.navbar .navbar-brand {
     padding: 50px 50px;

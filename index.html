@@ -19,7 +19,7 @@
 
 
     <!--  Boostrap Framework  -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
 
     <!--=== CSS  ===-->
     <link href="assets/css/themes/custom.css" rel="stylesheet" id="stylesheet">
@@ -34,7 +34,7 @@
     <link href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet">
 
     <!-- SLIDER REVOLUTION 4.x -->
-        <link rel="stylesheet" href="assets/plugins/slider-revolution/examples&amp;source/rs-plugin/css/settings.css" media="screen">
+    <link rel="stylesheet" href="assets/plugins/slider-revolution/examples&amp;source/rs-plugin/css/settings.css" media="screen">
 
     <!-- Owl carousel  -->
     <link rel="stylesheet" href="assets/plugins/owl.carousel/owl-carousel/owl.carousel.css">
@@ -44,7 +44,7 @@
 <body>
 
     <!-- Main Navigation -->
-    <nav class="navbar navbar-trn navbar-fixed-top navbar-height" role="navigation" id="navbarSettings">
+    <nav class="navbar navbar-trn navbar-fixed-top navbar-height" role="navigation" id="navbarSettings" style="background:rgba(255,255,255,0.5);">
         <div class="container">
             <div class="hidden-sm hidden-md hidden-lg">
                 <div class="navbar-header">
@@ -122,54 +122,74 @@
     <!--  Welcome Section  -->
     <span class="breakPoint" id="sWelcome"></span>
         <div class="tp-banner-container">
-            <div class="tp-banner" >
-                <ul>	<!-- SLIDE  -->
-                    
-        
-                    <!-- SLIDE  -->
-                    <li data-transition="fade" data-slotamount="1" data-masterspeed="3000" data-thumb="" data-delay="15000"  data-saveperformance="off"  data-title="">
-                        <!-- MAIN IMAGE -->
-                        <img src="assets/img/coit-tower.jpg"  alt="kenburns6"  data-bgposition="bottom bottom" data-kenburns="on" data-duration="140000" data-ease="Linear.easeNone" data-bgfit="140" data-bgfitend="120" data-bgpositionend="left center">
-                        <!-- LAYERS -->
+ 
+        <div class="tp-banner" >
+            <ul> 
+                <!-- SLIDE  -->
+                <li data-fstransition="fade" data-fsmasterspeed="1000" data-fsslotamount="7" data-saveperformance="off" >
+                    <!-- MAIN IMAGE -->
+                    <img src="assets/video/coit-cover.jpg"  alt="coit-cover"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+                    <!-- LAYERS -->
 
-                        <!-- LAYER NR. 1 -->
-                        
-                        <div class="tp-caption tp-fade fadeout title-intro"
-                            data-x="center" data-hoffset="0"
-                            data-y="center" data-voffset="0"
-                            data-speed="1000"
-                            data-start="4000"
-                            data-easing="Linear.easeNone"
-                            data-elementdelay="3.5"
-                            data-endelementdelay="3.75"
-                            data-endspeed="1000"
-                            data-endeasing="Linear.easeNone"
-                            style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap; background:rgba(192, 54, 44, 0.75); width:100%; margin-top:10px; line-height:150%;">San Francisco 2024
-                        </div>
-                        -->
-                        <!-- LAYER NR. 2 -->
-                        
-                        <div class="tp-caption text-white tp-fade fadeout tp-resizeme text-intro"
-                            data-x="center" data-hoffset="-20"
-                            data-y="center" data-voffset="100"
-                            data-speed="1000"
-                            data-start="5000"
-                            data-easing="Linear.easeNone"
-                            data-elementdelay="5.5"
-                            data-endelementdelay="5.75"
-                            data-endspeed="1000"
-                            data-endeasing="Linear.easeNone"
-                            style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap; text-align:center; background:rgba(192, 54, 44, 0.75); width:110%;">We are honored to be chosen as a potential bid city for the United States
-                                    <br>to host the 2024 Olympic and Paralymplic games.
-                        </div>
-                    </li>
+                    <!-- LAYER NR. 1 -->
+                    <div class="tp-caption tp-fade fadeout fullscreenvideo"
+                        data-x="0"
+                        data-y="0"
+                        data-speed="1000"
+                        data-start="1100"
+                        data-easing="Power4.easeOut"
+                        data-elementdelay="0.01"
+                        data-endelementdelay="0.1"
+                        data-endspeed="1500"
+                        data-endeasing="Power4.easeIn"
+                        data-autoplay="true"
+                        data-autoplayonlyfirsttime="false"
+                        data-nextslideatend="true"
+             data-volume="mute" data-forceCover="1" data-aspectratio="16:9" data-forcerewind="on"           style="z-index: 2;">
+             <video class="" preload="none" loop width="100%" height="100%" 
+            poster='assets/video/coit-cover.jpg'> 
+            <source src='assets/video/sf2024.mp4' type='video/mp4' />
+            <source src='assets/video/sf2024.webm' type='video/webm' />
 
-                    </li>
-                </ul>
-                
-                <!-- TIMER -->
-                <div class="tp-bannertimer tp-bottom"></div>
-            </div>
+            </video>
+
+                    </div>
+
+                                     <!-- LAYER NR. 1 -->
+                                    
+                                    <div class="tp-caption tp-fade fadeout title-intro"
+                                        data-x="center" data-hoffset="0"
+                                        data-y="center" data-voffset="0"
+                                        data-speed="1000"
+                                        data-start="4000"
+                                        data-easing="Linear.easeNone"
+                                        data-elementdelay="3.5"
+                                        data-endelementdelay="3.75"
+                                        data-endspeed="1000"
+                                        data-endeasing="Linear.easeNone"
+                                        style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap; background:rgba(192, 54, 44, 0.75); width:100%; margin-top:10px; line-height:150%;">San Francisco 2024
+                                    </div>
+                                    -->
+                                    <!-- LAYER NR. 2 -->
+                                    
+                                    <div class="tp-caption text-white tp-fade fadeout tp-resizeme text-intro"
+                                        data-x="center" data-hoffset="-20"
+                                        data-y="center" data-voffset="100"
+                                        data-speed="1000"
+                                        data-start="5000"
+                                        data-easing="Linear.easeNone"
+                                        data-elementdelay="5.5"
+                                        data-endelementdelay="5.75"
+                                        data-endspeed="1000"
+                                        data-endeasing="Linear.easeNone"
+                                        style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap; text-align:center; background:rgba(192, 54, 44, 0.75); width:110%;">We are honored to be chosen as a potential bid city for the United States
+                                                <br>to host the 2024 Olympic and Paralymplic games.
+                                    </div>
+                </li>
+            </ul>   
+            <div class="tp-bannertimer"></div>  
+        </div>
+    
         </div>
     <!-- Join us section -->
     <span class="breakPoint" id="sJoinUs"></span>
