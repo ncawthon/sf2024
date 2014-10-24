@@ -1,0 +1,5 @@
+AuthUserFile .htpasswd
+AuthName "Still in Training"
+AuthType Basic
+
+require user basoc
