@@ -79,13 +79,13 @@ $(document).ready(function () {
                     "box-shadow": "none"
                 });
                 $navbarTrn.css({
-                    "background-color": "transparent"
+                    "background-color": "rgba(255,255,255,0.5);"
                 });
                 $nav.addClass("navbar-height");
             }
         } else {
             $navbarTrn.css({
-                "background-color": "transparent"
+                "background-color": "rgba(255,255,255,0.5);"
             });
             $nav.css({
                 "box-shadow": "none"
@@ -146,27 +146,6 @@ $(document).ready(function () {
 
     /*
      * ===================================
-     * One Page Navigation
-     * ===================================
-     * */
-
-    $('.nav-a, .nav-b, .nav-mobile').onePageNav({
-        currentClass: 'active',
-        changeHash: false,
-        scrollSpeed: 1000,
-        scrollThreshold: 0.5,
-        filter: '',
-        easing: 'easeInOutCubic'
-    });
-
-    var firstOfNavB = $(".nav-b li").first().hasClass("active"),
-        lastOfNavA = $(".nav-a li").last().hasClass("active");
-    if (firstOfNavB) {
-        lastOfNavA.removeClass("active");
-    }
-
-    /*
-     * ===================================
      * Smooth scrolling
      * ===================================
      * */
@@ -210,7 +189,7 @@ $(document).ready(function () {
 
         }
     });
-    
+
 
     /*
      * ===================================
@@ -250,7 +229,7 @@ $(document).ready(function () {
         spinner: "spinner4",
         autoHeight: "off",
         forceFullWidth: "on",
-        hideTimerBar:"on"
+        hideTimerBar: "on"
     });
 
 
@@ -277,12 +256,15 @@ $(document).ready(function () {
     });
 
 
+    /*=== Validator for form ===*/
+    $(".validate").validate();
+
 
     /*=== WOW - Loading animations ===*/
     new WOW({
         boxClass: 'wow',
         animateClass: 'animated',
-        offset: 0,
+        offset: 250,
         mobile: false
     }).init();
 
@@ -298,11 +280,9 @@ $(document).ready(function () {
             draggable: false,
             scrollwheel: false,
             disableDoubleClickZoom: true,
-            zoomControl: true            
+            zoomControl: true
         },
         type: 'roadmap',
         center: [37.4395881, -122.15977]
     });
-
-
 });

@@ -6,40 +6,12 @@
  * ===================================
  * */
 
-/*===    Headings    ===*/
-
-/*=== Header title ===*/
-.top-title {
-    text-align: center;
-    margin: 0;
-    text-transform: capitalize;
-    padding: 15px 0;
-    color: @white;
-    
-    &:after {
-        content: "";
-        display: block;
-        padding-top: 8px;
-        width: 80px;
-        margin: auto;
-        border-bottom: @border @white;
-    }
-}
-
-.sub-text {
-    color: @white;
-}
-
 /*=== Large title and subtitle ===*/
 
 .lg-title {
     text-align: center;
     position: relative;
-//    letter-spacing: 2px;
-//    margin-bottom: 40px;
     text-transform: uppercase;
-//    color: #777;
-//    font-size: 36px;
     letter-spacing: 1px;
     margin-bottom: 45px;
     font-size: 45px;
@@ -112,12 +84,7 @@
 .bg-filter .big-title {
     color: @white;
 }
-/*=== Title with border ===*/
 
-.title-border {
-    padding-bottom: 5px;
-    border-bottom: @border @extra-light;
-}
 
 /*=== Subtitles ===*/
 .subtitle-v2 {
@@ -166,10 +133,10 @@ a.text-success:hover {
     color: darken(@success, 15%);
 }
 .text-info {
-    color: @info;
+    color: #3FA6B5;
 }
 a.text-info:hover {
-    color: darken(@info, 15%);
+    color: darken(#3FA6B5, 15%);
 }
 .text-warning {
     color: @warning;
@@ -242,30 +209,6 @@ a.bg-danger:hover {
     }
 }
 
-/*=== Share icons list ===*/
-
-.share-icons-list {
-    padding-left: 0;
-    list-style: none;
-    li {
-        display: inline-block;
-        padding-right: 2.5px;
-        margin-bottom: 5px;
-    }
-}
-
-/*=== Features list with icons ===*/
-
-.features-list {
-    > li {
-        margin: 10px 0;
-        list-style: none;
-    }
-    i {
-        margin-right: 10px;
-        color: @primary;
-    }
-}
 
 /*=== Info list ===*/
 /* using in the portfolio item (down) */
@@ -306,32 +249,11 @@ a.bg-danger:hover {
     margin-right: 15px;
 }
 
-/*=== Contact list with info ===*/
-
-.info-bar {
-    h4 {
-        margin-top: 0;
-        margin-bottom: 5px;
-        text-transform: uppercase;
-        font-size: 15px;
-        color: @grey;
-        font-weight: @font-weight-bold;
-    }
-    > li {
-        margin-bottom: 15px;
-        color: @grey;
-        > p {
-            margin-bottom: 0;
-        }
-        i {
-            width: 1.5em;
-            height: 1em;
-            text-align: center;
-            font-size: 70%;
-            vertical-align: middle;
-            line-height: 0.85em;
-            color: @light-grey;
-        }
+.big-list {
+    li {
+        font-size: 17px;
+        color: #777;
+        margin: 15px 0;
     }
 }
 
@@ -346,13 +268,7 @@ a {
         outline: none;
     }
 }
-/*=== Labels ===*/
 
-h3 > .label,
-h2 > .label,
-h1 > .label {
-    font-weight: @font-weight-light;
-}
 
 /* blockquote */
 blockquote.primary {
