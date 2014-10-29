@@ -91,35 +91,35 @@
 /*=== Animation for modal windows ===*/
 
 /* Scale + rotateY (only for screen larger than 992px) */
-.md-effect-1 {
-    @media (min-width: 992px) {
-        .md-content {
-            .transform(perspective(1500px) rotateY(-180deg) scale(0.2));
-            .transition(all 0.5s ease);
-            .transform-style(preserve-3d);
-            .transform-origin(50% 50%);
-            overflow: hidden;
-            opacity: 0;
-        }
-        &.md-show .md-content {
-            .transform(perspective(1500px) rotateY(0deg) scale(1));
-             opacity: 1;
-             overflow: auto;
-        }
-    }
-    @media (max-width: 992px) {
-        /* */
-        .md-content {
-            .transform(scale(0.5));
-            .transition(all 0.35s ease);
-             opacity: 0;
-        }
-        &.md-show .md-content {
-            .transform(scale(1));
-            opacity: 1;
-        }
-    }
-}
+//.md-effect-1 {
+//    @media (min-width: 992px) {
+//        .md-content {
+//            .transform(perspective(1500px) rotateY(-180deg) scale(0.2));
+//            .transition(all 0.5s ease);
+//            .transform-style(preserve-3d);
+//            .transform-origin(50% 50%);
+//            overflow: hidden;
+//            opacity: 0;
+//        }
+//        &.md-show .md-content {
+//            .transform(perspective(1500px) rotateY(0deg) scale(1));
+//             opacity: 1;
+//             overflow: auto;
+//        }
+//    }
+//    @media (max-width: 992px) {
+//        /* */
+//        .md-content {
+//            .transform(scale(0.5));
+//            .transition(all 0.35s ease);
+//             opacity: 0;
+//        }
+//        &.md-show .md-content {
+//            .transform(scale(1));
+//            opacity: 1;
+//        }
+//    }
+//}
 
 /* Simple scale */
 .md-effect-2 {

@@ -94,32 +94,32 @@
     .easePulse {
         .animation-name(@name3);
     }
-    /* openIn */
-    @name4: openIn;
-    @-webkit-keyframes @name4 {
-        0% {
-            opacity: 0;
-            .transform(perspective(500px) rotateY(15deg));
-        }
-        100% {
-            opacity: 1;
-            .transform(perspective(500px) rotateY(0));
-        }
-    }
-    @keyframes @name4 {
-        0% {
-            opacity: 0;
-            .transform(perspective(500px) rotateY(15deg));
-        }
-        100% {
-            opacity: 1;
-            .transform(perspective(500px) rotateY(0));
-        }
-    }
-    .openIn {
-        .animation-name(@name4);
-    }
-        
+//    /* openIn */
+//    @name4: openIn;
+//    @-webkit-keyframes @name4 {
+//        0% {
+//            opacity: 0;
+//            .transform(perspective(500px) rotateY(15deg));
+//        }
+//        100% {
+//            opacity: 1;
+//            .transform(perspective(500px) rotateY(0));
+//        }
+//    }
+//    @keyframes @name4 {
+//        0% {
+//            opacity: 0;
+//            .transform(perspective(500px) rotateY(15deg));
+//        }
+//        100% {
+//            opacity: 1;
+//            .transform(perspective(500px) rotateY(0));
+//        }
+//    }
+//    .openIn {
+//        .animation-name(@name4);
+//    }
+//        
     /* easeUp */
     @name5: easeUp;
     @-webkit-keyframes @name5 {
@@ -146,58 +146,110 @@
        .animation-name(@name5);
     }
     
+
+    //
+    @valX: 30%;
+    @valXm: -30%;
     
-    /* openSection */
-    @name6: openSection;
-    @-webkit-keyframes @name6 {
+    @name8: fromRight;
+    @-webkit-keyframes @name8 {
         0% {
-            height: 0;
-            padding: 0;
+            opacity: 0;
+            .transform(translateX(@valX));
         }
         100% {
-            height: auto;
+            opacity: 1;
+            .transform(translateX(0));
         }
     }
-    @keyframes @name6 {
+     @keyframes @name8 {
         0% {
-            height: 0;
-            padding: 0;
+            opacity: 0;
+            .transform(translateX(@valX));
         }
         100% {
-            height: auto;
+            opacity: 1;
+            .transform(translateX(0));
         }
     }
-    .openSection {
-        @transition-name6: height 1s ease !important;
-        .animation-name(@name6, @transition-name6);
-    }
-    
-    /* swithOnTv */
-    @name7: swithOnTv;
-    @-webkit-keyframes @name7 {
-        0% {
-            .transform(scale3d(0, 0.01, 1));
-        }
-        50% {
-            .transform(scale3d(0.75, 0.01, 1));
-        }
-        100% {
-            .transform(scale3d(1, 1, 1));
-        }
-    }
-    @keyframes @name7 {
-        0% {
-            .transform(scale3d(0, 0.01, 1));
-        }
-        50% {
-            .transform(scale3d(0.75, 0.01, 1));
-        }
-        100% {
-            .transform(scale3d(1, 1, 1));
-        }
-    }
-    .swithOnTv {
-        .animation-name(@name7);
+    .fromRight {
+        .animation-name(@name8);
     }
     
+    @name9: toLeft;
+    @-webkit-keyframes @name9 {
+        0% {
+            opacity: 1;
+            .transform(translateX(0));
+            
+        }
+        100% {
+            opacity: 0;
+            .transform(translateX(-@valXm));
+        }
+    }
+     @keyframes @name9 {
+        0% {
+            opacity: 1;
+            .transform(translateX(0));
+            
+        }
+        100% {
+            opacity: 0;
+            .transform(translateX(-@valXm));
+        }
+     }
+    .toLeft {
+        .animation-name(@name9);
+    }
+    //
+    @name10: fromLeft;
+    @-webkit-keyframes @name10 {
+        0% {
+            opacity: 0;
+            .transform(translateX(-@valXm));
+        }
+        100% {
+            opacity: 1;
+            .transform(translateX(0));
+        }
+    }
+     @keyframes @name10 {
+        0% {
+            opacity: 0;
+            .transform(translateX(-@valXm));
+        }
+        100% {
+            opacity: 1;
+            .transform(translateX(0));
+        }
+    }
+    .fromLeft {
+        .animation-name(@name10);
+    }
+    
+    @name11: toRight;
+    @-webkit-keyframes @name11 {
+        0% {
+            opacity: 1;
+            .transform(translateX(0));
+        }
+        100% {           
+            opacity: 0;
+            .transform(translateX(@valX));
+        }
+    }
+     @keyframes @name11 {
+        0% {
+            opacity: 1;
+            .transform(translateX(0));
+        }
+        100% {           
+            opacity: 0;
+            .transform(translateX(@valX));
+        }
+    }
+    .toRight {
+        .animation-name(@name11);
+    }
 }
