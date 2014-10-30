@@ -1,0 +1,157 @@
+#interactive-venue-map
+  position: relative
+
+  *
+    box-sizing: border-box
+
+  [ng-click]
+    cursor: pointer
+  .filter
+    position: absolute
+    top: 0
+    right: 0
+    left: 0
+    width: 100%
+    z-Index: 1000000
+    &.active
+      height: 100%
+      bottom: 0
+      background: rgba(0, 0, 0, 0.6)
+    header
+      padding: 0.5em 0
+      background: rgba(0, 0, 0, 0.8)
+      color: rgba(255, 255, 255, 0.8)
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+      span
+        padding: 0.5em
+      .toggle
+        background: rgba(245, 130, 31, 0.9)
+        .inactive
+          display: none
+      :last-child
+        text-align: right
+    main
+      padding: 0.5em
+      nav
+        margin: 0.5em 0
+        ul
+          padding: 0
+          margin: 0
+          list-style: none
+          li
+            text-align: center
+            padding: 0 0.5em
+            position: relative
+            span
+              position: absolute
+              display: block
+              bottom: 0
+              &:first-child
+                left: -1px
+              &:last-child
+                right: -1px
+              background: #fff
+              width: 10px
+              height: 1px
+            &.selected
+              a
+                background: none
+                border-bottom: none
+            a
+              border: 1px solid #fff
+              display: block
+              padding: 10px
+              background: rgba(0, 0, 0, 0.5)
+              color: #fff
+              text-decoration: none
+      section
+        margin: 1.5em 0 0.5em
+        .sub-category
+          .venue
+            height: 1em
+            width: 1em
+          a
+            padding: 0.5em
+            border-radius: 3px
+            -webkit-border-radius: 3px
+            -moz-border-radius: 3px
+            text-decoration: none
+            color: #fff
+          &.selected
+            a
+              background: rgba(255, 255, 255, 0.8)
+              color: #444
+
+  .map
+    width: 100%
+    height: 600px
+
+  .venue-marker
+    width: 30px
+    height: 30px
+    border: 1px solid rgb(185, 185, 185)
+    padding: 1px
+    background: #fff
+    border-radius: 2px
+    -moz-border-radius: 2px
+    -webkit-border-radius: 2px
+    .venue
+      float: left
+
+  .leaflet-control-zoom
+    margin-top: 45px
+
+  .venue
+    margin: 1px
+    background: rgb(216, 216, 216)
+    border: 1px solid rgb(185, 185, 185)
+    height: 24px
+    width: 24px
+    display: inline-block
+    vertical-align: middle
+    img
+      height: 100%
+      width: 100%
+
+  .leaflet-popup-content
+    padding: 0
+
+  .leaflet-popup-content-wrapper
+    padding: 0
+    header
+      height: 100px
+      position: relative
+      -webkit-border-top-left-radius: 3px
+      -webkit-border-top-right-radius: 3px
+      -moz-border-radius-topleft: 3px
+      -moz-border-radius-topright: 3px
+      border-top-left-radius: 3px
+      border-top-right-radius: 3px
+      h1
+        color: #fff
+        background: rgba(0, 0, 0, 0.5)
+        bottom: 0
+        right: 0
+        left: 0
+        width: 100%
+        padding: 0.5em
+        margin: 0
+        position: absolute
+    main
+      padding: 1em 1em 3em
+      position: relative
+      .next-venue, .previous-venue, .progress
+        position: absolute
+        bottom: 0
+        display: inline-block
+        padding: 1em
+      .progress
+        display: block
+        text-align: center
+        color: #ccc
+        left: 0
+        right: 0
+      .next-venue
+        right: 0
+      .previous-venue
+        left: 0
