@@ -37,8 +37,11 @@
     <!-- CSS Animations -->
     <link href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet">
 
-
+    <!-- Random Rainbow -->
     <script src="js/app.js"></script>
+    
+     <!-- WOW.js - loading animations -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/wow/0.1.6/wow.min.js"></script>    
 
     </head>
 
@@ -48,47 +51,77 @@
             <div class="rainbow-bar"><div class="section"><span class="sub-section"></span><span class="sub-section"></span><span class="sub-section"></span><span class="sub-section"></span></div><div class="section"><span class="sub-section"></span><span class="sub-section"></span><span class="sub-section"></span><span class="sub-section"></span></div><div class="section"><span class="sub-section"></span><span class="sub-section"></span><span class="sub-section"></span><span class="sub-section"></span></div><div class="section"><span class="sub-section"></span><span class="sub-section"></span><span class="sub-section"></span><span class="sub-section"></span></div></div>
 
         <img src="img/sf2024-logo.png" alt="San Francisco 2024"/>
-        <h1>Coming Soon</h1>
-
-        <div class="container section">
-            <form class="form-inline all-trn row" role="form">
-                <div class="col-sm-4">
-                    <div class="form-group icon">
-                        <div class="control input-group">
-                            <label class="sr-only" for="FullName">Please enter your name</label>
-                            <input type="text" class="form-control" id="FullName" placeholder="Your name" required><i class="fa fa-user"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="form-group icon">
-                        <div class="input-group control">
-                            <label class="sr-only" for="Email">Please enter a valid email</label>
-                            <input class="form-control" type="email" id="Email" placeholder="Your email" required>
-                            <i class="fa fa-envelope"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <button type="submit" class="btn btn-danger btn-xlg btn-block">Stay Informed</button>
-                </div>
-            </form>
-        </div>        
     
-         <div class="bg-danger">
-            <div class="container section text-center">
-                <ul class="list-unstyled list-inline m-no-bottom">
-                    <li><i class="fa fa-facebook i-social"></i>
+    <div>
+        <div class="container section-lg">
+
+            <h2 class="text-center text-white lg-title m-no-bottom fadeIn wow">Join us</h2>
+            <div class="space-lg"></div>
+
+
+            <!--id="mc_embed_signup"-->
+                <form action="//sf2024.us9.list-manage.com/subscribe/post?u=bd21388d1e57e5939f08d19e7&amp;id=a19d2bdbe7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline all-trn" target="_blank" novalidate>
+                    <div id="row" class="row col-sm-12">
+                        <div class="col-sm-4">
+                            <div class="form-group icon">
+                                <div class=" control input-group wow fadeIn " data-wow-delay="0.15s">
+                                    <input type="text" value="" name="NAME" class="required form-control" id="mce-NAME" placeholder="Your name" required>
+                                    <i class="fa fa-user"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group icon">
+                                <div class="control input-group wow fadeIn " data-wow-delay="0.25s">
+                                    <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Your email" required >
+                                     <i class="fa fa-envelope"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->             
+                        
+                        <div style="position: absolute; left: -5000px;">
+                            <input type="text" name="b_bd21388d1e57e5939f08d19e7_a19d2bdbe7" tabindex="-1" value="">
+                        </div>
+                        
+                        <div class="col-sm-3">
+                            <input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="btn btn-danger btn-xlg btn-block wow fadeIn " data-wow-delay="0.35s">
+                        </div>
+                    </div>
+                    
+
+                    <div id="mce-responses">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>
+                </form>
+            </div>
+            <div class="row col-sm-12">
+                <ul class="list-unstyled list-inline m-no-bottom" style="margin-left:40px;">
+
+                    <li>
+                        <a href="http://twitter.com/sf2024" target="_blank">
+                        <i class="fa fa-twitter i-social wow easePulse" data-wow-delay="0.25s" style="background:#fff;"></i>
+                        </a>
                     </li>
-                    <li><i class="fa fa-twitter i-social"></i>
+
+                    <li>
+                        <a href="http://vine.co/u/1032138845241937920" target="_blank">
+                        <i class="fa fa-vine i-social wow easePulse" data-wow-delay="0.25s" style="background:#fff;"></i>
+                        </a>
                     </li>
-                    <li><i class="fa fa-youtube-play i-social"></i>
-                    </li>
-                    <li><i class="fa fa-instagram i-social"></i>
+
+                    <li>
+                        <a href="http://instagram.com/sf2024" target="_blank">
+                        <i class="fa fa-instagram i-social wow easePulse" data-wow-delay="0.25s" style="background:#fff;"></i>
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
+    </div>
+
     </body>
      <!-- Modernizr -->
     <script src="js/min/modernizr.custom.min.js"></script>
@@ -100,8 +133,6 @@
     <!-- Bootstrap JS -->
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-    <!-- WOW.js - loading animations -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/wow/0.1.6/wow.min.js"></script>
 
     <!-- ONE PAGE NAVIGATION -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-one-page-nav/3.0.0/jquery.nav.min.js" id="removeNavPlugin"></script>
