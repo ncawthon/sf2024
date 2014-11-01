@@ -95,3 +95,45 @@
     }
 }
 
+/* legacy section */
+#lc .right,
+#lb .left,
+#la .right {
+	background: #fff;
+	height: 500px;
+	position: relative;
+	z-index: 2;
+	.transition(all 0.35s ease);
+}
+#lc,
+#la {
+	.right {
+		box-shadow: -10px 0 25px -20px;
+		padding-left: 50px;
+	}
+	.img-mask {
+		left: 70%;
+		right: -70%;
+	}
+}
+#lb {
+	.left {
+		box-shadow: 10px 0 25px -20px;
+		padding-right: 50px;
+	}
+	.img-mask {
+		left: -80%;
+		right: 80%;
+	}
+}
+/* legacy animation is actived */
+.slideInEffect {
+	&#lc,
+	&#la,
+	&#lb {
+		.img-mask {
+			left: 0;
+			right: 0;
+		}
+	}
+}

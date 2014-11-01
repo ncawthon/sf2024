@@ -94,7 +94,7 @@
     .easePulse {
         .animation-name(@name3);
     }
-//    /* openIn */
+    /* openIn */
 //    @name4: openIn;
 //    @-webkit-keyframes @name4 {
 //        0% {
@@ -119,7 +119,7 @@
 //    .openIn {
 //        .animation-name(@name4);
 //    }
-//        
+        
     /* easeUp */
     @name5: easeUp;
     @-webkit-keyframes @name5 {
@@ -145,111 +145,30 @@
     .easeUp {
        .animation-name(@name5);
     }
-    
 
     //
-    @valX: 30%;
-    @valXm: -30%;
-    
-    @name8: fromRight;
-    @-webkit-keyframes @name8 {
+    @name6: aSlideInLeft;
+    @keyframes @name6 {
         0% {
-            opacity: 0;
-            .transform(translateX(@valX));
+            opacity: 0.35s;
+            left: -500px;
         }
         100% {
             opacity: 1;
-            .transform(translateX(0));
+            left: 0;
         }
     }
-     @keyframes @name8 {
+    @-webkit-keyframes @name6 {
         0% {
-            opacity: 0;
-            .transform(translateX(@valX));
+            opacity: 0.35s;
+            left: -500px;
         }
         100% {
             opacity: 1;
-            .transform(translateX(0));
+            left: 0;
         }
     }
-    .fromRight {
-        .animation-name(@name8);
-    }
-    
-    @name9: toLeft;
-    @-webkit-keyframes @name9 {
-        0% {
-            opacity: 1;
-            .transform(translateX(0));
-            
-        }
-        100% {
-            opacity: 0;
-            .transform(translateX(-@valXm));
-        }
-    }
-     @keyframes @name9 {
-        0% {
-            opacity: 1;
-            .transform(translateX(0));
-            
-        }
-        100% {
-            opacity: 0;
-            .transform(translateX(-@valXm));
-        }
-     }
-    .toLeft {
-        .animation-name(@name9);
-    }
-    //
-    @name10: fromLeft;
-    @-webkit-keyframes @name10 {
-        0% {
-            opacity: 0;
-            .transform(translateX(-@valXm));
-        }
-        100% {
-            opacity: 1;
-            .transform(translateX(0));
-        }
-    }
-     @keyframes @name10 {
-        0% {
-            opacity: 0;
-            .transform(translateX(-@valXm));
-        }
-        100% {
-            opacity: 1;
-            .transform(translateX(0));
-        }
-    }
-    .fromLeft {
-        .animation-name(@name10);
-    }
-    
-    @name11: toRight;
-    @-webkit-keyframes @name11 {
-        0% {
-            opacity: 1;
-            .transform(translateX(0));
-        }
-        100% {           
-            opacity: 0;
-            .transform(translateX(@valX));
-        }
-    }
-     @keyframes @name11 {
-        0% {
-            opacity: 1;
-            .transform(translateX(0));
-        }
-        100% {           
-            opacity: 0;
-            .transform(translateX(@valX));
-        }
-    }
-    .toRight {
-        .animation-name(@name11);
+    .aSlideInLeft {
+        .animation-name(@name6);
     }
 }
