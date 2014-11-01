@@ -168,3 +168,50 @@
 .bg-repeat {
     background-repeat: repeat;
 }
+
+/* legacy - background images */
+.img-mask {
+    background: url("@{base-url}unnamed.png");
+    background-position: center center;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .transition(all 1s cubic-bezier(.43,.01,.02,.99) 0.35s);
+}
+.img-fixed-c,
+.img-fixed-b,
+.img-fixed-a {
+    background-attachment: fixed !important;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: relative;
+}
+
+.img-fixed-a {
+    background: url("@{base-url}legacy/1-transportation.png");
+}
+.img-fixed-b {
+    background: url("@{base-url}legacy/2-accommodation.png");
+}
+.img-fixed-c {
+    background: url("@{base-url}legacy/3-youth.png");
+}
+
+.extra-layer {
+    position: relative;
+    min-height: 500px;
+}
+.centerYtop {
+    position: relative;
+    .transform(translateY(100%));
+    .big-title {
+        margin-top: 0;
+    }
+    ul {
+        margin-bottom: 0;
+    }
+}
