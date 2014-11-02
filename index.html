@@ -34,84 +34,23 @@
 	<!-- Owl carousel  -->
 	<link rel="stylesheet" href="assets/plugins/owl.carousel/owl-carousel/owl.carousel.css">
 
-<<<<<<< HEAD
-    <!-- Main Navigation -->
-    <nav class="navbar navbar-trn navbar-fixed-top navbar-height" role="navigation" id="navbarSettings" style="background-color:rgba(255, 255, 255, 0.498039);">
-        <div class="container">
-            <div class="hidden-sm hidden-md hidden-lg">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#"><img height="60" style="margin-top:-10px;" alt="..." src="assets/img/logo.png"></a>
-                </div>
-                <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right nav-mobile">
-                        <li class="dropdown">
-                            <a href="#sJoinUs">Join Us</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#sLegacy">Legacy</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#sOurCity">Our City</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#sOurTeam">Our Team</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#sNews">News</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#sContact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <!-- venue map -->
+    <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css">
 
-            <div class="row hidden-xs">
-                <div class="col-sm-5">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                            <a href="#sJoinUs" class="scroll">Join Us</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#sLegacy" class="scroll">Legacy</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#sOurCity" class="scroll">Our City</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-2">
-                    <div class="navbar-header centerX">
-                        <a class="navbar-logo scroll" href="#sWelcome">
-                            <img width="150" height="90" alt="..." src="assets/img/logo.png">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-sm-5">
-                    <ul class="nav navbar-nav navbar-left">
-                        <li class="dropdown">
-                            <a href="#sOurTeam" class="scroll">Our Team</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#sNews" class="scroll">News</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#sContact" class="scroll">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-=======
+    <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css">
+    <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css">
+
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.5.0/base-min.css&pure/0.5.0/grids-min.css&pure/0.5.0/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+      <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.5.0/base-min.css&pure/0.5.0/grids-min.css&pure/0.5.0/grids-responsive-min.css">
+    <!--<![endif]-->
+
+    <link rel="stylesheet" href="assets/css/map.css">
 </head>
->>>>>>> FETCH_HEAD
 
 <body>
 
@@ -127,16 +66,16 @@
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" href="#">
-						<img height="60" style="margin-top:-10px;" alt="..." src="assets/img/logo.png">
+						<img height="60" style="margin-top:-20px;" alt="sf2024" src="assets/img/logo.png">
 					</a>
 				</div>
 				<div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right nav-mobile">
 						<li class="dropdown">
-							<a href="#sLegacy">LEGACY</a>
+							<a href="#sLegacy">Join Us</a>
 						</li>
 						<li class="dropdown">
-							<a href="#sJoinUs">Join us</a>
+							<a href="#sJoinUs">Legacy</a>
 						</li>
 						<li class="dropdown">
 							<a href="#sOurCity">Our City</a>
@@ -158,10 +97,10 @@
 				<div class="col-sm-5">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="dropdown">
-							<a href="#sLegacy" class="scroll wow fadeIn" data-wow-delay="0.55s">LEGACY</a>
+							<a href="#sLegacy" class="scroll wow fadeIn" data-wow-delay="0.55s">Join Us</a>
 						</li>
 						<li class="dropdown">
-							<a href="#sJoinUs" class="scroll wow fadeIn" data-wow-delay="0.45s">Join us</a>
+							<a href="#sJoinUs" class="scroll wow fadeIn" data-wow-delay="0.45s">Legacy</a>
 						</li>
 						<li class="dropdown">
 							<a href="#sOurCity" class="scroll wow fadeIn" data-wow-delay="0.35s">Our City</a>
@@ -171,7 +110,7 @@
 				<div class="col-sm-2">
 					<div class="navbar-header centerX">
 						<a class="navbar-logo scroll" href="#sWelcome">
-							<img class="wow fadeIn" data-wow-delay="0.25s" width="150" height="90" alt="..." src="assets/img/logo.png">
+							<img class="wow fadeIn" data-wow-delay="0.25s" width="150" height="90" alt="sf2024" src="assets/img/logo.png">
 						</a>
 					</div>
 				</div>
@@ -245,7 +184,7 @@
                                     </div>
 
                                     <!-- LAYER NR. 2 -->
-                                    
+                                    <!--
                                     <div class="tp-caption text-white tp-fade fadeout tp-resizeme text-intro"
                                         data-x="center" data-hoffset="-20"
                                         data-y="center" data-voffset="100"
@@ -259,13 +198,13 @@
                                         style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap; text-align:center; background:rgba(192, 54, 44, 0.75); width:110%;">We are honored to be chosen as a potential bid city for the United States
                                                 <br>to host the 2024 Olympic and Paralympic games.
                                     </div>
+                                    -->
                 </li>
             </ul>   
             <div class="tp-bannertimer"></div>  
         </div>
     
         </div>
-<<<<<<< HEAD
     
     <!-- Join us section -->
     <span class="breakPoint" id="sJoinUs"></span>
@@ -412,6 +351,13 @@
 
 
 
+    <!-- BACKGROUND IMAGE -->
+    <div class="bg-16 bg-center bg-fixed bg-cover">
+        <div class="filling-section bg-filter"></div>
+    </div>
+    <!--/END BACKGROUND IMAGE -->
+
+
 
     <!-- Our City -->
     <span class="breakPoint" id="sOurCity"></span>
@@ -423,14 +369,60 @@
     <div class="section-lg">
         <div class="container">
             <p class="subtitle-v2 m-no-bottom text-center text-grey wow fadeIn">Curabitur bibendum justo non orci. Aenean id metus id velit voluptatem quia sit. Bibendum justo non orci. Aenean id metus id velit.</p>
-            <div class="space-lg"></div>
+           <div class="space-lg"></div>            
+        </div>
 
+            <div id="interactive-venue-map" ng-app="InteractiveVenueMap">
+              <div class="filter" ng-controller="FilterCtrl" ng-class="{'active': showFilter}">
+                <header class="pure-g">
+                  <div class="pure-u-1-2">
+                    <span><strong>Potential Venue Map</strong> &Iota; San Francisco 2024</span>
+                  </div>
+                  <div class="pure-u-1-2" ng-click="showFilter = !showFilter">
+                    <span ng-if="showFilter">Hide Map Categories</span>
+                    <span ng-if="!showFilter">Show Map Categories</span>
+                    <span class="toggle">
+                      <i class="icon ion-navicon-round" ng-if="!showFilter"></i><i class="icon ion-close" ng-if="showFilter"></i>
+                    </span>
+                  </div>
+                </header>
+                <main ng-if="showFilter">
+                  <nav>
+                    <ul class="pure-g">
+                      <li ng-repeat="category in venues" ng-class="{'selected': (selectedCategory === category)}" class="pure-u-1-3">
+                        <span></span>
+                        <a href="" ng-click="changeCategory(category)">
+                          {{category.category}}
+                        </a>
+                        <span></span>
+                      </li>
+                    </ul>
+                  </nav>
 
+                  <section class="pure-g">
+                    <div class="pure-u-1-5 sub-category" ng-class="{'selected': !selectedCategory.hidden}">
+                      <a href="" ng-click="toggleCategory(selectedCategory)">
+                        <div class="venue" style="background: {{selectedCategory.color}}"></div>
+                        <strong>All {{selectedCategory.category}} ({{countVenues(selectedCategory)}})</strong>
+                      </a>
+                    </div>
 
+                    <div class="pure-u-1-5 sub-category" ng-repeat="subCategory in selectedCategory.subCategories" ng-class="{'selected': !subCategory.hidden}">
+                      <a href="" ng-click="toggleCategory(selectedCategory, subCategory)">
+                        <div class="venue" style="background: {{selectedCategory.color}}"><img ng-src="{{subCategory.icon}}" ng-if="subCategory.icon"></div>
+                        {{subCategory.category}} ({{subCategory.venues.length}})
+                      </a>
+                    </div>
+                  </section>
 
+                </main>
+              </div>
+              <div class="map">
+              </div>
+            </div>
 
-
-
+        <div class="container">
+           <div class="space-lg"></div>
             <div id="pricesSlider" class="owl-carousel">
                 <div class="item">
                     <div class="panel panel-default ">
@@ -561,7 +553,7 @@
     <div class="container section-lg">
         <div class="md-overlay"></div>
         <div class="row profile-grid">
-            <div class="col-lg-3 col-md-3 col-sm-6 fromPocket wow" data-wow-delay="0.80s">
+            <div class="col-lg-4 col-md-4 col-sm-6 fromPocket wow" data-wow-delay="0.80s">
                 <div class="thumbnail">
                     <div class="profile">
                         <div class="hover-content md-trigger" data-modal="modal-a1">
@@ -571,9 +563,9 @@
                             </div>
                         </div>
                         <div class="caption">
-                            <h3 class="m-no-all">Nicole Perry</h3>
-                            <h5>Chief Olympic Officer</h5>
-                            <h6>Placeholder Company, Inc.</h6>
+                            <h3 class="m-no-all">Steve Strandberg</h3>
+                            <h5>Bid Leader</h5>
+                            <h6>San Francisco 2024</h6>
                         </div>
                     </div>
                 </div>
@@ -620,7 +612,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 fromPocket wow" data-wow-delay="0.60s">
+            <div class="col-lg-4 col-md-4 col-sm-6 fromPocket wow" data-wow-delay="0.60s">
                 <div class="thumbnail">
                     <div class="profile">
                         <div class="hover-content md-trigger" data-modal="modal-a1">
@@ -630,9 +622,9 @@
                             </div>
                         </div>
                         <div class="caption">
-                            <h3 class="m-no-all">Ben Berry</h3>
-                            <h5>Chairman of the Board</h5>
-                            <h6>Fakeco.com</h6>
+                            <h3 class="m-no-all">Anne Cribbs</h3>
+                            <h5>Bid Leader / US Olympian</h5>
+                            <h6>San Francisco 2024</h6>
                         </div>
                     </div>
                 </div>
@@ -679,7 +671,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 fromPocket wow" data-wow-delay="0.40s">
+            <div class="col-lg-4 col-md-4 col-sm-6 fromPocket wow" data-wow-delay="0.40s">
                 <div class="thumbnail">
                     <div class="profile">
                         <div class="hover-content md-trigger" data-modal="modal-a1">
@@ -689,9 +681,9 @@
                             </div>
                         </div>
                         <div class="caption">
-                            <h3 class="m-no-all">Jenny James</h3>
-                            <h5>Head Ringleader</h5>
-                            <h6>Company 123, Inc.</h6>
+                            <h3 class="m-no-all">Larry Baer</h3>
+                            <h5>Bid Leader</h5>
+                            <h6>San Francisco 2024</h6>
                         </div>
                     </div>
                 </div>               <!-- Modal a3-->
@@ -737,21 +729,6 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 fromPocket wow" data-wow-delay="0.20s">
-                 <div class="thumbnail">
-                    <div class="profile">
-                        <div class="hover-content md-trigger" data-modal="modal-a1">
-                            <img class="img-responsive" alt="Our team" src="assets/img/faces/generic-man.jpg">
-                            <div class="hover-fade">
-                                <i class="fa fa-expand"></i>
-                            </div>
-                        </div>
-                        <div class="caption">
-                            <h3 class="m-no-all">Gary Foxtrot</h3>
-                            <h5>Minister of Defense</h5>
-                            <h6>Fakeco.com</h6>
-                        </div>
-                    </div>
                 </div>
                <!-- Modal a4-->
                 <div class="md-modal md-effect-2" id="modal-a4">
@@ -1476,21 +1453,21 @@
             <div class="space-lg"></div>
             <div class="md-overlay"></div>
             <div class="timeline" id="newsFeed">
-                <div class="label-month">October 2014</div>
+                <div class="label-month fadeIn wow">October 2014</div>
                 <div class="row box-feed">
                     <div class="col-sm-6">
                         <div class="box-post left">
-                            <h3><a href="#">Rio 2016 Olympians Pass the Baton to San Francisco</a></h3>
-                            <img class="img-responsive" alt="..." src="assets/img/768w/basoc-1.jpg">
-                            <p class="text-block-v2 space-sm">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam posuere lacus quis dolor imperdiet...</p>
+                            <h3 class="fadeIn wow" data-wow-delay="0.15s"><a href="#">Rio 2016 Olympians Pass the Baton to San Francisco</a></h3>
+                            <img class="img-responsive fadeIn wow" data-wow-delay="0.25s" alt="..." src="assets/img/768w/basoc-1.jpg">
+                            <p class="text-block-v2 space-sm fadeIn wow" data-wow-delay="0.35s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam posuere lacus quis dolor imperdiet...</p>
                         </div>
                     </div>
 
                     <div class="col-sm-6">
                         <div class="box-post right">
-                            <h3><a href="#">Local Olympic Hopefuls head to 2016 trials</a></h3>
-                            <img class="img-responsive" alt="..." src="assets/img/768w/basoc-2.jpg">
-                            <p class="text-block-v2 space-sm">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam posuere lacus quis dolor imperdiet...</p>
+                            <h3 class="fadeIn wow" data-wow-delay="0.45s"><a href="#">Local Olympic Hopefuls head to 2016 trials</a></h3>
+                            <img class="img-responsive fadeIn wow" data-wow-delay="0.55s" alt="..." src="assets/img/768w/basoc-2.jpg">
+                            <p class="text-block-v2 space-sm fadeIn wow" data-wow-delay="0.65s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam posuere lacus quis dolor imperdiet...</p>
                         </div>
                     </div>
                 </div>
@@ -1498,15 +1475,15 @@
                 <div class="row box-feed">
                     <div class="col-sm-6">
                         <div class="box-post left">
-                            <h3><a href="#">San Francisco City Hall to Host Olympic Viewing Parties</a></h3>
-                            <img class="img-responsive" alt="..." src="assets/img/768w/basoc-3.jpg">
-                            <p class="text-block-v2 space-sm">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam posuere lacus quis dolor imperdiet...</p>
+                            <h3 class="fadeIn wow" data-wow-delay="0.15s"><a href="#">San Francisco City Hall to Host Olympic Viewing Parties</a></h3>
+                            <img class="img-responsive fadeIn wow" data-wow-delay="0.25s" alt="..." src="assets/img/768w/basoc-3.jpg">
+                            <p class="text-block-v2 space-sm fadeIn wow" data-wow-delay="0.35s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam posuere lacus quis dolor imperdiet...</p>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="box-post right">
-                            <h3><a href="#">BASOC Hosts Road to Rio Dinner Gala</a></h3>
-                            <p class="text-block-v2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam posuere lacus quis dolor imperdiet...</p>
+                            <h3 class="fadeIn wow" data-wow-delay="0.45s"><a href="#">BASOC Hosts Road to Rio Dinner Gala</a></h3>
+                            <p class="text-block-v2 fadeIn wow" data-wow-delay="0.55s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam posuere lacus quis dolor imperdiet...</p>
                         </div>
                     </div>
                 </div>
@@ -1515,15 +1492,15 @@
                 <div class="row box-feed">
                     <div class="col-sm-6">
                         <div class="box-post left">
-                            <h3><a href="#">HuffPo: Californians Make Up most of the US Olympic Team</a></h3>
-                            <p class="text-block-v2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam posuere lacus quis dolor imperdiet...</p>
+                            <h3 class="fadeIn wow" data-wow-delay="0.15s"><a href="#">HuffPo: Californians Make Up most of the US Olympic Team</a></h3>
+                            <p class="text-block-v2 fadeIn wow" data-wow-delay="0.25s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam posuere lacus quis dolor imperdiet...</p>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="box-post right">
-                            <h3><a href="#">Team USA's Jennifer Kessy<br /> Ask Me Anything</a></h3>
-                            <img class="img-responsive" alt="..." src="assets/img/768w/basoc-4.jpg">
-                            <p class="text-block-v2 space-sm">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam posuere lacus quis dolor imperdiet...</p>
+                            <h3 class="fadeIn wow" data-wow-delay="0.35s"><a href="#">Team USA's Jennifer Kessy<br /> Ask Me Anything</a></h3>
+                            <img class="img-responsive fadeIn wow" data-wow-delay="0.45s" alt="..." src="assets/img/768w/basoc-4.jpg">
+                            <p class="text-block-v2 space-sm fadeIn wow" data-wow-delay="0.55s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam posuere lacus quis dolor imperdiet...</p>
                         </div>
                     </div>
                 </div>
@@ -1539,62 +1516,6 @@
         </div>
     </div>
     <!--===/END NEWS SECTION ===-->
-
-    <!--=== Twitter ===-->
-    <div class="bg-dark-7 hidden-md hidden-sm hidden-xs">
-        <div class="container section">
-            <div class="row">
-                <div class="col-sm-5"><i class="fa fa-twitter icon-bg"></i>
-                </div>
-                <div class="col-sm-7">
-                    <div class="space-lg"></div>
-                    <div class="space-md"></div>
-                    <div id="twitterSlider" class="owl-carousel sm-pagination">
-                        <div class="item">
-                            <blockquote class="danger">
-                                <p>26 years ago today the rings fell from the sky. <a>#seoul88 #openingceremony #olympics</a>
-                                </p>
-                                <footer>@olympics <a href="https://twitter.com/brackets/status/519607551592112128">October 7, 2014</a>
-                                </footer>
-                            </blockquote>
-                        </div>
-                        <div class="item">
-                            <blockquote class="danger">
-                                <p>Over 15,000 of the best athletes in the world will be coming to join us at<a href="#">#Rio2016!</a> 
-                                </p>
-                                <footer>@Rio2016 <a href="https://twitter.com/brackets/status/519607551592112128">October 7, 2014</a>
-                                </footer>
-                            </blockquote>
-                        </div>
-                        <div class="item">
-                            <blockquote class="danger">
-                                <p>Hard work has made it easy. That is my secret. That is why I win.
-                                </p>
-                                <footer>@nadiacomaneci10 <a href="https://twitter.com/brackets/status/519607551592112128">October 7, 2014</a>
-                                </footer>
-                            </blockquote>
-                        </div>
-                        <div class="item">
-                            <blockquote class="danger">
-                                <p>#500 days to go to <a>#Lillehammer2016.</a> So happy to be an Ambassador again for the <a>#youtholympics.</a> Get active kids! 
-                                </p>
-                                <footer>@lindseyvonn <a href="https://twitter.com/brackets/status/519607551592112128">October 7, 2014</a>
-                                </footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-    <!-- BACKGROUND IMAGE -->
-    <div class="bg-15 bg-center bg-fixed bg-cover">
-        <div class="filling-section bg-filter"></div>
-    </div>
-    <!--/END BACKGROUND IMAGE -->
 
     <!-- CONTACT SECTION -->
     <span class="breakPoint" id="sContact"></span>
@@ -1671,1489 +1592,6 @@
     <!--===/END    FOOTER     ===-->
 
 
-    <!-- Modernizr -->
-    <script src="assets/js/min/modernizr.custom.min.js"></script>
-
-    <!-- jQuery -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-
-    <!-- Bootstrap JS -->
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-    <!-- WOW.js - loading animations -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/wow/0.1.6/wow.min.js"></script>
-
-    <!-- SMOOTH SCROLLING -->
-    <script src="http://cdn.jsdelivr.net/jquery.nicescroll/3.5.4/jquery.nicescroll.min.js" id="removeScrollPlugin"></script>
-
-    <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
-    <script src="assets/plugins/slider-revolution/examples&amp;source/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-    <script src="assets/plugins/slider-revolution/examples&amp;source/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-
-
-    <!-- MODAL WINDOWS -->
-    <script src="assets/js/min/classie.min.js"></script>
-    <script src="assets/js/min/jquery.modalEffects.min.js"></script>
-    <script>
-        // this is important for IEs
-        var polyfilter_scriptpath = "/js/";
-    </script>
-    <script src="assets/js/min/cssParser.min.js"></script>
-
-    <!-- OWL CAROUSEL -->
-    <script src="assets/plugins/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
-    
-    <!-- jQuery Validate -->
-    <script src="assets/plugins/jquery-validation-1.13.1/dist/jquery.validate.min.js"></script>
-    
-    <!-- Mailchimp -->
-    <script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-    <script>
-    (function ($) {
-        window.fnames = new Array();
-        window.ftypes = new Array();
-        fnames[1] = 'NAME';
-        ftypes[1] = 'text';
-        fnames[0] = 'EMAIL';
-        ftypes[0] = 'email';
-        }(jQuery));
-    var $mcj = jQuery.noConflict(true);
-    </script>
-
-
-    <!-- Must be last of all scripts -->
-    <script src="assets/js/one-page.js"></script>
-
-    
-    <!--[if lt IE 9]>
-=======
-
-
-	<span class="breakPoint" id="sLegacy"></span>
-	<div class="container section-lg">
-		<h2 class="lg-title m-no-bottom text-info wow fadeIn" data-wow-delay="0.5s">Legacy</h2>
-		<div class="space-lg"></div>
-		<p class="subtitle-v2 m-no-bottom text-center text-grey wow fadeIn" data-wow-delay="0.6s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio.</p>
-	</div>
-	<hr>
-	<div class="section-xlg container" id="legacy">
-		<div class="row" id="la">
-			<div class="col-sm-6">
-				<div class="extra-layer">
-					<div class="img-mask">
-						<div class="img-fixed-a"></div>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6 right">
-				<div class="centerYtop ">
-					<h2 class="big-title text-info wow fadeInRight" data-wow-delay="0.25s">TRANSPORTATION</h2>
-					<ul class="big-list">
-						<li class="wow fadeInRight" data-wow-delay="0.35s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-						<li class="wow fadeInRight" data-wow-delay="0.45s">Fusce nibh. Aenean id metus id velit ullamcorper pulvinar.</li>
-						<li class="wow fadeInRight" data-wow-delay="0.55s">Duis aute irure dolor in reprehenderit in reprehenderit in voluptate.</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<hr>
-	<div class="section-xlg container">
-		<div class="row" id="lb">
-			<div class="col-sm-6 left">
-				<div class="centerYtop">
-					<h2 class="big-title text-info wow fadeInLeft" data-wow-delay="0.25s">AFFORDABLE HOUSING</h2>
-					<ul class="big-list">
-						<li class="wow fadeInLeft" data-wow-delay="0.35s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-						<li class="wow fadeInLeft" data-wow-delay="0.45s">Fusce nibh. Aenean id metus id velit ullamcorper pulvinar.</li>
-						<li class="wow fadeInLeft" data-wow-delay="0.55s">Duis aute irure dolor in reprehenderit in reprehenderit in voluptate.</li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="extra-layer">
-					<div class="img-mask">
-						<div class="img-fixed-b"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<hr>
-	<div class="section-xlg container">
-		<div class="row" id="lc">
-			<div class="col-sm-6">
-				<div class="extra-layer">
-					<div class="img-mask">
-						<div class="img-fixed-c"></div>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6 right">
-				<div class="centerYtop">
-					<h2 class="big-title text-info wow fadeInRight" data-wow-delay="0.25s">YOUTH AMBITION</h2>
-					<ul class="big-list">
-						<li class="wow fadeInRight" data-wow-delay="0.35s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-						<li class="wow fadeInRight" data-wow-delay="0.45s">Fusce nibh. Aenean id metus id velit ullamcorper pulvinar.</li>
-						<li class="wow fadeInRight" data-wow-delay="0.55s">Duis aute irure dolor in reprehenderit in reprehenderit in voluptate.</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<div class="space-lg"></div>
-
-	<!-- Join us section -->
-	<span class="breakPoint" id="sJoinUs"></span>
-	<div class="bg-warning">
-		<div class="container section">
-			<h2 class="text-center text-white lg-title m-no-bottom fadeIn wow">Join us</h2>
-		</div>
-	</div>
-	<div class="bg-dark-1">
-		<div class="container section-lg">
-			<!--id="mc_embed_signup"-->
-			<div>
-				<form action="//sf2024.us9.list-manage.com/subscribe/post?u=bd21388d1e57e5939f08d19e7&amp;id=a19d2bdbe7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline all-trn" target="_blank" novalidate>
-					<div id="row">
-						<div class="col-sm-4">
-							<div class="form-group icon">
-								<div class=" control input-group wow fadeIn " data-wow-delay="0.15s">
-									<input type="text" value="" name="NAME" class="required form-control" id="mce-NAME" placeholder="Your name" required>
-									<i class="fa fa-user"></i>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="form-group icon">
-								<div class="control input-group wow fadeIn " data-wow-delay="0.25s">
-									<input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Your email" required>
-									<i class="fa fa-envelope"></i>
-								</div>
-							</div>
-						</div>
-
-						<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-
-						<div style="position: absolute; left: -5000px;">
-							<input type="text" name="b_bd21388d1e57e5939f08d19e7_a19d2bdbe7" tabindex="-1" value="">
-						</div>
-
-						<div class="col-sm-3">
-							<input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="btn btn-warning btn-xlg btn-block wow fadeIn " data-wow-delay="0.35s">
-						</div>
-					</div>
-
-
-					<div id="mce-responses">
-						<div class="response" id="mce-error-response" style="display:none"></div>
-						<div class="response" id="mce-success-response" style="display:none"></div>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-	<div class="bg-warning">
-		<div class="container section text-center">
-			<ul class="list-unstyled list-inline m-no-bottom">
-				<li><i class="fa fa-facebook i-social wow easePulse" data-wow-delay="0.15s"></i>
-				</li>
-				<li><i class="fa fa-twitter i-social wow easePulse" data-wow-delay="0.25s"></i>
-				</li>
-				<li><i class="fa fa-youtube-play i-social wow easePulse" data-wow-delay="0.35s"></i>
-				</li>
-				<li><i class="fa fa-instagram i-social wow easePulse" data-wow-delay="0.45s"></i>
-				</li>
-			</ul>
-		</div>
-	</div>
-
-	<!-- BACKGROUND IMAGE -->
-	<div class="bg-19 bg-center bg-fixed bg-cover">
-		<div class="filling-section bg-filter"></div>
-	</div>
-	<!--/END BACKGROUND IMAGE -->
-
-
-	<!-- Our City -->
-	<span class="breakPoint" id="sOurCity"></span>
-	<div class="bg-info">
-		<div class="container section">
-			<h2 class="lg-title m-no-bottom wow fadeIn">Our city</h2>
-		</div>
-	</div>
-	<div class="section-lg">
-		<div class="container">
-			<p class="subtitle-v2 m-no-bottom text-center text-grey wow fadeIn" data-wow-delay="0.15s">Curabitur bibendum justo non orci. Aenean id metus id velit voluptatem quia sit. Bibendum justo non orci. Aenean id metus id velit.</p>
-			<div class="space-lg"></div>
-			<div id="pricesSlider" class="owl-carousel">
-				<div class="item">
-					<div class="panel panel-default wow fromPocket flipping first" data-wow-delay="0.15s">
-						<div class="panel-body text-center">
-							<div class="hover-content">
-								<div class="visible-part">
-									<h3 class="price text-info">1.2k</h3> 
-									<h4 class="type">MILES</h4>
-								</div>
-								<div class="hidden-part">
-									<img src="assets/img/pictograms/cycling.png" width="60" class="img-responsive" style="margin:0px auto;" />
-									<h4 class="type" style="margin-bottom:5px;">Cycling</h4>
-									<ul class="list-unstyled info-list md-list">
-										<li>San Francisco boasts over one thousand miles of bike lanes, 263 of which are used for the
-											<br /><span class="text-info">Tour De California</span>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="panel panel-default wow fromPocket flipping second" data-wow-delay="0.35s">
-						<div class="panel-body text-center">
-							<div class="hover-content">
-								<div class="visible-part">
-									<h3 class="price text-info">321</h3> 
-									<h4 class="type">MATCHES</h4>
-								</div>
-								<div class="hidden-part">
-									<img src="assets/img/pictograms/table-tennis.png" width="60" class="img-responsive" style="margin:0px auto;" />
-									<h4 class="type" style="margin-bottom:5px;">Table Tennis</h4>
-									<ul class="list-unstyled info-list md-list">
-										<li>Number of matches in last year's
-											<br /><span class="text-info">Table Tennis World Cup</span> held at Stanford.</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="panel panel-default wow fromPocket flipping third" data-wow-delay="0.55s">
-						<div class="panel-body text-center">
-							<div class="hover-content">
-								<div class="visible-part">
-									<h3 class="price text-info">28</h3> 
-									<h4 class="type">COUNTRIES</h4>
-								</div>
-								<div class="hidden-part">
-									<img src="assets/img/pictograms/sailing.png" width="60" class="img-responsive" style="margin:0px auto;" />
-									<h4 class="type" style="margin-bottom:5px;">Sailing</h4>
-									<ul class="list-unstyled info-list md-list">
-										<li>Number of countries from around the world competed in last year's
-											<br /><span class="text-info">Regatta on the Bay</span>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="panel panel-default wow fromPocket flipping fourth" data-wow-delay="0.75s">
-						<div class="panel-body text-center">
-							<div class="hover-content">
-								<div class="visible-part">
-									<h3 class="price text-info">971</h3> 
-									<h4 class="type">STROKES</h4>
-								</div>
-								<div class="hidden-part">
-									<img src="assets/img/pictograms/golf.png" width="60" class="img-responsive" style="margin:0px auto;" />
-									<h4 class="type" style="margin-bottom:5px;">Golf</h4>
-									<ul class="list-unstyled info-list md-list">
-										<li>Number of strokes taken by competitors at the
-											<br /><span class="text-info">2014 US Open</span>
-											<br />in Harding Park</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="panel panel-default">
-						<div class="panel-body text-center">
-							<div class="hover-content">
-								<div class="visible-part">
-									<h3 class="price text-info">.021</h3> 
-									<h4 class="type">MILLISECONDS</h4>
-								</div>
-								<div class="hidden-part">
-									<img src="assets/img/pictograms/rowing.png" width="60" class="img-responsive" style="margin:0px auto;" />
-									<h4 class="type" style="margin-bottom:5px;">Rowing</h4>
-									<ul class="list-unstyled info-list md-list">
-										<li>Winning margin for the Duke LWT 8+ at the <span class="text-info">2014 NCAA Rowing Championships</span> held on the Oakland Estuary</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="panel panel-default">
-						<div class="panel-body text-center">
-							<div class="hover-content">
-								<div class="visible-part">
-									<h3 class="price text-info">971</h3> 
-									<h4 class="type">POINTS</h4>
-								</div>
-								<div class="hidden-part">
-									<img src="assets/img/pictograms/fencing.png" width="60" class="img-responsive" style="margin:0px auto;" />
-									<h4 class="type" style="margin-bottom:5px;">Fencing</h4>
-									<ul class="list-unstyled info-list md-list">
-										<li>Total points scored by the winning team at the <span class="text-info">World Fencing Championships</span>
-										</li>held in May.
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- BACKGROUND IMAGE -->
-	<div class="bg-18 bg-center bg-fixed bg-cover">
-		<div class="filling-section bg-filter"></div>
-	</div>
-	<!--/END BACKGROUND IMAGE -->
-
-	<!-- Our team -->
-	<span class="breakPoint" id="sOurTeam"></span>
-	<!-- primary team-->
-	<div class="bg-success">
-		<div class="container section">
-			<h2 class="lg-title  m-no-all">Our team</h2>
-		</div>
-	</div>
-	<div class="container section-lg">
-		<div class="md-overlay"></div>
-		<div class="row profile-grid">
-			<div class="col-lg-3 col-md-3 col-sm-6 fromPocket wow" data-wow-delay="0.80s">
-				<div class="thumbnail">
-					<div class="profile">
-						<div class="hover-content md-trigger" data-modal="modal-a1">
-							<img class="img-responsive" alt="Our team" src="assets/img/faces/generic-woman.jpg">
-							<div class="hover-fade">
-								<i class="fa fa-expand"></i>
-							</div>
-						</div>
-						<div class="caption">
-							<h3 class="m-no-all">Nicole Perry</h3>
-							<h5>Chief Olympic Officer</h5>
-							<h6>Placeholder Company, Inc.</h6>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- modal a1 -->
-			<div class="md-modal md-effect-2" id="modal-a1">
-				<div class="md-content">
-					<div class="icon-close md-close"></div>
-					<div class="container">
-						<div class="md-body">
-							<div class="row">
-								<div class="col-sm-4">
-									<img class="img-responsive" alt="Our team" src="assets/img/faces/generic-woman.jpg">
-								</div>
-								<div class="col-sm-8">
-									<h2 class="title">Person Name <small>Job Title</small></h2>
-									<p class="text-block-v1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
-									<p class="text-block-v1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens.</p>
-								</div>
-							</div>
-							<hr class="hr">
-							<div class="row">
-								<div class="col-sm-6 text-left">
-									<ul class="icons-list circle-icons">
-										<li><a href="#"><i class="fa fa-facebook"></i></a>
-										</li>
-										<li><a href="#"><i class="fa fa-google-plus"></i></a>
-										</li>
-										<li><a href="#"><i class="fa fa-linkedin"></i></a>
-										</li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a>
-										</li>
-										<li><a href="#"><i class="fa fa-instagram"></i></a>
-										</li>
-										<li><a href="#"><i class="fa fa-youtube"></i></a>
-										</li>
-									</ul>
-								</div>
-								<div class="col-sm-6 text-right">
-									<button class="btn btn-link btn-xlg md-close"><i class="fa fa-arrow-left"></i>Back</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-			<div class="col-lg-3 col-md-3 col-sm-6 fromPocket wow" data-wow-delay="0.60s">
-				<div class="thumbnail">
-					<div class="profile">
-						<div class="hover-content md-trigger" data-modal="modal-a2">
-							<img class="img-responsive" alt="Our team" src="assets/img/faces/generic-man.jpg">
-							<div class="hover-fade">
-								<i class="fa fa-expand"></i>
-							</div>
-						</div>
-						<div class="caption">
-							<h3 class="m-no-all">Ben Berry</h3>
-							<h5>Chairman of the Board</h5>
-							<h6>Fakeco.com</h6>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Modal a2 -->
-			<div class="md-modal md-effect-2" id="modal-a2">
-				<div class="md-content">
-					<div class="icon-close md-close"></div>
-					<div class="container">
-						<div class="md-body">
-							<div class="row">
-								<div class="col-sm-4">
-									<img class="img-responsive" alt="Our team" src="assets/img/faces/generic-man.jpg">
-								</div>
-								<div class="col-sm-8">
-									<h2 class="title">Jack Brown <small>CFO</small></h2>
-									<p class="text-block-v1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
-									<p class="text-block-v1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens.</p>
-								</div>
-							</div>
-							<hr class="hr">
-							<div class="row">
-								<div class="col-sm-6 text-left">
-									<ul class="icons-list circle-icons">
-										<li><a href="#"><i class="fa fa-facebook"></i></a>
-										</li>
-										<li><a href="#"><i class="fa fa-google-plus"></i></a>
-										</li>
-										<li><a href="#"><i class="fa fa-linkedin"></i></a>
-										</li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a>
-										</li>
-										<li><a href="#"><i class="fa fa-instagram"></i></a>
-										</li>
-										<li><a href="#"><i class="fa fa-youtube"></i></a>
-										</li>
-									</ul>
-								</div>
-								<div class="col-sm-6 text-right">
-									<button class="btn btn-link btn-xlg md-close"><i class="fa fa-arrow-left"></i>Back</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-lg-3 col-md-3 col-sm-6 fromPocket wow" data-wow-delay="0.40s">
-				<div class="thumbnail">
-					<div class="profile">
-						<div class="hover-content md-trigger" data-modal="modal-a3">
-							<img class="img-responsive" alt="Our team" src="assets/img/faces/generic-woman.jpg">
-							<div class="hover-fade">
-								<i class="fa fa-expand"></i>
-							</div>
-						</div>
-						<div class="caption">
-							<h3 class="m-no-all">Jenny James</h3>
-							<h5>Head Ringleader</h5>
-							<h6>Company 123, Inc.</h6>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Modal a3-->
-			<div class="md-modal md-effect-2" id="modal-a3">
-				<div class="md-content">
-					<div class="icon-close md-close"></div>
-					<div class="container">
-						<div class="md-body">
-							<div class="row">
-								<div class="col-sm-4">
-									<img class="img-responsive" alt="Our team" src="assets/img/faces/generic-woman.png">
-								</div>
-								<div class="col-sm-8">
-									<h2 class="title">Jack Brown <small>CFO</small></h2>
-									<p class="text-block-v1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
-									<p class="text-block-v1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens.</p>
-								</div>
-							</div>
-							<hr class="hr">
-							<div class="row">
-								<div class="col-sm-6 text-left">
-									<ul class="icons-list circle-icons">
-										<li><a href="#"><i class="fa fa-facebook"></i></a>
-										</li>
-										<li><a href="#"><i class="fa fa-google-plus"></i></a>
-										</li>
-										<li><a href="#"><i class="fa fa-linkedin"></i></a>
-										</li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a>
-										</li>
-										<li><a href="#"><i class="fa fa-instagram"></i></a>
-										</li>
-										<li><a href="#"><i class="fa fa-youtube"></i></a>
-										</li>
-									</ul>
-								</div>
-								<div class="col-sm-6 text-right">
-									<button class="btn btn-link btn-xlg md-close"><i class="fa fa-arrow-left"></i>Back</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-			<div class="col-lg-3 col-md-3 col-sm-6 fromPocket wow" data-wow-delay="0.20s">
-				<div class="thumbnail">
-					<div class="profile">
-						<div class="hover-content md-trigger" data-modal="modal-a4">
-							<img class="img-responsive" alt="Our team" src="assets/img/faces/generic-man.jpg">
-							<div class="hover-fade">
-								<i class="fa fa-expand"></i>
-							</div>
-						</div>
-						<div class="caption">
-							<h3 class="m-no-all">Gary Foxtrot</h3>
-							<h5>Minister of Defense</h5>
-							<h6>Fakeco.com</h6>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Modal 4 -->
-	<div class="md-modal md-effect-2" id="modal-a4">
-		<div class="md-content">
-			<div class="icon-close md-close"></div>
-			<div class="container">
-				<div class="md-body">
-					<div class="row">
-						<div class="col-sm-4">
-							<img class="img-responsive" alt="Our team" src="assets/img/faces/generic-man.png">
-						</div>
-						<div class="col-sm-8">
-							<h2 class="title">Jack Brown <small>CFO</small></h2>
-							<p class="text-block-v1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
-							<p class="text-block-v1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens.</p>
-						</div>
-					</div>
-					<hr class="hr">
-					<div class="row">
-						<div class="col-sm-6 text-left">
-							<ul class="icons-list circle-icons">
-								<li><a href="#"><i class="fa fa-facebook"></i></a>
-								</li>
-								<li><a href="#"><i class="fa fa-google-plus"></i></a>
-								</li>
-								<li><a href="#"><i class="fa fa-linkedin"></i></a>
-								</li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a>
-								</li>
-								<li><a href="#"><i class="fa fa-instagram"></i></a>
-								</li>
-								<li><a href="#"><i class="fa fa-youtube"></i></a>
-								</li>
-							</ul>
-						</div>
-						<div class="col-sm-6 text-right">
-							<button class="btn btn-link btn-xlg md-close"><i class="fa fa-arrow-left"></i>Back</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- secondary-->
-	<div class="bg-success secondary-team">
-		<div class="section-lg container">
-			<div class="md-overlay"></div>
-			<ul class="list-unstyled list-team-sm">
-				<li class="easePulse wow" data-wow-delay="0.15s">
-					<div class="hover-content md-trigger" data-modal="modal-1">
-						<img class="img-responsive" alt="Our team" src="assets/img/faces/generic-man.jpg">
-						<div class="top-part">
-							<i class="fa fa-expand"></i>
-						</div>
-						<div class="bottom-part">
-							<h3>Person Name</h3>
-						</div>
-					</div>
-				</li>
-				<!-- Modal Window for Item 1 -->
-				<div class="md-modal md-effect-2" id="modal-1">
-					<div class="md-content">
-						<div class="icon-close md-close"></div>
-						<div class="container">
-							<div class="md-body">
-								<div class="row">
-									<div class="col-sm-4">
-										<img class="img-responsive" alt="Our team" src="assets/img/faces/generic-man.jpg">
-									</div>
-									<div class="col-sm-8">
-										<h2 class="title">Jack Brown <small>CFO</small></h2>
-										<p class="text-block-v1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
-										<p class="text-block-v1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens.</p>
-									</div>
-								</div>
-								<hr class="hr">
-								<div class="row">
-									<div class="col-sm-6 text-left">
-										<ul class="icons-list circle-icons">
-											<li><a href="#"><i class="fa fa-facebook"></i></a>
-											</li>
-											<li><a href="#"><i class="fa fa-google-plus"></i></a>
-											</li>
-											<li><a href="#"><i class="fa fa-linkedin"></i></a>
-											</li>
-											<li><a href="#"><i class="fa fa-twitter"></i></a>
-											</li>
-											<li><a href="#"><i class="fa fa-instagram"></i></a>
-											</li>
-											<li><a href="#"><i class="fa fa-youtube"></i></a>
-											</li>
-										</ul>
-									</div>
-									<div class="col-sm-6 text-right">
-										<button class="btn btn-link btn-xlg md-close"><i class="fa fa-arrow-left"></i>Back</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<li class="easePulse wow" data-wow-delay="0.25s">
-					<div class="hover-content md-trigger" data-modal="modal-a1">
-						<img class="img-responsive" alt="Our team" src="assets/img/faces/generic-man.jpg">
-						<div class="top-part">
-							<i class="fa fa-expand"></i>
-						</div>
-						<div class="bottom-part">
-							<h3>Person Name</h3>
-						</div>
-					</div>
-					<!-- Modal Window for Item 2 -->
-					<div class="md-modal md-effect-2" id="modal-2">
-						<div class="md-content">
-							<div class="icon-close md-close"></div>
-							<div class="container">
-								<div class="md-body">
-									<div class="row">
-										<div class="col-sm-4">
-											<img class="img-responsive" alt="Our team" src="assets/img/faces/face-2.jpg">
-										</div>
-										<div class="col-sm-8">
-											<h2 class="title">Jack Brown <small>CFO</small></h2>
-											<p class="text-block-v1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
-											<p class="text-block-v1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens.</p>
-										</div>
-									</div>
-									<hr class="hr">
-									<div class="row">
-										<div class="col-sm-6 text-left">
-											<ul class="icons-list circle-icons">
-												<li><a href="#"><i class="fa fa-facebook"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-google-plus"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-linkedin"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-twitter"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-instagram"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-youtube"></i></a>
-												</li>
-											</ul>
-										</div>
-										<div class="col-sm-6 text-right">
-											<button class="btn btn-link btn-xlg md-close"><i class="fa fa-arrow-left"></i>Back</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</li>
-
-				<li class="easePulse wow" data-wow-delay="0.05s">
-					<div class="hover-content md-trigger" data-modal="modal-a1">
-						<img class="img-responsive" alt="Our team" src="assets/img/faces/generic-woman.jpg">
-						<div class="top-part">
-							<i class="fa fa-expand"></i>
-						</div>
-						<div class="bottom-part">
-							<h3>Person Name</h3>
-						</div>
-					</div>
-					<!-- Modal Window for Item 3 -->
-					<div class="md-modal md-effect-2" id="modal-3">
-						<div class="md-content">
-							<div class="icon-close md-close"></div>
-							<div class="container">
-								<div class="md-body">
-									<div class="row">
-										<div class="col-sm-4">
-											<img class="img-responsive" alt="Our team" src="assets/img/faces/face-4.jpg">
-										</div>
-										<div class="col-sm-8">
-											<h2 class="title">Jack Brown <small>CFO</small></h2>
-											<p class="text-block-v1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
-											<p class="text-block-v1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens.</p>
-										</div>
-									</div>
-									<hr class="hr">
-									<div class="row">
-										<div class="col-sm-6 text-left">
-											<ul class="icons-list circle-icons">
-												<li><a href="#"><i class="fa fa-facebook"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-google-plus"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-linkedin"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-twitter"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-instagram"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-youtube"></i></a>
-												</li>
-											</ul>
-										</div>
-										<div class="col-sm-6 text-right">
-											<button class="btn btn-link btn-xlg md-close"><i class="fa fa-arrow-left"></i>Back</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</li>
-
-				<li class="easePulse wow" data-wow-delay="0.35s">
-					<div class="hover-content md-trigger" data-modal="modal-a1">
-						<img class="img-responsive" alt="Our team" src="assets/img/faces/generic-man.jpg">
-						<div class="top-part">
-							<i class="fa fa-expand"></i>
-						</div>
-						<div class="bottom-part">
-							<h3>Person Name</h3>
-						</div>
-					</div>
-					<!-- Modal Window for Item 4 -->
-					<div class="md-modal md-effect-2" id="modal-4">
-						<div class="md-content">
-							<div class="icon-close md-close"></div>
-							<div class="container">
-								<div class="md-body">
-									<div class="row">
-										<div class="col-sm-4">
-											<img class="img-responsive" alt="Our team" src="assets/img/faces/face-3.jpg">
-										</div>
-										<div class="col-sm-8">
-											<h2 class="title">Jack Brown <small>CFO</small></h2>
-											<p class="text-block-v1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
-											<p class="text-block-v1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens.</p>
-										</div>
-									</div>
-									<hr class="hr">
-									<div class="row">
-										<div class="col-sm-6 text-left">
-											<ul class="icons-list circle-icons">
-												<li><a href="#"><i class="fa fa-facebook"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-google-plus"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-linkedin"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-twitter"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-instagram"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-youtube"></i></a>
-												</li>
-											</ul>
-										</div>
-										<div class="col-sm-6 text-right">
-											<button class="btn btn-link btn-xlg md-close"><i class="fa fa-arrow-left"></i>Back</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</li>
-
-				<li class="easePulse wow" data-wow-delay="0.15s">
-					<div class="hover-content md-trigger" data-modal="modal-a1">
-						<img class="img-responsive" alt="Our team" src="assets/img/faces/generic-woman.jpg">
-						<div class="top-part">
-							<i class="fa fa-expand"></i>
-						</div>
-						<div class="bottom-part">
-							<h3>Person Name</h3>
-						</div>
-					</div>
-					<!-- Modal Window for Item 5 -->
-					<div class="md-modal md-effect-2" id="modal-5">
-						<div class="md-content">
-							<div class="icon-close md-close"></div>
-							<div class="container">
-								<div class="md-body">
-									<div class="row">
-										<div class="col-sm-4">
-											<img class="img-responsive" alt="Our team" src="assets/img/faces/face-7.jpg">
-										</div>
-										<div class="col-sm-8">
-											<h2 class="title">Jack Brown <small>CFO</small></h2>
-											<p class="text-block-v1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
-											<p class="text-block-v1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens.</p>
-										</div>
-									</div>
-									<hr class="hr">
-									<div class="row">
-										<div class="col-sm-6 text-left">
-											<ul class="icons-list circle-icons">
-												<li><a href="#"><i class="fa fa-facebook"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-google-plus"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-linkedin"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-twitter"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-instagram"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-youtube"></i></a>
-												</li>
-											</ul>
-										</div>
-										<div class="col-sm-6 text-right">
-											<button class="btn btn-link btn-xlg md-close"><i class="fa fa-arrow-left"></i>Back</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</li>
-
-				<li class="easePulse wow" data-wow-delay="0.20s">
-					<div class="hover-content md-trigger" data-modal="modal-a1">
-						<img class="img-responsive" alt="Our team" src="assets/img/faces/generic-woman.jpg">
-						<div class="top-part">
-							<i class="fa fa-expand"></i>
-						</div>
-						<div class="bottom-part">
-							<h3>Person Name</h3>
-						</div>
-					</div>
-					<!-- Modal Window for Item 6 -->
-					<div class="md-modal md-effect-2" id="modal-6">
-						<div class="md-content">
-							<div class="icon-close md-close"></div>
-							<div class="container">
-								<div class="md-body">
-									<div class="row">
-										<div class="col-sm-4">
-											<img class="img-responsive" alt="Our team" src="assets/img/faces/face-5.jpg">
-										</div>
-										<div class="col-sm-8">
-											<h2 class="title">Jack Brown <small>CFO</small></h2>
-											<p class="text-block-v1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
-											<p class="text-block-v1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens.</p>
-										</div>
-									</div>
-									<hr class="hr">
-									<div class="row">
-										<div class="col-sm-6 text-left">
-											<ul class="icons-list circle-icons">
-												<li><a href="#"><i class="fa fa-facebook"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-google-plus"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-linkedin"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-twitter"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-instagram"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-youtube"></i></a>
-												</li>
-											</ul>
-										</div>
-										<div class="col-sm-6 text-right">
-											<button class="btn btn-link btn-xlg md-close"><i class="fa fa-arrow-left"></i>Back</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</li>
-				<!---->
-				<li class="easePulse wow" data-wow-delay="0.25s">
-					<div class="hover-content md-trigger" data-modal="modal-a1">
-						<img class="img-responsive" alt="Our team" src="assets/img/faces/generic-man.jpg">
-						<div class="top-part">
-							<i class="fa fa-expand"></i>
-						</div>
-						<div class="bottom-part">
-							<h3>Person Name</h3>
-						</div>
-					</div>
-					<!-- Modal Window for Item 7 -->
-					<div class="md-modal md-effect-2" id="modal-7">
-						<div class="md-content">
-							<div class="icon-close md-close"></div>
-							<div class="container">
-								<div class="md-body">
-									<div class="row">
-										<div class="col-sm-4">
-											<img class="img-responsive" alt="Our team" src="assets/img/faces/face-8.jpg">
-										</div>
-										<div class="col-sm-8">
-											<h2 class="title">Jack Brown <small>CFO</small></h2>
-											<p class="text-block-v1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
-											<p class="text-block-v1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens.</p>
-										</div>
-									</div>
-									<hr class="hr">
-									<div class="row">
-										<div class="col-sm-6 text-left">
-											<ul class="icons-list circle-icons">
-												<li><a href="#"><i class="fa fa-facebook"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-google-plus"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-linkedin"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-twitter"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-instagram"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-youtube"></i></a>
-												</li>
-											</ul>
-										</div>
-										<div class="col-sm-6 text-right">
-											<button class="btn btn-link btn-xlg md-close"><i class="fa fa-arrow-left"></i>Back</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</li>
-
-				<li class="easePulse wow" data-wow-delay="0.35">
-					<div class="hover-content md-trigger" data-modal="modal-a1">
-						<img class="img-responsive" alt="Our team" src="assets/img/faces/generic-man.jpg">
-						<div class="top-part">
-							<i class="fa fa-expand"></i>
-						</div>
-						<div class="bottom-part">
-							<h3>Person Name</h3>
-						</div>
-					</div>
-					<!-- Modal Window for Item 8 -->
-					<div class="md-modal md-effect-2" id="modal-8">
-						<div class="md-content">
-							<div class="icon-close md-close"></div>
-							<div class="container">
-								<div class="md-body">
-									<div class="row">
-										<div class="col-sm-4">
-											<img class="img-responsive" alt="Our team" src="assets/img/faces/face-9.jpg">
-										</div>
-										<div class="col-sm-8">
-											<h2 class="title">Jack Brown <small>CFO</small></h2>
-											<p class="text-block-v1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
-											<p class="text-block-v1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens.</p>
-										</div>
-									</div>
-									<hr class="hr">
-									<div class="row">
-										<div class="col-sm-6 text-left">
-											<ul class="icons-list circle-icons">
-												<li><a href="#"><i class="fa fa-facebook"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-google-plus"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-linkedin"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-twitter"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-instagram"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-youtube"></i></a>
-												</li>
-											</ul>
-										</div>
-										<div class="col-sm-6 text-right">
-											<button class="btn btn-link btn-xlg md-close"><i class="fa fa-arrow-left"></i>Back</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</li>
-
-				<li class="easePulse wow" data-wow-delay="0.15">
-					<div class="hover-content md-trigger" data-modal="modal-a1">
-						<img class="img-responsive" alt="Our team" src="assets/img/faces/generic-woman.jpg">
-						<div class="top-part">
-							<i class="fa fa-expand"></i>
-						</div>
-						<div class="bottom-part">
-							<h3>Person Name</h3>
-						</div>
-					</div>
-					<!-- Modal Window for Item 9 -->
-					<div class="md-modal md-effect-2" id="modal-9">
-						<div class="md-content">
-							<div class="icon-close md-close"></div>
-							<div class="container">
-								<div class="md-body">
-									<div class="row">
-										<div class="col-sm-4">
-											<img class="img-responsive" alt="Our team" src="assets/img/faces/face-4.jpg">
-										</div>
-										<div class="col-sm-8">
-											<h2 class="title">Jack Brown <small>CFO</small></h2>
-											<p class="text-block-v1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
-											<p class="text-block-v1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens.</p>
-										</div>
-									</div>
-									<hr class="hr">
-									<div class="row">
-										<div class="col-sm-6 text-left">
-											<ul class="icons-list circle-icons">
-												<li><a href="#"><i class="fa fa-facebook"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-google-plus"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-linkedin"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-twitter"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-instagram"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-youtube"></i></a>
-												</li>
-											</ul>
-										</div>
-										<div class="col-sm-6 text-right">
-											<button class="btn btn-link btn-xlg md-close"><i class="fa fa-arrow-left"></i>Back</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</li>
-
-				<li class="easePulse wow" data-wow-delay="0.40s">
-					<div class="hover-content md-trigger" data-modal="modal-a1">
-						<img class="img-responsive" alt="Our team" src="assets/img/faces/generic-woman.jpg">
-						<div class="top-part">
-							<i class="fa fa-expand"></i>
-						</div>
-						<div class="bottom-part">
-							<h3>Person Name</h3>
-						</div>
-					</div>
-					<!-- Modal Window for Item 10 -->
-					<div class="md-modal md-effect-2" id="modal-10">
-						<div class="md-content">
-							<div class="icon-close md-close"></div>
-							<div class="container">
-								<div class="md-body">
-									<div class="row">
-										<div class="col-sm-4">
-											<img class="img-responsive" alt="Our team" src="assets/img/faces/face-1.jpg">
-										</div>
-										<div class="col-sm-8">
-											<h2 class="title">Jack Brown <small>CFO</small></h2>
-											<p class="text-block-v1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
-											<p class="text-block-v1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens.</p>
-										</div>
-									</div>
-									<hr class="hr">
-									<div class="row">
-										<div class="col-sm-6 text-left">
-											<ul class="icons-list circle-icons">
-												<li><a href="#"><i class="fa fa-facebook"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-google-plus"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-linkedin"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-twitter"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-instagram"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-youtube"></i></a>
-												</li>
-											</ul>
-										</div>
-										<div class="col-sm-6 text-right">
-											<button class="btn btn-link btn-xlg md-close"><i class="fa fa-arrow-left"></i>Back</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</li>
-
-				<li class="easePulse wow" data-wow-delay="0.25s">
-					<div class="hover-content md-trigger" data-modal="modal-a1">
-						<img class="img-responsive" alt="Our team" src="assets/img/faces/generic-man.jpg">
-						<div class="top-part">
-							<i class="fa fa-expand"></i>
-						</div>
-						<div class="bottom-part">
-							<h3>Person Name</h3>
-						</div>
-					</div>
-					<!-- Modal Window for Item 11 -->
-					<div class="md-modal md-effect-2" id="modal-11">
-						<div class="md-content">
-							<div class="icon-close md-close"></div>
-							<div class="container">
-								<div class="md-body">
-									<div class="row">
-										<div class="col-sm-4">
-											<img class="img-responsive" alt="Our team" src="assets/img/faces/face-2.jpg">
-										</div>
-										<div class="col-sm-8">
-											<h2 class="title">Jack Brown <small>CFO</small></h2>
-											<p class="text-block-v1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
-											<p class="text-block-v1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens.</p>
-										</div>
-									</div>
-									<hr class="hr">
-									<div class="row">
-										<div class="col-sm-6 text-left">
-											<ul class="icons-list circle-icons">
-												<li><a href="#"><i class="fa fa-facebook"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-google-plus"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-linkedin"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-twitter"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-instagram"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-youtube"></i></a>
-												</li>
-											</ul>
-										</div>
-										<div class="col-sm-6 text-right">
-											<button class="btn btn-link btn-xlg md-close"><i class="fa fa-arrow-left"></i>Back</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</li>
-
-				<li class="easePulse wow" data-wow-delay="0.30s">
-					<div class="hover-content md-trigger" data-modal="modal-a1">
-						<img class="img-responsive" alt="Our team" src="assets/img/faces/generic-man.jpg">
-						<div class="top-part">
-							<i class="fa fa-expand"></i>
-						</div>
-						<div class="bottom-part">
-							<h3>Person Name</h3>
-						</div>
-					</div>
-					<!-- Modal Window for Item 12 -->
-					<div class="md-modal md-effect-2" id="modal-12">
-						<div class="md-content">
-							<div class="icon-close md-close"></div>
-							<div class="container">
-								<div class="md-body">
-									<div class="row">
-										<div class="col-sm-4">
-											<img class="img-responsive" alt="Our team" src="assets/img/faces/face-3.jpg">
-										</div>
-										<div class="col-sm-8">
-											<h2 class="title">Jack Brown <small>CFO</small></h2>
-											<p class="text-block-v1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
-											<p class="text-block-v1">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens.</p>
-										</div>
-									</div>
-									<hr class="hr">
-									<div class="row">
-										<div class="col-sm-6 text-left">
-											<ul class="icons-list circle-icons">
-												<li><a href="#"><i class="fa fa-facebook"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-google-plus"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-linkedin"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-twitter"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-instagram"></i></a>
-												</li>
-												<li><a href="#"><i class="fa fa-youtube"></i></a>
-												</li>
-											</ul>
-										</div>
-										<div class="col-sm-6 text-right">
-											<button class="btn btn-link btn-xlg md-close"><i class="fa fa-arrow-left"></i>Back</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-
-
-	<!-- BACKGROUND IMAGE -->
-	<div class="bg-16 bg-center bg-fixed bg-cover">
-		<div class="filling-section bg-filter"></div>
-	</div>
-	<!--/END BACKGROUND IMAGE -->
-
-
-	<!--=== NEWS SECTION ===-->
-	<span class="breakPoint" id="sNews"></span>
-	<div class="bg-danger">
-		<div class="container section">
-			<h2 class="lg-title m-no-bottom">News</h2>
-		</div>
-	</div>
-
-	<div class="bg-grey">
-		<div class="section-lg container">
-			<div class="space-lg"></div>
-			<div class="md-overlay"></div>
-			<div class="timeline" id="newsFeed">
-				<div class="label-month fadeIn wow">October 2014</div>
-				<div class="row box-feed">
-					<div class="col-sm-6">
-						<div class="box-post left">
-							<h3 class="fadeIn wow" data-wow-delay="0.15s"><a href="#">Rio 2016 Olympians Pass the Baton to San Francisco</a></h3>
-							<img class="img-responsive fadeIn wow" data-wow-delay="0.25s" alt="..." src="assets/img/768w/basoc-1.jpg">
-							<p class="text-block-v2 space-sm fadeIn wow" data-wow-delay="0.35s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam posuere lacus quis dolor imperdiet...</p>
-						</div>
-					</div>
-
-					<div class="col-sm-6">
-						<div class="box-post right">
-							<h3 class="fadeIn wow" data-wow-delay="0.45s"><a href="#">Local Olympic Hopefuls head to 2016 trials</a></h3>
-							<img class="img-responsive fadeIn wow" data-wow-delay="0.55s" alt="..." src="assets/img/768w/basoc-2.jpg">
-							<p class="text-block-v2 space-sm fadeIn wow" data-wow-delay="0.65s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam posuere lacus quis dolor imperdiet...</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="row box-feed">
-					<div class="col-sm-6">
-						<div class="box-post left">
-							<h3 class="fadeIn wow" data-wow-delay="0.15s"><a href="#">San Francisco City Hall to Host Olympic Viewing Parties</a></h3>
-							<img class="img-responsive fadeIn wow" data-wow-delay="0.25s" alt="..." src="assets/img/768w/basoc-3.jpg">
-							<p class="text-block-v2 space-sm fadeIn wow" data-wow-delay="0.35s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam posuere lacus quis dolor imperdiet...</p>
-						</div>
-					</div>
-					<div class="col-sm-6">
-						<div class="box-post right">
-							<h3 class="fadeIn wow" data-wow-delay="0.45s"><a href="#">BASOC Hosts Road to Rio Dinner Gala</a></h3>
-							<p class="text-block-v2 fadeIn wow" data-wow-delay="0.55s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam posuere lacus quis dolor imperdiet...</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="label-month">August 2014</div>
-				<div class="row box-feed">
-					<div class="col-sm-6">
-						<div class="box-post left">
-							<h3 class="fadeIn wow" data-wow-delay="0.15s"><a href="#">HuffPo: Californians Make Up most of the US Olympic Team</a></h3>
-							<p class="text-block-v2 fadeIn wow" data-wow-delay="0.25s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam posuere lacus quis dolor imperdiet...</p>
-						</div>
-					</div>
-					<div class="col-sm-6">
-						<div class="box-post right">
-							<h3 class="fadeIn wow" data-wow-delay="0.35s"><a href="#">Team USA's Jennifer Kessy<br /> Ask Me Anything</a></h3>
-							<img class="img-responsive fadeIn wow" data-wow-delay="0.45s" alt="..." src="assets/img/768w/basoc-4.jpg">
-							<p class="text-block-v2 space-sm fadeIn wow" data-wow-delay="0.55s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam posuere lacus quis dolor imperdiet...</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="row box-feed"></div>
-
-				<div class="label-month">
-					<div id="loadNews">View more <span class="i-plus">+</span>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-	<!--===/END NEWS SECTION ===-->
-
-	<!--=== Twitter ===-->
-	<div class="bg-dark-7 hidden-md hidden-sm hidden-xs">
-		<div class="container section">
-			<div class="row">
-				<div class="col-sm-5"><i class="fa fa-twitter icon-bg wow easePulse" data-wow-delay="0.15s"></i>
-				</div>
-				<div class="col-sm-7">
-					<div class="space-lg"></div>
-					<div class="space-md"></div>
-					<div id="twitterSlider" class="owl-carousel sm-pagination">
-						<div class="item wow fadeIn" data-wow-delay="0.25s">
-							<blockquote class="danger">
-								<p>26 years ago today the rings fell from the sky. <a>#seoul88 #openingceremony #olympics</a>
-								</p>
-								<footer>@olympics <a href="https://twitter.com/brackets/status/519607551592112128">October 7, 2014</a>
-								</footer>
-							</blockquote>
-						</div>
-						<div class="item wow fadeIn" data-wow-delay="0.25s">
-							<blockquote class="danger">
-								<p>Over 15,000 of the best athletes in the world will be coming to join us at<a href="#">#Rio2016!</a> 
-								</p>
-								<footer>@Rio2016 <a href="https://twitter.com/brackets/status/519607551592112128">October 7, 2014</a>
-								</footer>
-							</blockquote>
-						</div>
-						<div class="item wow fadeIn" data-wow-delay="0.25s">
-							<blockquote class="danger">
-								<p>Hard work has made it easy. That is my secret. That is why I win.
-								</p>
-								<footer>@nadiacomaneci10 <a href="https://twitter.com/brackets/status/519607551592112128">October 7, 2014</a>
-								</footer>
-							</blockquote>
-						</div>
-						<div class="item wow fadeIn" data-wow-delay="0.25s">
-							<blockquote class="danger">
-								<p>#500 days to go to <a>#Lillehammer2016.</a> So happy to be an Ambassador again for the <a>#youtholympics.</a> Get active kids!
-								</p>
-								<footer>@lindseyvonn <a href="https://twitter.com/brackets/status/519607551592112128">October 7, 2014</a>
-								</footer>
-							</blockquote>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-
-
-	<!-- BACKGROUND IMAGE -->
-	<div class="bg-15 bg-center bg-fixed bg-cover">
-		<div class="filling-section bg-filter"></div>
-	</div>
-	<!--/END BACKGROUND IMAGE -->
-
-	<!-- CONTACT SECTION -->
-	<span class="breakPoint" id="sContact"></span>
-	<div class="bg-warning">
-		<div class="container section">
-			<h2 class="lg-title m-no-all wow fadeIn">Contact us</h2>
-		</div>
-	</div>
-
-	<!--=== GOOGLE MAPS ===-->
-	<div id="map"></div>
-	<!--===/END GOOGLE MAPS ===-->
-
-
-	<!--===    FOOTER     ===-->
-	<footer class="footer">
-		<div class="footer-top">
-			<div class="container ">
-				<div class="row">
-					<div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
-						<h4 style="color:#c0732c;">Contact</h4>
-						<ul class="info-list md-list i-primary">
-							<li>
-								<i class="fa fa-envelope fa-fw" style="color:#c0732c;"></i>
-								<a href="mailto:influence.bootstrap@gmail.com">info@sf2024.org</a>
-							</li>
-							<li>
-								<i class="fa fa-phone fa-fw" style="color:#c0732c;"></i>
-								1 (650) 323 9400
-							</li>
-							<li>
-								<i class="fa fa-map-marker fa-fw" style="color:#c0732c;"></i>
-								81 Encina Ave - Upper Floor
-							</li>
-						</ul>
-					</div>
-					<div class="space-sm visible-sm visible-xs"></div>
-					<div class="col-md-4 col-lg-4  col-xs-12">
-						<h4 style="color:#c0732c;">About Us</h4>
-						<p>The Bay Area Sports Organizing Committee is run by volunteers. Some of the Bay Area's most distinguished business and community leaders devote their time, energy and resources to this remarkable organization.</p>
-					</div>
-					<div class="space-sm visible-sm visible-xs"></div>
-					<div class="col-md-4 col-lg-4  col-xs-12">
-						<h4 style="color:#c0732c;">Follow Us</h4>
-						<ul class="circle-icons icons-list">
-							<li>
-								<a href="#" title="Follow us">
-									<i class="fa fa-twitter"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#" title="Follow us">
-									<i class="fa fa-instagram"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#" title="Follow us">
-									<i class="fa fa-facebook"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#" title="Follow us">
-									<i class="fa fa-youtube-play"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="footer-bottom">
-			<div class="container">
-				<p>© 2014 Bay Area Sports Organizing Committee. All Rights Reserved.</p>
-			</div>
-		</div>
-	</footer>
-	<!--===/END    FOOTER     ===-->
-
-
 	<!-- Modernizr -->
 	<script src="assets/js/min/modernizr.custom.min.js"></script>
 
@@ -3206,15 +1644,95 @@
 		var $mcj = jQuery.noConflict(true);
 	</script>
 
-	<!-- GOOGLE MAPS -->
-	<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-	<script src="assets/js/min/initmap.min.js"></script>
+	<!-- Venue Map -->
+
+    <script src="https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js"></script>
+    <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="assets/js/map.js"></script>
+    <script>
+      var makeRandomVenues = function (number) {
+        var venues = [];
+
+        for (var i = 0; i < number; i++) {
+          venues.push({
+            name: 'Golf Course',
+            description: 'Aute incididunt officia magna tempor ad id nulla incididunt Lorem non eiusmod culpa adipisicing voluptate. Laboris veniam duis do sit ea nostrud esse ea irure in cupidatat. Irure irure cillum Lorem ex cillum anim sit exercitation eu laboris culpa proident eiusmod. Sunt proident esse exercitation mollit aliquip culpa ad. Cillum laborum ea dolore est irure laboris sit nostrud reprehenderit eu laboris tempor eiusmod incididunt. Anim mollit excepteur culpa consequat eu proident Lorem eiusmod consequat est. Commodo culpa dolor pariatur culpa proident aliqua exercitation id in commodo ut.',
+            image: 'http://i.imgur.com/TWhC7.jpg',
+            lat: Math.floor(Math.random()*10),
+            lng: Math.floor(Math.random()*10)
+          });
+        }
+
+        return venues;
+      };
+
+      window.venues = [{
+        category: 'Athletic Venues',
+        color: 'red',
+        subCategories: [{
+          category: 'Athletic',
+          icon: 'assets/img/pictograms/acc-ceremonies.svg',
+          venues: makeRandomVenues(10) // <-- Insert the venues for this subCategory here as an array (e.g. [{name: 'Golf', lat: 10, lng: 11, description: 'Test'}])
+        }, {
+          category: 'Archery',
+          icon: 'assets/acc-ceremonies.svg',
+          venues: makeRandomVenues(10)
+        }, {
+          category: 'Badminton',
+          icon: 'assets/acc-ceremonies.svg',
+          venues: makeRandomVenues(10)
+        }, {
+          category: 'Basketball',
+          icon: 'assets/acc-ceremonies.svg',
+          venues: makeRandomVenues(10)
+        }]
+      }, {
+        category: 'Athletic Venues 2',
+        color: 'blue',
+        subCategories: [{
+          category: 'Athletic 2',
+          icon: 'assets/acc-ceremonies.svg',
+          venues: makeRandomVenues(3)
+        }, {
+          category: 'Archery 2',
+          icon: 'assets/acc-ceremonies.svg',
+          venues: makeRandomVenues(4)
+        }, {
+          category: 'Badminton 2',
+          icon: 'assets/acc-ceremonies.svg',
+          venues: makeRandomVenues(7)
+        }, {
+          category: 'Basketball 2',
+          icon: 'assets/acc-ceremonies.svg',
+          venues: makeRandomVenues(1)
+        }]
+      }, {
+        category: 'Athletic Venues 3',
+        color: 'yellow',
+        subCategories: [{
+          category: 'Athletic 3',
+          icon: 'assets/acc-ceremonies.svg',
+          venues: makeRandomVenues(3)
+        }, {
+          category: 'Archery 3',
+          icon: 'assets/acc-ceremonies.svg',
+          venues: makeRandomVenues(4)
+        }, {
+          category: 'Badminton 3',
+          icon: 'assets/acc-ceremonies.svg',
+          venues: makeRandomVenues(7)
+        // }, {
+        //   category: 'Basketball 3',
+        //   venues: makeRandomVenues(1)
+        }]
+      }];
+    </script>
 
 	<!-- Must be last of all scripts -->
 	<script src="assets/js/one-page.js"></script>
 
 	<!--[if lt IE 9]>
->>>>>>> FETCH_HEAD
       <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
       <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
