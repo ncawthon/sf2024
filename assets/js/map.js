@@ -3,7 +3,7 @@
 L.mapbox.accessToken = 'pk.eyJ1IjoiYWxleGFuZGVyZ3VnZWwiLCJhIjoiTHF6V3lBdyJ9.azWklrByWOL7jmYb0KSRdQ';
 
 var InteractiveVenueMap = function (options) {
-  this.container = $('#interactive-venue-map');
+  this.container = $jQueryAngular('#interactive-venue-map');
   this.mapElement = this.container.find('.map')[0];
 
   options = options || {};
@@ -42,7 +42,7 @@ InteractiveVenueMap.prototype._clusterToMarkers = function (cluster) {
 };
 
 InteractiveVenueMap.prototype._initCategoryFilter = function () {
-  $(this.id).find('.category-filter').empty();
+  $jQueryAngular(this.id).find('.category-filter').empty();
 };
 
 InteractiveVenueMap.prototype._initClusterGroup = function () {
@@ -89,9 +89,9 @@ InteractiveVenueMap.prototype._jumpTo = function (map, oldMarker, newMarker) {
 InteractiveVenueMap.prototype._venueToPopup = function (venue) {
   var self = this;
 
-  var header = $('<header />');
-  var h1 = $('<h1 />');
-  // var closeButton = $('<button />');
+  var header = $jQueryAngular('<header />');
+  var h1 = $jQueryAngular('<h1 />');
+  // var closeButton = $jQueryAngular('<button />');
   // closeButton.text('✖');
 
   // closeButton.click(function (evene) {
@@ -101,11 +101,11 @@ InteractiveVenueMap.prototype._venueToPopup = function (venue) {
   // header.apend(closeButton);
   header.append(h1);
 
-  var main = $('<main />');
-  var description = $('<p />')
+  var main = $jQueryAngular('<main />');
+  var description = $jQueryAngular('<p />')
   main.append(description);
 
-  var html = $('<div />');
+  var html = $jQueryAngular('<div />');
   html.append(header);
   html.append(main);
 
@@ -118,14 +118,14 @@ InteractiveVenueMap.prototype._venueToPopup = function (venue) {
 
   var venueIndex = this.venues.indexOf(venue);
 
-  var previousLink = $('<a href="#" class="previous-venue">&laquo; Previous</a>').click(function (event) {
+  var previousLink = $jQueryAngular('<a href="#" class="previous-venue">&laquo; Previous</a>').click(function (event) {
     var previousVenue = self.venues[venueIndex - 1];
     self._jumpTo(self.map, venue._marker, previousVenue._marker);
   });
 
-  var progressReport = $('<span class="progress">' + (venueIndex + 1) + '/' + this.venues.length + '</span>');
+  var progressReport = $jQueryAngular('<span class="progress">' + (venueIndex + 1) + '/' + this.venues.length + '</span>');
 
-  var nextLink = $('<a href="#" class="next-venue">Next &raquo;</a>').click(function (event) {
+  var nextLink = $jQueryAngular('<a href="#" class="next-venue">Next &raquo;</a>').click(function (event) {
     var nextVenue = self.venues[venueIndex + 1];
     self._jumpTo(self.map, venue._marker, nextVenue._marker);
   });
