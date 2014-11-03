@@ -409,7 +409,7 @@
                   <section class="pure-g">
                     <div class="pure-u-1-5 sub-category" ng-class="{'selected': !selectedCategory.hidden}">
                       <a href="" ng-click="toggleCategory(selectedCategory)">
-                        <div class="venue" style="background: {{selectedCategory.color}}"></div>
+                        <div class="venue" style="background: {{selectedCategory.color}}"><img ng-src="{{selectedCategory.icon}}" ng-if="selectedCategory.icon"></div>
                         <strong>All {{selectedCategory.category}} ({{countVenues(selectedCategory)}})</strong>
                       </a>
                     </div>
@@ -1742,8 +1742,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
     <script src="assets/js/map.js"></script>
     <script>
-
-
       var makeRandomVenues = function (number) {
         var venues = [];
 
@@ -1763,6 +1761,7 @@
       window.venues = [{
         category: 'Athletic Venues',
         color: '#3a66b5',
+				icon: 'assets/img/icons/sport-all.svg',
         subCategories: [{
            category: 'Archery',
           icon: 'assets/img/icons/sport-archery.svg',
