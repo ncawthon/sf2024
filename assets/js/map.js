@@ -24,6 +24,9 @@ InteractiveVenueMap.prototype._initMap = function (mapOptions) {
   });
 
   this.zoomControl.addTo(this.map);
+
+  // Add zoomslider etc.
+  // L.control.zoomslider().addTo(this.map);
 };
 
 InteractiveVenueMap.prototype._clusterToMarkers = function (cluster) {
@@ -96,7 +99,7 @@ InteractiveVenueMap.prototype._venueToPopup = function (venue) {
   //
   // });
 
-  // header.apend(closeButton);
+  // header.append(closeButton);
   header.append(h1);
 
   var main = $jQueryAngular('<main />');
