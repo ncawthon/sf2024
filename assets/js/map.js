@@ -117,15 +117,19 @@ InteractiveVenueMap.prototype._venueToPopup = function (venue) {
   var venueIndex = this.venues.indexOf(venue);
 
   var previousLink = $jQueryAngular('<a href="#" class="previous-venue">&laquo; Previous</a>').click(function (event) {
+    event.preventDefault();
     var previousVenue = self.venues[venueIndex - 1];
     self._jumpTo(self.map, venue._marker, previousVenue._marker);
+    return false;
   });
 
   var progressReport = $jQueryAngular('<span class="progress">' + (venueIndex + 1) + '/' + this.venues.length + '</span>');
 
   var nextLink = $jQueryAngular('<a href="#" class="next-venue">Next &raquo;</a>').click(function (event) {
+    event.preventDefault();
     var nextVenue = self.venues[venueIndex + 1];
     self._jumpTo(self.map, venue._marker, nextVenue._marker);
+    return false;
   });
 
   progressReport.append(previousLink);
