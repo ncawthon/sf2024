@@ -28,8 +28,6 @@
         background: rgba(245, 130, 31, 0.9)
         .inactive
           display: none
-      :last-child
-        text-align: right
     main
       padding: 0.5em
       nav
@@ -64,12 +62,13 @@
               background: rgba(0, 0, 0, 0.5)
               color: #fff
               text-decoration: none
-      section
+      .sub-categories
         margin: 1.5em 0 0.5em
+        -webkit-column-count: 5
+        -moz-column-count:
+        column-count: 5
         .sub-category
-          .venue
-            height: 1em
-            width: 1em
+          display: inline-block
           a
             padding: 0.5em
             border-radius: 3px
