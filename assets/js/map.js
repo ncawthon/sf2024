@@ -2,25 +2,22 @@
 
 L.mapbox.accessToken = 'pk.eyJ1IjoiYWxleGFuZGVyZ3VnZWwiLCJhIjoiTHF6V3lBdyJ9.azWklrByWOL7jmYb0KSRdQ';
 
-var InteractiveVenueMap = function (options) {
+var InteractiveVenueMap = function (mapOptions, clusterOptions) {
   this.container = $jQueryAngular('#interactive-venue-map');
   this.mapElement = this.container.find('.map')[0];
 
-  options = options || {};
-  options.mapboxId = 'alexandergugel.k21hb9dm';
-  options.disableClusteringAtZoom = options.disableClusteringAtZoom || 8;
-
-  options.zoomControl = false;
-  options.scrollWheelZoom = false;
-
-  this.options = options;
-
-  this._initMap(options);
-  this._initClusterGroup();
+  this._initMap(mapOptions);
+  this._initClusterGroup(clusterOptions);
 };
 
-InteractiveVenueMap.prototype._initMap = function (options) {
-  this.map = L.mapbox.map(this.mapElement, options.mapboxId, options);
+InteractiveVenueMap.prototype._initMap = function (mapOptions) {
+  mapOptions = mapOptions || {};
+  mapOptions.mapboxId = 'alexandergugel.k21hb9dm';
+
+  mapOptions.zoomControl = false;
+  mapOptions.scrollWheelZoom = false;
+
+  this.map = L.mapbox.map(this.mapElement, mapOptions.mapboxId, mapOptions);
 
   this.zoomControl = L.control.zoom({
     position: 'topright'
@@ -45,33 +42,34 @@ InteractiveVenueMap.prototype._initCategoryFilter = function () {
   $jQueryAngular(this.id).find('.category-filter').empty();
 };
 
-InteractiveVenueMap.prototype._initClusterGroup = function () {
+InteractiveVenueMap.prototype._initClusterGroup = function (clusterOptions) {
   var self = this;
 
-  this.venueClusterGroup = new L.MarkerClusterGroup({
-    disableClusteringAtZoom: this.options.disableClusteringAtZoom,
-    iconCreateFunction: function (cluster) {
-      return new L.divIcon({
-        iconSize: L.point(56, (function calcHeight() {
-          var rows = cluster.getChildCount();
-          if (rows % 2 !== 0) {
-            rows++;
-          }
-          rows = rows/2;
-          return rows*26 + 4;
-        })()),
-        className: 'venue-marker',
-        html: (function () {
-          var html = '';
-          var markers = self._clusterToMarkers(cluster);
-          for (var i = 0; i < markers.length; i++) {
-            html += self._venueToMarkerHTML(markers[i]._venue);
-          }
-          return html;
-        })()
-      });
-    }
-  });
+  clusterOptions = clusterOptions || {};
+  clusterOptions.disableClusteringAtZoom = clusterOptions.disableClusteringAtZoom || 8;
+  clusterOptions.iconCreateFunction = clusterOptions.iconCreateFunction || function (cluster) {
+    return new L.divIcon({
+      iconSize: L.point(56, (function calcHeight() {
+        var rows = cluster.getChildCount();
+        if (rows % 2 !== 0) {
+          rows++;
+        }
+        rows = rows/2;
+        return rows*26 + 4;
+      })()),
+      className: 'venue-marker',
+      html: (function () {
+        var html = '';
+        var markers = self._clusterToMarkers(cluster);
+        for (var i = 0; i < markers.length; i++) {
+          html += self._venueToMarkerHTML(markers[i]._venue);
+        }
+        return html;
+      })()
+    });
+  }
+
+  this.venueClusterGroup = new L.MarkerClusterGroup(clusterOptions);
 
   this.map.addLayer(this.venueClusterGroup);
 };
@@ -201,15 +199,17 @@ InteractiveVenueMap.prototype.rerender = function () {
   this.render(venues);
 };
 
+// Angular magic starts here
+
 var InteractiveVenueMapModule = angular.module('InteractiveVenueMap', []);
 
 InteractiveVenueMapModule.run(['$window', function ($window) {
-  $window.interactiveVenueMap = new InteractiveVenueMap();
-  $window.interactiveVenueMap.render($window.venues);
+  $window.interactiveVenueMap.interactiveVenueMap = new InteractiveVenueMap($window.interactiveVenueMap.mapOptions, $window.interactiveVenueMap.clusterOptions);
+  $window.interactiveVenueMap.interactiveVenueMap.render($window.interactiveVenueMap.venues);
 }]);
 
 InteractiveVenueMapModule.controller('FilterCtrl', ['$scope', '$window', function($scope, $window) {
-  $scope.venues = $window.venues;
+  $scope.venues = $window.interactiveVenueMap.venues;
 
   $scope.selectedCategory = $scope.venues[0];
 
@@ -227,7 +227,7 @@ InteractiveVenueMapModule.controller('FilterCtrl', ['$scope', '$window', functio
         category.subCategories[i].hidden = true;
       }
     }
-    $window.interactiveVenueMap.rerender();
+    $window.interactiveVenueMap.interactiveVenueMap.rerender();
   };
 
   $scope.countVenues = function (category) {

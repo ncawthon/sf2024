@@ -1758,7 +1758,23 @@
         return venues;
       };
 
-      window.venues = [{
+			window.interactiveVenueMap = {};
+
+			// Leaflet map options (see http://leafletjs.com/reference.html#map-center)
+			window.interactiveVenueMap.mapOptions = {
+				zoom: 16,
+				minZoom: 1,
+				maxZoom: 2,
+				center: [0, 0]
+			};
+
+			// Cluster options (https://github.com/Leaflet/Leaflet.markercluster#all-options)
+			window.interactiveVenueMap.clusterOptions = {
+				showCoverageOnHover: false
+			};
+
+
+      window.interactiveVenueMap.venues = [{
         category: 'Athletic Venues',
         color: '#3a66b5',
 				icon: 'assets/img/icons/sport-all.svg',
