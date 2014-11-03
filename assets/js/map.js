@@ -11,6 +11,7 @@ var InteractiveVenueMap = function (options) {
   options.disableClusteringAtZoom = options.disableClusteringAtZoom || 8;
 
   options.zoomControl = false;
+  options.scrollWheelZoom = false;
 
   this.options = options;
 
