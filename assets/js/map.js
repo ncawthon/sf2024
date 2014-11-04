@@ -23,11 +23,17 @@ InteractiveVenueMap.prototype._initMap = function (mapOptions) {
     position: 'bottomright'
   });
 
- // this.zoomControl.addTo(this.map);
-
-  // Add zoomslider etc.
+//  this.zoomslider.addTo(this.map);
+//    position: 'topleft'
 //   L.control.zoomslider().addTo(this.map);
+
+//  this.fullscreen.addTo(this.map);
+//    position: 'topleft'
+//   L.control.fullscreen().addTo(this.map);
+
 };
+
+
 
 InteractiveVenueMap.prototype._clusterToMarkers = function (cluster) {
   var markers = cluster._markers.slice();
