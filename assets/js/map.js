@@ -1,6 +1,6 @@
 'use strict';
 
-L.mapbox.accessToken = 'pk.eyJ1IjoiYWxleGFuZGVyZ3VnZWwiLCJhIjoiTHF6V3lBdyJ9.azWklrByWOL7jmYb0KSRdQ';
+L.mapbox.accessToken = 'pk.eyJ1Ijoibmlja2Nhd3Rob24iLCJhIjoiR1Vic2wwQSJ9.glVpgeji4zywDmytJ8kU8A';
 
 var InteractiveVenueMap = function (mapOptions, clusterOptions) {
   this.container = $jQueryAngular('#interactive-venue-map');
@@ -12,7 +12,7 @@ var InteractiveVenueMap = function (mapOptions, clusterOptions) {
 
 InteractiveVenueMap.prototype._initMap = function (mapOptions) {
   mapOptions = mapOptions || {};
-  mapOptions.mapboxId = 'alexandergugel.k21hb9dm';
+  mapOptions.mapboxId = 'nickcawthon.6eeb8650';
 
   mapOptions.zoomControl = false;
   mapOptions.scrollWheelZoom = false;
@@ -20,13 +20,13 @@ InteractiveVenueMap.prototype._initMap = function (mapOptions) {
   this.map = L.mapbox.map(this.mapElement, mapOptions.mapboxId, mapOptions);
 
   this.zoomControl = L.control.zoom({
-    position: 'topright'
+    position: 'bottomright'
   });
 
-  this.zoomControl.addTo(this.map);
+ // this.zoomControl.addTo(this.map);
 
   // Add zoomslider etc.
-  // L.control.zoomslider().addTo(this.map);
+//   L.control.zoomslider().addTo(this.map);
 };
 
 InteractiveVenueMap.prototype._clusterToMarkers = function (cluster) {

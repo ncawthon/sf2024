@@ -20,7 +20,7 @@
 	<link href="assets/css/themes/custom.css" rel="stylesheet" id="stylesheet">
 
 	<!-- Google Fonts - Lato -->
-	<link href="http://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Lato:200,300,400" rel="stylesheet">
 
 	<!-- Font Awesome Icons -->
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -52,7 +52,12 @@
       <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.5.0/base-min.css&pure/0.5.0/grids-min.css&pure/0.5.0/grids-responsive-min.css">
     <!--<![endif]-->
 
+    <!-- Potential Venue Map -->
     <link rel="stylesheet" href="assets/css/map.css">
+
+    <!-- Social Connections -->
+    <link rel="stylesheet" href="assets/css/social-connections.css">
+
 </head>
 
 <body>
@@ -75,10 +80,10 @@
 				<div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right nav-mobile">
 						<li class="dropdown">
-							<a href="#sLegacy">Join Us</a>
+							<a href="#sJoinUs">Join Us</a>
 						</li>
 						<li class="dropdown">
-							<a href="#sJoinUs">Legacy</a>
+							<a href="#sLegacy">Legacy</a>
 						</li>
 						<li class="dropdown">
 							<a href="#sOurCity">Our City</a>
@@ -100,10 +105,10 @@
 				<div class="col-sm-5">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="dropdown">
-							<a href="#sLegacy" class="scroll wow fadeIn" data-wow-delay="0.55s">Join Us</a>
+							<a href="#sJoinUs" class="scroll wow fadeIn" data-wow-delay="0.55s">Join Us</a>
 						</li>
 						<li class="dropdown">
-							<a href="#sJoinUs" class="scroll wow fadeIn" data-wow-delay="0.45s">Legacy</a>
+							<a href="#sLegacy" class="scroll wow fadeIn" data-wow-delay="0.45s">Legacy</a>
 						</li>
 						<li class="dropdown">
 							<a href="#sOurCity" class="scroll wow fadeIn" data-wow-delay="0.35s">Our City</a>
@@ -259,11 +264,43 @@
             </div>
         </div>
     </div>
+
     <div class="bg-warning">
         <div class="container section text-center">
-                    <h2 class="text-center text-white lg-title fadeIn wow">#SF2024</h2>
+                    <h2 class="text-center text-white lg-title fadeIn wow" style="margin-bottom:0px;">#SF2024</h2>
+        </div>
+    </div>
+    
+    <div class="bg-warning" style="margin-bottom:0px;">  
+        <section id="social-connections-popup-overlay"></section>
 
-            <ul class="list-unstyled list-inline m-no-bottom">
+        <section id="social-connections-popup"></section>
+
+        <section id="social-connections" class="pure-g"></section>
+
+        <script>
+          window.socialConnections = {
+            twitter: [
+              '529438707288641537',
+              '529438630058950656',
+              '526431474644680704',
+              '526816405937590272'
+            ],
+            instagram: [
+              '448979387270691659_45818965',
+              '448979387270691659_45818965',
+              '448979387270691659_45818965'
+            ],
+            vine: [
+              '1139033694657708032'
+            ]
+          };
+        </script>
+    </div>
+
+    <div class="bg-warning">
+        <div class="container section text-center" style="margin-top:0px;">
+            <ul class="list-unstyled list-inline m-no-bottom" style="margin-top:0px;">
                 <li><i class="fa fa-facebook i-social wow easePulse" data-wow-delay="0.15s"></i>
                 </li>
                 <li><i class="fa fa-twitter i-social wow easePulse" data-wow-delay="0.25s"></i>
@@ -430,7 +467,7 @@
            <div class="space-lg"></div>
             <div id="pricesSlider" class="owl-carousel">
                 <div class="item">
-                    <div class="panel panel-default ">
+                    <div class="panel panel-default">
                         <div class="panel-body text-center">
                             <div class="hover-content">
                                 <div class="visible-part">
@@ -787,13 +824,10 @@
             <div class="md-overlay"></div>
             <ul class="list-unstyled list-team-sm">
                 <li class="easePulse wow" data-wow-delay="0.15s">
-                    <div class="hover-content md-trigger" data-modal="modal-a1">
+                    <div class="hover-content">
                         <img class="img-responsive" alt="Our team" src="assets/img/faces/generic-man.jpg">
-                        <div class="top-part">
-                            <i class="fa fa-expand"></i>
-                        </div>
                         <div class="bottom-part">
-                            <h3>Person Name</h3>
+                            <h3>Nick Cawthon<br/>Bid Dude</h3>
                         </div>
                     </div>
                     <!-- Modal Window for Item 1 -->
@@ -843,9 +877,6 @@
                 <li class="easePulse wow" data-wow-delay="0.25s">
                     <div class="hover-content md-trigger" data-modal="modal-a1">
                         <img class="img-responsive" alt="Our team" src="assets/img/faces/generic-man.jpg">
-                        <div class="top-part">
-                            <i class="fa fa-expand"></i>
-                        </div>
                         <div class="bottom-part">
                             <h3>Person Name</h3>
                         </div>
@@ -1575,7 +1606,7 @@
                         <ul class="info-list md-list i-primary">
                             <li>
                                 <i class="fa fa-envelope fa-fw"  style="color:#c0732c;"></i>
-                                <a href="mailto:influence.bootstrap@gmail.com">info@sf2024.org</a>
+                                <a href="mailto:info@sf2044.com">info@sf2024.org</a>
                             </li>
                             <li>
                                 <i class="fa fa-phone fa-fw"  style="color:#c0732c;"></i>
@@ -1590,7 +1621,7 @@
                     <div class="space-sm visible-sm visible-xs"></div>
                     <div class="col-md-4 col-lg-4  col-xs-12">
                         <h4 style="color:#c0732c;">About Us</h4>
-                        <p>Some of the Bay Area's most distinguished business and community leaders volunteer their time, energy and resources to this remarkable organization.</p>
+                        <p>Some of the Bay Area's most distinguished business and community leaders volunteer their time, energy and resources to this remarkable non-profit organization.</p>
                     </div>
                     <div class="space-sm visible-sm visible-xs"></div>
                     <div class="col-md-4 col-lg-4  col-xs-12">
@@ -1620,9 +1651,12 @@
                     </div>
                 </div>
             </div>
+            <div class="space-lg"></div>
         </div>
+ 
+        <div class="section-lg" style="background:#222;">
 
-        <div class="section-lg" style="background:#111;">
+
             <!--id="mc_embed_signup"-->
             <div class="container">
                 <form action="//sf2024.us9.list-manage.com/subscribe/post?u=bd21388d1e57e5939f08d19e7&amp;id=a19d2bdbe7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline all-trn" target="_blank" novalidate>
@@ -1664,9 +1698,9 @@
             </div>
         </div>
 
-        <div class="footer-bottom">
+        <div class="footer-bottom" style="background:#111;">
             <div class="container">
-                <p>© 2014 SF2024. All Rights Reserved.</p>
+                <p>© 2014 San Francisco 2024. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -1761,10 +1795,10 @@
 
 			// Leaflet map options (see http://leafletjs.com/reference.html#map-center)
 			window.interactiveVenueMap.mapOptions = {
-				zoom: 16,
-				// minZoom: 1,
-				// maxZoom: 2,
-				center: [0, 0]
+				zoom: 10,
+				 minZoom: 11,
+				 maxZoom: 16,
+				center: [37.6854951, -122.1934582]
 			};
 
 			// Cluster options (https://github.com/Leaflet/Leaflet.markercluster#all-options)
@@ -2085,6 +2119,9 @@
     ]
       }];
     </script>
+
+    <!-- Social Connections -->
+    <script src="assets/js/social-connections.js"></script>
 
 	<!-- Must be last of all scripts -->
 	<script src="assets/js/one-page.js"></script>

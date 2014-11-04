@@ -17,29 +17,29 @@
 #social-connections .blue,
 #social-connections-popup-overlay .blue,
 #social-connections-popup .blue {
-  background: #2b7391;
+  background: #3a66b5;
 }
 #social-connections .brown,
 #social-connections-popup-overlay .brown,
 #social-connections-popup .brown {
-  background: #8f6f18;
+  background: #865120;
 }
 #social-connections .red,
 #social-connections-popup-overlay .red,
 #social-connections-popup .red {
-  background: #b81b1b;
+  background: #c0372c;
 }
 #social-connections .green,
 #social-connections-popup-overlay .green,
 #social-connections-popup .green {
-  background: #497b0e;
+  background: #229336;
 }
 #social-connections .author,
 #social-connections-popup-overlay .author,
 #social-connections-popup .author {
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.6);
   color: #fff;
-  font-size: 0.75em;
+  font-size: 1em;
   height: 48px;
   position: relative;
   text-align: left;
@@ -73,8 +73,9 @@
 #social-connections .author div .location,
 #social-connections-popup-overlay .author div .location,
 #social-connections-popup .author div .location {
-  color: rgba(255,255,255,0.7);
-  font-size: 0.75em;
+  color: rgba(255,255,255,0.9);
+  font-size: 1em;
+  line-height: 150%;
 }
 #social-connections-popup-overlay {
   background: rgba(0,0,0,0.8);
@@ -102,8 +103,8 @@
   margin: 3em auto;
   text-align: left;
   max-width: 100%;
-  width: 250px;
-  border: 2px solid #fff;
+  width: 400px;
+  border: 1px solid #fff;
 }
 #social-connections-popup main .close {
   position: absolute;
@@ -121,6 +122,7 @@
   padding: 1em 1em 0.5em;
   margin: 0;
   color: #fff;
+  font-size: 1.25em;
 }
 #social-connections-popup main p:first-child {
   border-bottom: 1px solid rgba(240,240,240,0.8);
@@ -200,7 +202,7 @@
     min-height: 16vw;
   }
   #social-connections section .content {
-    font-size: 0.75em;
+    font-size: 1.25em;
   }
 }
 .flip {
@@ -296,4 +298,8 @@
   to {
     -moz-transform: rotateY(0);
   }
+}
+#social-connections .container {
+  margin:0px;
+  padding: 0px;
 }
