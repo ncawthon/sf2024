@@ -86,9 +86,8 @@
 
 #interactive-venue-map .filter main .sub-categories {
   margin: 1.5em 0 0.5em;
-  -webkit-column-count: 5;
-  -moz-column-count: column-count;
 }
+
 #interactive-venue-map .filter main .sub-categories : 5,
 #interactive-venue-map .filter main .sub-categories .sub-category {
   display: inline-block;
@@ -231,7 +230,7 @@
 }
 #interactive-venue-map .leaflet-popup-content-wrapper main .previous-venue {
   left: 0;
-  top:0;  
+  top:0;
   font-weight: bold;
 }
 

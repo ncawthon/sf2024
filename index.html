@@ -442,21 +442,22 @@
                     </ul>
                   </nav>
 
-                  <section class="sub-categories">
-                    <div class="sub-category" ng-class="{'selected': !selectedCategory.hidden}">
-                      <a href="" ng-click="toggleCategory(selectedCategory)">
-                        <div class="venue" style="background: {{selectedCategory.color}}"><img ng-src="{{selectedCategory.icon}}" ng-if="selectedCategory.icon"></div>
-                        <strong>All {{selectedCategory.category}} ({{countVenues(selectedCategory)}})</strong>
-                      </a>
-                    </div>
 
-                    <div class="sub-category" ng-repeat="subCategory in selectedCategory.subCategories" ng-class="{'selected': !subCategory.hidden}">
-                      <a href="" ng-click="toggleCategory(selectedCategory, subCategory)">
-                        <div class="venue" style="background: {{selectedCategory.color}}"><img ng-src="{{subCategory.icon}}" ng-if="subCategory.icon"></div>
-                        {{subCategory.category}} ({{subCategory.venues.length}})
-                      </a>
-                    </div>
-                  </section>
+									<section class="pure-g">
+				            <div class="pure-u-1-5 sub-category" ng-class="{'selected': !selectedCategory.hidden}">
+				              <a href="" ng-click="toggleCategory(selectedCategory)">
+				                <div class="venue" style="background: {{selectedCategory.color}}"></div>
+				                <strong>All {{selectedCategory.category}} ({{countVenues(selectedCategory)}})</strong>
+				              </a>
+				            </div>
+
+				            <div class="pure-u-1-5 sub-category" ng-repeat="subCategory in selectedCategory.subCategories" ng-class="{'selected': !subCategory.hidden}">
+				              <a href="" ng-click="toggleCategory(selectedCategory, subCategory)">
+				                <div class="venue" style="background: {{selectedCategory.color}}"><img ng-src="{{subCategory.icon}}" ng-if="subCategory.icon"></div>
+				                {{subCategory.category}} ({{subCategory.venues.length}})
+				              </a>
+				            </div>
+				          </section>
 
                 </main>
               </div>
