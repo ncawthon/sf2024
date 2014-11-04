@@ -412,7 +412,7 @@
             <p class="subtitle-v2 m-no-bottom text-center text-grey wow fadeIn">Curabitur bibendum justo non orci. Aenean id metus id velit voluptatem quia sit. Bibendum justo non orci. Aenean id metus id velit.</p>
            <div class="space-lg"></div>
 
-           <h3 class="lg-title text-grey m-no-bottom wow fadeIn">Potential Venue Map</h3>
+           <h3 class="lg-title text-grey m-no-bottom wow fadeIn">Preliminary Venue Map</h3>
            <div class="space-lg"></div>
 
         </div>
@@ -1797,14 +1797,15 @@
 			// Leaflet map options (see http://leafletjs.com/reference.html#map-center)
 			window.interactiveVenueMap.mapOptions = {
 				zoom: 10,
-				 minZoom: 11,
+				 minZoom: 10,
 				 maxZoom: 16,
 				center: [37.6854951, -122.1934582]
 			};
 
 			// Cluster options (https://github.com/Leaflet/Leaflet.markercluster#all-options)
 			window.interactiveVenueMap.clusterOptions = {
-				showCoverageOnHover: false
+				showCoverageOnHover: false,
+                removeOutsideVisibleBounds:true,
 			};
 
       window.interactiveVenueMap.venues = [{
@@ -1816,7 +1817,7 @@
           icon: 'assets/img/icons/sport-archery.svg',
           venues:
           [
-            {name: 'Stanford West Campus', lat: 37.426183, lng: -122.1839303, image:'assets/img/venues/sport-archery-stanford-west.png', description: 'This site provides an excellent location, close to the Olympic Village, within easy walking distance of the Olympic Stadium and Swimming Center, as well as within easy walking distance from Caltrain.'}
+            {name: 'Archery | Stanford West Campus', lat: 37.426183, lng: -122.1839303, image:'assets/img/venues/sport-archery-stanford-west.png', description: 'This site provides an excellent location, close to the Olympic Village, within easy walking distance of the Olympic Stadium and Swimming Center, as well as within easy walking distance from Caltrain.'}
             ]
 
     },
@@ -1825,7 +1826,7 @@
           icon: 'assets/img/icons/sport-badminton.svg',
           venues:
         [
-            {name: 'Maples Pavilion', lat: 37.429587, lng: -122.160539, image:'assets/img/venues/sport-badminton-maples-pavilion.png', description: 'Maples Pavilion features the ceiling height necessary for Badminton’s high lobs. Its air-handling equipment can be turned off so as not to disturb the flight of the shuttlecock, yet because of its below-grade design, Maples Pavilion will still maintain comfortable temperatures, even in summer.'}
+            {name: 'Badminton | Maples Pavilion', lat: 37.429587, lng: -122.160539, image:'assets/img/venues/sport-badminton-maples-pavilion.png', description: 'Maples Pavilion features the ceiling height necessary for Badminton’s high lobs. Its air-handling equipment can be turned off so as not to disturb the flight of the shuttlecock, yet because of its below-grade design, Maples Pavilion will still maintain comfortable temperatures, even in summer.'}
             ]
 
     },
@@ -1834,9 +1835,9 @@
           icon: 'assets/img/icons/sport-basketball.svg',
           venues:
         [
-            {name: 'Leavey Center', lat: 37.3491632, lng: -121.9351986, image:'assets/img/venues/sport-basketball-leavey-center.png', description: 'Leavey Center at Santa Clara University has recently completed an extensive renovation that expanded its capacity to 5,000 seats and provided for new team facilities, new club facilities, luxury suites, and many other amenities for the media and spectators. '},
+            {name: 'Basketball | Leavey Center', lat: 37.3491632, lng: -121.9351986, image:'assets/img/venues/sport-basketball-leavey-center.png', description: 'Leavey Center at Santa Clara University has recently completed an extensive renovation that expanded its capacity to 5,000 seats and provided for new team facilities, new club facilities, luxury suites, and many other amenities for the media and spectators. '},
 
-            {name: 'Oracle Arena', lat: 37.750298, lng: -122.202881, image:'assets/img/venues/sport-basketball-oracle-arena.png', description: 'The 20,000 seat Oracle Arena will ensure that the men’s and women’s basketball tournaments can look forward to every single game being played in top-notch arenas for the 2024 Olympic Games in the San Francisco Bay Area. '}
+            {name: 'Basketball | Oracle Arena', lat: 37.750298, lng: -122.202881, image:'assets/img/venues/sport-basketball-oracle-arena.png', description: 'The 20,000 seat Oracle Arena will ensure that the men’s and women’s basketball tournaments can look forward to every single game being played in top-notch arenas for the 2024 Olympic Games in the San Francisco Bay Area. '}
 
 
         ]
@@ -1851,7 +1852,7 @@
           icon: 'assets/img/icons/sport-boxing.svg',
           venues:
           [
-            {name: 'The Cow Palace', lat: 37.706675, lng: -122.41867, image:'assets/img/venues/sport-boxing-cow-palace.png', description: 'San Francisco’s Cow Palace has played host to generations of sports events of every imaginable type, yet it still possesses an allure that only the stately older venues can offer, an allure that will draw fans from around the globe to enjoy Olympic Boxing. Of equal importance, the Cow Palace provides vast support facilities in which to create an ideal environment for the Olympic boxers. With ample training facilities and custom-designed individual athlete rooms surrounding the saunas and weigh-in area, each athlete will have a private space in which to prepare for his match.'}
+            {name: 'Boxing | The Cow Palace', lat: 37.706675, lng: -122.41867, image:'assets/img/venues/sport-boxing-cow-palace.png', description: 'San Francisco’s Cow Palace has played host to generations of sports events of every imaginable type, yet it still possesses an allure that only the stately older venues can offer, an allure that will draw fans from around the globe to enjoy Olympic Boxing. Of equal importance, the Cow Palace provides vast support facilities in which to create an ideal environment for the Olympic boxers. With ample training facilities and custom-designed individual athlete rooms surrounding the saunas and weigh-in area, each athlete will have a private space in which to prepare for his match.'}
             ]
 
     },
@@ -1860,14 +1861,14 @@
           icon: 'assets/img/icons/sport-canoe-slalom.svg',
           venues:
           [
-            {name: 'Lake Natoma', lat: 38.635227, lng: -121.225977, image:'assets/img/venues/sport-canoe-slalom-lake-natoma.png', description: 'For years, whitewater enthusiasts have dreamed of a slalom course at Lake Natoma to complement the existing flatwater facilities and to provide a year-round venue in which to train and compete. SF2024 has joined with this group and is working with the California State Parks, the Bureau of Reclamation and several other agencies to bring this dream into reality. '} ]
+            {name: 'Canoe - Slalom | Lake Natoma', lat: 38.635227, lng: -121.225977, image:'assets/img/venues/sport-canoe-slalom-lake-natoma.png', description: 'For years, whitewater enthusiasts have dreamed of a slalom course at Lake Natoma to complement the existing flatwater facilities and to provide a year-round venue in which to train and compete. SF2024 has joined with this group and is working with the California State Parks, the Bureau of Reclamation and several other agencies to bring this dream into reality. '} ]
         },
         {
           category: 'Canoe - Sprint',
           icon: 'assets/img/icons/sport-canoe-sprint.svg',
           venues:
           [
-            {name: 'Lake Natoma', lat: 38.638176, lng: -121.221578, image:'assets/img/venues/sport-canoe-slalom-lake-natoma.png', description: 'With the guidance of four-time Olympian Andy Toro, SF2024 proposes Lake Natoma as the site for the Canoe/Kayak – Sprint competition for the 2012 Olympic Games. Lake Natoma is a proven venue that has hosted numerous championships. The California State University at Sacramento (CSUS) Aquatics Center, which operates the venue with the California State Parks, is expanding and upgrading the facilities throughout, adding new boathouses, docks and spectator facilities. These renovations will create perhaps the finest canoeing, kayaking and rowing venue in the country. '} ] },
+            {name: 'Canoe - Sprint | Lake Natoma', lat: 38.638176, lng: -121.221578, image:'assets/img/venues/sport-canoe-slalom-lake-natoma.png', description: 'With the guidance of four-time Olympian Andy Toro, SF2024 proposes Lake Natoma as the site for the Canoe/Kayak – Sprint competition for the 2012 Olympic Games. Lake Natoma is a proven venue that has hosted numerous championships. The California State University at Sacramento (CSUS) Aquatics Center, which operates the venue with the California State Parks, is expanding and upgrading the facilities throughout, adding new boathouses, docks and spectator facilities. These renovations will create perhaps the finest canoeing, kayaking and rowing venue in the country. '} ] },
         {
           category: 'Cycling - BMX',
           icon: 'assets/img/icons/sport-cycling-bmx.svg',
