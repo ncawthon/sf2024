@@ -270,8 +270,8 @@
                     <h2 class="text-center text-white lg-title fadeIn wow" style="margin-bottom:0px;">#SF2024</h2>
         </div>
     </div>
-    
-    <div class="bg-warning" style="margin-bottom:0px;">  
+
+    <div class="bg-warning" style="margin-bottom:0px;">
         <section id="social-connections-popup-overlay"></section>
 
         <section id="social-connections-popup"></section>
@@ -1653,7 +1653,7 @@
             </div>
             <div class="space-lg"></div>
         </div>
- 
+
         <div class="section-lg" style="background:#222;">
 
 
@@ -1717,7 +1717,7 @@
 	<!-- jQuery for Angular (Angular only supports jQuery 2.1 and above) -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script>
-		var $jQueryAngular = jQuery.noConflict();
+		window.$jQueryAngular = jQuery.noConflict(true);
 	</script>
 
 	<!-- Bootstrap JS -->
@@ -1762,7 +1762,7 @@
 			fnames[0] = 'EMAIL';
 			ftypes[0] = 'email';
 		}(jQuery));
-		var $mcj = jQuery.noConflict(true);
+		// var $mcj = jQuery.noConflict(true);
 	</script>
 
 	<!-- Venue Map -->

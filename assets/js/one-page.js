@@ -168,7 +168,7 @@ $(document).ready(function () {
 		}, 450);
 	});
 
-	//legacy section 
+	//legacy section
 	$("#sLegacy").waypoint(function () {
 		$("#la").addClass("slideInEffect");
 	});
@@ -315,20 +315,20 @@ $(document).ready(function () {
 	}).init();
 
 	/*=== Google Maps ===*/
-	$('#map').initMap({
-		markers: {
-			marker1: {
-				position: [37.4395881, -122.15977, 14]
-			}
-		},
-		options: {
-			zoom: 14,
-			draggable: false,
-			scrollwheel: false,
-			disableDoubleClickZoom: true,
-			zoomControl: true
-		},
-		type: 'roadmap',
-		center: [37.4395881, -122.15977]
-	});
+	// $('#map').initMap({
+	// 	markers: {
+	// 		marker1: {
+	// 			position: [37.4395881, -122.15977, 14]
+	// 		}
+	// 	},
+	// 	options: {
+	// 		zoom: 14,
+	// 		draggable: false,
+	// 		scrollwheel: false,
+	// 		disableDoubleClickZoom: true,
+	// 		zoomControl: true
+	// 	},
+	// 	type: 'roadmap',
+	// 	center: [37.4395881, -122.15977]
+	// });
 });

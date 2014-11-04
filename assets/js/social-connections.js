@@ -1,4 +1,4 @@
-(function () {
+(function ($) {
   'use strict';
 
   /*
@@ -66,15 +66,11 @@
       return result
   }
 
-
   var colorClasses = ['blue', 'brown', 'red', 'green'];
 
   var randomColorClass = function () {
     return colorClasses[Math.floor(Math.random()*colorClasses.length)];
   };
-
-  var $overlay = $('#social-connections-popup-overlay');
-  var $popup = $('#social-connections-popup');
 
   var hideOverlay = function (event) {
     $overlay.fadeOut();
@@ -84,8 +80,6 @@
     $popup.empty();
   };
 
-  $popup.on('click', '.close', hideOverlay);
-
   var beautifyDate = function (date) {
     if (typeof date === 'string') {
       date = new Date(date);
@@ -93,7 +87,6 @@
     var month = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
     return month[date.getMonth()] + ' ' + (date.getDay()+1);
   };
-
 
   var renderAuthor = function (author) {
     return $(
@@ -260,7 +253,14 @@
     return array[Math.floor(Math.random()*array.length)];
   };
 
+  var $overlay, $popup;
+
   $(function () {
+    $overlay = $('#social-connections-popup-overlay');
+    $popup = $('#social-connections-popup');
+
+    $popup.on('click', '.close', hideOverlay);
+
     var $socialConnectionsEl = $('#social-connections');
     var socialConnections = window.socialConnections;
 
@@ -303,6 +303,8 @@
     }
 
     setInterval(function () {
+      if ($tiles.length === 0) return;
+
       var $container = randomElement($containers);
       var $tile = $container.find('.tile');
 
@@ -316,8 +318,9 @@
       $tiles.push($tile);
 
       $container.append($newTile);
+
       $newTile.hide();
       $newTile.removeClass('flip out').addClass('flip in').show();
     }, Math.round(Math.random()*7500));
   });
-}).call(this);
+}).call(this, jQuery);
