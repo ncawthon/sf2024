@@ -51,6 +51,23 @@
     }
 }
 
+.flipping {
+    .hover-content {
+        /* visible-part (current) will be hidden */
+        .visible-part {
+            opacity: 0;
+           .transform(perspective(500px) rotateY(-180deg));
+        }
+        /* hidden-part (current) will be visible */
+        .hidden-part {
+            opacity: 1;
+            .transform(perspective(500px) rotateY(0deg));
+        }
+    }
+}
+
+
+
 /* === Portfolio Item - top animation with link to somethink and bottom animation with title of a project, work or somethink === */
 
 .hover-content:hover .top-part,

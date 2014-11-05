@@ -5,81 +5,44 @@ redirect_to:
 --- 
 <!DOCTYPE html>
 <html lang="en">
- 
-<head>   
-    <title>San Francisco 2024</title>
- 
-    <!-- Meta Tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-    <!--  Boostrap Framework  -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+<head>
+	<title>San Francisco 2024</title>
 
-    <!--=== CSS  ===-->
-    <link href="assets/css/themes/custom.css" rel="stylesheet" id="stylesheet">
+	<!-- Meta Tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-    <!-- Google Fonts - Lato -->
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+	<!--  Boostrap Framework  -->
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
 
-    <!-- Font Awesome Icons -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<!--=== CSS  ===-->
+	<link href="assets/css/themes/custom.css" rel="stylesheet" id="stylesheet">
 
-    <!-- CSS Animations -->
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet">
+	<!-- Google Fonts - Lato -->
+	<link href="http://fonts.googleapis.com/css?family=Lato:200,300,400" rel="stylesheet">
 
-    <!-- SLIDER REVOLUTION 4.x -->
-    <link rel="stylesheet" href="assets/plugins/slider-revolution/examples&amp;source/rs-plugin/css/settings.css" media="screen">
+	<!-- Font Awesome Icons -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- Owl carousel  -->
-    <link rel="stylesheet" href="assets/plugins/owl.carousel/owl-carousel/owl.carousel.css">
+	<!-- CSS Animations -->
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet">
 
-</head>
+	<!-- SLIDER REVOLUTION 4.x -->
+	<link rel="stylesheet" href="assets/plugins/slider-revolution/examples&amp;source/rs-plugin/css/settings.css" media="screen">
 
-<body>
+	<!-- Owl carousel  -->
+	<link rel="stylesheet" href="assets/plugins/owl.carousel/owl-carousel/owl.carousel.css">
 
-    <!-- Main Navigation -->
-    <nav class="navbar navbar-trn navbar-fixed-top navbar-height" role="navigation" id="navbarSettings" style="background-color:rgba(255, 255, 255, 0.498039);">
-        <div class="container">
-            <div class="hidden-sm hidden-md hidden-lg">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#"><img height="60" style="margin-top:-10px;" alt="..." src="assets/img/logo.png"></a>
-                </div>
-                <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right nav-mobile">
-                        <li class="dropdown">
-                            <a href="#sLegacy">LEGACY</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#sJoinUs">Join us</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#sOurCity">Our City</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#sOurTeam">Our Team</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#sNews">News</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#sContact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <!-- venue map -->
+    <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css">
 
+<<<<<<< HEAD
             <div class="row hidden-xs">
                 <div class="col-sm-5">
                     <ul class="nav navbar-nav navbar-right">
@@ -121,14 +84,117 @@ redirect_to:
             </div>
         </div>
     </nav>
+=======
+    <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css">
+    <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css">
+
+    <link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-zoomslider/v0.7.0/L.Control.Zoomslider.css' rel='stylesheet' />
+>>>>>>> FETCH_HEAD
 
 
-    <!--  Welcome Section  -->
-    <span class="breakPoint" id="sWelcome"></span>
-        <div class="tp-banner-container">
- 
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.5.0/base-min.css&pure/0.5.0/grids-min.css&pure/0.5.0/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+      <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.5.0/base-min.css&pure/0.5.0/grids-min.css&pure/0.5.0/grids-responsive-min.css">
+    <!--<![endif]-->
+
+    <!-- Potential Venue Map -->
+    <link rel="stylesheet" href="assets/css/map.css">
+
+    <!-- Social Connections -->
+    <link rel="stylesheet" href="assets/css/social-connections.css">
+
+</head>
+
+<body>
+
+	<!-- Main Navigation -->
+	<nav class="navbar navbar-trn navbar-fixed-top navbar-height" role="navigation" id="navbarSettings" style="background-color:rgba(255, 255, 255, 0.498039);">
+		<div class="container">
+			<div class="hidden-sm hidden-md hidden-lg">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">
+						<img height="60" style="margin-top:-20px;" alt="sf2024" src="assets/img/logo.png">
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right nav-mobile">
+						<li class="dropdown">
+							<a href="#sJoinUs">Join Us</a>
+						</li>
+						<li class="dropdown">
+							<a href="#sLegacy">Legacy</a>
+						</li>
+						<li class="dropdown">
+							<a href="#sOurCity">Our City</a>
+						</li>
+						<li class="dropdown">
+							<a href="#sOurTeam">Our Team</a>
+						</li>
+						<li class="dropdown">
+							<a href="#sNews">News</a>
+						</li>
+						<li class="dropdown">
+							<a href="#sContact">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row hidden-xs">
+				<div class="col-sm-5">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#sJoinUs" class="scroll wow fadeIn" data-wow-delay="0.55s">Join Us</a>
+						</li>
+						<li class="dropdown">
+							<a href="#sLegacy" class="scroll wow fadeIn" data-wow-delay="0.45s">Legacy</a>
+						</li>
+						<li class="dropdown">
+							<a href="#sOurCity" class="scroll wow fadeIn" data-wow-delay="0.35s">Our City</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-2">
+					<div class="navbar-header centerX">
+						<a class="navbar-logo scroll" href="#sWelcome">
+							<img class="wow fadeIn" data-wow-delay="0.25s" width="150" height="90" alt="sf2024" src="assets/img/logo.png">
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-5">
+					<ul class="nav navbar-nav navbar-left">
+						<li class="dropdown">
+							<a href="#sOurTeam" class="scroll wow fadeIn" data-wow-delay="0.35s">Our Team</a>
+						</li>
+						<li class="dropdown">
+							<a href="#sNews" class="scroll wow fadeIn" data-wow-delay="0.45s">News</a>
+						</li>
+						<li class="dropdown">
+							<a href="#sContact" class="scroll wow fadeIn" data-wow-delay="0.55s">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+
+	<!--  Welcome Section  -->
+	<span class="breakPoint" id="sWelcome"></span>
+	<div class="tp-banner-container">
+
         <div class="tp-banner" >
-            <ul> 
+            <ul>
                 <!-- SLIDE  -->
                 <li data-fstransition="fade" data-fsmasterspeed="1000" data-fsslotamount="7" data-saveperformance="off" >
                     <!-- MAIN IMAGE -->
@@ -150,8 +216,8 @@ redirect_to:
                         data-autoplayonlyfirsttime="false"
                         data-nextslideatend="true"
              data-volume="mute" data-forceCover="1" data-aspectratio="16:9" data-forcerewind="on"           style="z-index: 2;">
-             <video class="" preload="none" loop width="100%" height="100%" 
-            poster='assets/video/coit-cover.jpg'> 
+             <video class="" preload="none" loop width="100%" height="100%"
+            poster='assets/video/coit-cover.jpg'>
             <source src='assets/video/sf2024.mp4' type='video/mp4' />
             <source src='assets/video/sf2024.webm' type='video/webm' />
 
@@ -160,7 +226,7 @@ redirect_to:
                     </div>
 
                                      <!-- LAYER NR. 1 -->
-                                    
+
                                     <div class="tp-caption tp-fade fadeout title-intro"
                                         data-x="center" data-hoffset="0"
                                         data-y="center" data-voffset="0"
@@ -175,7 +241,7 @@ redirect_to:
                                     </div>
 
                                     <!-- LAYER NR. 2 -->
-                                    
+                                    <!--
                                     <div class="tp-caption text-white tp-fade fadeout tp-resizeme text-intro"
                                         data-x="center" data-hoffset="-20"
                                         data-y="center" data-voffset="100"
@@ -189,7 +255,9 @@ redirect_to:
                                         style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap; text-align:center; background:rgba(192, 54, 44, 0.75); width:110%;">We are honored to be chosen as a potential bid city for the United States
                                                 <br>to host the 2024 Olympic and Paralympic games.
                                     </div>
+                                    -->
                 </li>
+<<<<<<< HEAD
             </ul>   
             <div class="tp-bannertimer"></div>  
         </div>
@@ -235,28 +303,15 @@ redirect_to:
                     
                 </div>
             </div>
+=======
+            </ul>
+            <div class="tp-bannertimer"></div>
+>>>>>>> FETCH_HEAD
         </div>
-    </div>
-    <div class="section-xlg container">
-        <div class="row" id="lc">
-            <div class="col-sm-6 ">
-                <div class=" wow fromRight" data-wow-delay="0.45s">
 
-
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <h2 class="big-title text-info wow fadeInRight" data-wow-delay="0.05s">YOUTH AMBITION</h2>
-                <ul class="big-list"> 
-                    <li class="wow fadeInRight" data-wow-delay="0.15s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                    <li class="wow fadeInRight" data-wow-delay="0.25s">Fusce nibh. Aenean id metus id velit ullamcorper pulvinar.</li>
-                    <li class="wow fadeInRight" data-wow-delay="0.35s">Duis aute irure dolor in reprehenderit in reprehenderit in voluptate.</li>
-                </ul>
-            </div>
         </div>
-    </div>
-    
 
+<<<<<<< HEAD
     <div class="space-lg"></div>
     
 =======
@@ -334,6 +389,8 @@ redirect_to:
 
 
 >>>>>>> Stashed changes
+=======
+>>>>>>> FETCH_HEAD
     <!-- Join us section -->
     <span class="breakPoint" id="sJoinUs"></span>
     <div class="bg-warning">
@@ -364,17 +421,17 @@ redirect_to:
                             </div>
                         </div>
 
-                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->             
-                        
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+
                         <div style="position: absolute; left: -5000px;">
                             <input type="text" name="b_bd21388d1e57e5939f08d19e7_a19d2bdbe7" tabindex="-1" value="">
                         </div>
-                        
+
                         <div class="col-sm-3">
                             <input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="btn btn-warning btn-xlg btn-block wow fadeIn " data-wow-delay="0.35s">
                         </div>
                     </div>
-                    
+
 
                     <div id="mce-responses">
                         <div class="response" id="mce-error-response" style="display:none"></div>
@@ -384,14 +441,48 @@ redirect_to:
             </div>
         </div>
     </div>
+
     <div class="bg-warning">
         <div class="container section text-center">
-            <ul class="list-unstyled list-inline m-no-bottom">
+                    <h2 class="text-center text-white lg-title fadeIn wow" style="margin-bottom:0px;">#SF2024</h2>
+        </div>
+    </div>
+
+    <div class="bg-warning" style="margin-bottom:0px;">
+        <section id="social-connections-popup-overlay"></section>
+
+        <section id="social-connections-popup"></section>
+
+        <section id="social-connections" class="pure-g"></section>
+
+        <script>
+          window.socialConnections = {
+            twitter: [
+              '529438707288641537',
+              '529438630058950656',
+              '526431474644680704',
+              '526816405937590272'
+            ],
+            instagram: [
+              '448979387270691659_45818965',
+              '448979387270691659_45818965',
+              '448979387270691659_45818965'
+            ],
+            vine: [
+              '1139033694657708032'
+            ]
+          };
+        </script>
+    </div>
+
+    <div class="bg-warning">
+        <div class="container section text-center" style="margin-top:0px;">
+            <ul class="list-unstyled list-inline m-no-bottom" style="margin-top:0px;">
                 <li><i class="fa fa-facebook i-social wow easePulse" data-wow-delay="0.15s"></i>
                 </li>
                 <li><i class="fa fa-twitter i-social wow easePulse" data-wow-delay="0.25s"></i>
                 </li>
-                <li><i class="fa fa-youtube-play i-social wow easePulse" data-wow-delay="0.35s"></i>
+                <li><i class="fa fa-vine i-social wow easePulse" data-wow-delay="0.35s"></i>
                 </li>
                 <li><i class="fa fa-instagram i-social wow easePulse" data-wow-delay="0.45s"></i>
                 </li>
@@ -405,28 +496,167 @@ redirect_to:
     </div>
 
 
-    <!-- Our City -->
-    <span class="breakPoint" id="sOurCity"></span>
+
+    <!-- Legacy -->
+
+        <span class="breakPoint" id="sLegacy"></span>
     <div class="bg-info">
         <div class="container section">
+            <h2 class="lg-title m-no-bottom wow fadeIn">Legacy</h2>
+        </div>
+    </div>
+
+
+
+    <div class="container section-lg">
+            <p class="subtitle-v2 m-no-bottom text-center text-grey">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio.</p>
+    </div>
+    <hr>
+    <div class="section-xlg container">
+        <div class="row" id="la">
+            <div class="col-sm-6 ">
+                <div class="img-legacy wow fromRight" data-wow-delay="0.45s">
+
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <h2 class="big-title text-info wow fadeInRight" data-wow-delay="0.05s">RESPONSIBLE INFRASTRUCTURE</h2>
+                <ul class="big-list">
+                    <li class="text-grey wow fadeInRight" data-wow-delay="0.15s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                    <li class="text-grey wow fadeInRight" data-wow-delay="0.25s">Fusce nibh. Aenean id metus id velit ullamcorper pulvinar.</li>
+                    <li class="text-grey wow fadeInRight" data-wow-delay="0.35s">Duis aute irure dolor in reprehenderit in reprehenderit in voluptate.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section-xlg container">
+        <div class="row" id="lb">
+            <div class="col-sm-6">
+                <h2 class="big-title text-info wow fadeInLeft" data-wow-delay="0.05s">AFFORDABLE HOUSING</h2>
+                <ul class="big-list text-grey">
+                    <li class="text-grey wow fadeInLeft" data-wow-delay="0.15s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                    <li class="text-grey wow fadeInLeft" data-wow-delay="0.25s">Fusce nibh. Aenean id metus id velit ullamcorper pulvinar.</li>
+                    <li class="text-grey wow fadeInLeft" data-wow-delay="0.35s">Duis aute irure dolor in reprehenderit in reprehenderit in voluptate.</li>
+                </ul>
+            </div>
+            <div class="col-sm-6 ">
+                <div class="img-legacy wow fromLeft" data-wow-delay="0.45s">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-xlg container">
+        <div class="row" id="lc">
+            <div class="col-sm-6 ">
+                <div class=" wow fromRight" data-wow-delay="0.45s">
+
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <h2 class="big-title text-info wow fadeInRight" data-wow-delay="0.05s">YOUTH AMBITION</h2>
+                <ul class="big-list text-grey">
+                    <li class="text-grey wow fadeInRight" data-wow-delay="0.15s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                    <li class="text-grey wow fadeInRight" data-wow-delay="0.25s">Fusce nibh. Aenean id metus id velit ullamcorper pulvinar.</li>
+                    <li class="text-grey wow fadeInRight" data-wow-delay="0.35s">Duis aute irure dolor in reprehenderit in reprehenderit in voluptate.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Legacy -->
+
+
+
+    <!-- BACKGROUND IMAGE -->
+    <div class="bg-16 bg-center bg-fixed bg-cover">
+        <div class="filling-section bg-filter"></div>
+    </div>
+    <!--/END BACKGROUND IMAGE -->
+
+
+
+    <!-- Our City -->
+    <span class="breakPoint" id="sOurCity"></span>
+    <div class="bg-success">
+        <div class="container section">
+<<<<<<< HEAD
 <<<<<<< Updated upstream
             <h2 class="lg-title m-no-bottom wow fadeIn">Our city</h2>
 =======
             <h2 class="lg-title m-no-bottom">Our City</h2>
 >>>>>>> Stashed changes
+=======
+            <h2 class="lg-title m-no-bottom wow fadeIn">Our City</h2>
+>>>>>>> FETCH_HEAD
         </div>
     </div>
     <div class="section-lg">
         <div class="container">
             <p class="subtitle-v2 m-no-bottom text-center text-grey wow fadeIn">Curabitur bibendum justo non orci. Aenean id metus id velit voluptatem quia sit. Bibendum justo non orci. Aenean id metus id velit.</p>
-            <div class="space-lg"></div>
+           <div class="space-lg"></div>
+
+           <h3 class="lg-title text-grey m-no-bottom wow fadeIn">Preliminary Venue Map</h3>
+           <div class="space-lg"></div>
+
+        </div>
+
+            <div id="interactive-venue-map" ng-app="InteractiveVenueMap">
+              <div class="filter" ng-controller="FilterCtrl" ng-class="{'active': showFilter}">
+                <header class="pure-g">
+                  <div class="pure-u-1-1" ng-click="showFilter = !showFilter">
+                    <span class="toggle">
+                      <i class="icon ion-navicon-round" ng-if="!showFilter"></i><i class="icon ion-close" ng-if="showFilter"></i>
+                    </span>
+
+                    <span ng-if="showFilter">Hide Map Categories</span>
+                    <span ng-if="!showFilter">Show Map Categories</span>
+                  </div>
+                </header>
+                <main ng-if="showFilter">
+                  <nav>
+                    <ul class="pure-g">
+                      <li ng-repeat="category in venues" ng-class="{'selected': (selectedCategory === category)}" class="pure-u-1-3">
+                        <span></span>
+                        <a href="" ng-click="changeCategory(category)">
+                          {{category.category}}
+                        </a>
+                        <span></span>
+                      </li>
+                    </ul>
+                  </nav>
+
+
+									<section class="pure-g">
+				            <div class="pure-u-1-5 sub-category" ng-class="{'selected': !selectedCategory.hidden}">
+				              <a href="" ng-click="toggleCategory(selectedCategory)">
+				                <div class="venue" style="background: {{selectedCategory.color}}"></div>
+				                <strong>All {{selectedCategory.category}} ({{countVenues(selectedCategory)}})</strong>
+				              </a>
+				            </div>
+
+				            <div class="pure-u-1-5 sub-category" ng-repeat="subCategory in selectedCategory.subCategories" ng-class="{'selected': !subCategory.hidden}">
+				              <a href="" ng-click="toggleCategory(selectedCategory, subCategory)">
+				                <div class="venue" style="background: {{selectedCategory.color}}"><img ng-src="{{subCategory.icon}}" ng-if="subCategory.icon"></div>
+				                {{subCategory.category}} ({{subCategory.venues.length}})
+				              </a>
+				            </div>
+				          </section>
+
+                </main>
+              </div>
+              <div class="map"></div>
+            </div>
+
+        <div class="container">
+           <div class="space-lg"></div>
             <div id="pricesSlider" class="owl-carousel">
                 <div class="item">
-                    <div class="panel panel-default ">
+                    <div class="panel panel-default">
                         <div class="panel-body text-center">
                             <div class="hover-content">
                                 <div class="visible-part">
-                                    <h3 class="price text-info">1.2k</h3>    <h4 class="type">MILES</h4>
+                                    <h3 class="price text-success">1.2k</h3>    <h4 class="type">MILES</h4>
                                 </div>
                                 <div class="hidden-part">
                                     <img src="assets/img/pictograms/cycling.png" width="60" class="img-responsive" style="margin:0px auto;" />
@@ -444,7 +674,7 @@ redirect_to:
                         <div class="panel-body text-center">
                             <div class="hover-content">
                                 <div class="visible-part">
-                                    <h3 class="price text-info">321</h3>    <h4 class="type">MATCHES</h4>
+                                    <h3 class="price text-success">321</h3>    <h4 class="type">MATCHES</h4>
                                 </div>
                                 <div class="hidden-part">
                                     <img src="assets/img/pictograms/table-tennis.png" width="60" class="img-responsive" style="margin:0px auto;" />
@@ -462,7 +692,7 @@ redirect_to:
                         <div class="panel-body text-center">
                             <div class="hover-content">
                                 <div class="visible-part">
-                                    <h3 class="price text-info">28</h3>    <h4 class="type">COUNTRIES</h4>
+                                    <h3 class="price text-success">28</h3>    <h4 class="type">COUNTRIES</h4>
                                 </div>
                                 <div class="hidden-part">
                                     <img src="assets/img/pictograms/sailing.png" width="60" class="img-responsive" style="margin:0px auto;" />
@@ -542,7 +772,7 @@ redirect_to:
     <!-- Our team -->
     <span class="breakPoint" id="sOurTeam"></span>
     <!-- primary team-->
-    <div class="bg-success">
+    <div class="bg-warning">
         <div class="container section">
             <h2 class="lg-title  m-no-all">Our Team</h2>
         </div>
@@ -550,7 +780,7 @@ redirect_to:
     <div class="container section-lg">
         <div class="md-overlay"></div>
         <div class="row profile-grid">
-            <div class="col-lg-3 col-md-3 col-sm-6 fromPocket wow" data-wow-delay="0.80s">
+            <div class="col-lg-4 col-md-4 col-sm-6 fromPocket wow" data-wow-delay="0.80s">
                 <div class="thumbnail">
                     <div class="profile">
                         <div class="hover-content md-trigger" data-modal="modal-a1">
@@ -560,9 +790,9 @@ redirect_to:
                             </div>
                         </div>
                         <div class="caption">
-                            <h3 class="m-no-all">Nicole Perry</h3>
-                            <h5>Chief Olympic Officer</h5>
-                            <h6>Placeholder Company, Inc.</h6>
+                            <h3 class="m-no-all">Steve Strandberg</h3>
+                            <h5>Bid Leader</h5>
+                            <h6>San Francisco 2024</h6>
                         </div>
                     </div>
                 </div>
@@ -609,7 +839,7 @@ redirect_to:
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 fromPocket wow" data-wow-delay="0.60s">
+            <div class="col-lg-4 col-md-4 col-sm-6 fromPocket wow" data-wow-delay="0.60s">
                 <div class="thumbnail">
                     <div class="profile">
                         <div class="hover-content md-trigger" data-modal="modal-a1">
@@ -619,9 +849,9 @@ redirect_to:
                             </div>
                         </div>
                         <div class="caption">
-                            <h3 class="m-no-all">Ben Berry</h3>
-                            <h5>Chairman of the Board</h5>
-                            <h6>Fakeco.com</h6>
+                            <h3 class="m-no-all">Anne Cribbs</h3>
+                            <h5>Bid Leader / US Olympian</h5>
+                            <h6>San Francisco 2024</h6>
                         </div>
                     </div>
                 </div>
@@ -668,7 +898,7 @@ redirect_to:
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 fromPocket wow" data-wow-delay="0.40s">
+            <div class="col-lg-4 col-md-4 col-sm-6 fromPocket wow" data-wow-delay="0.40s">
                 <div class="thumbnail">
                     <div class="profile">
                         <div class="hover-content md-trigger" data-modal="modal-a1">
@@ -678,9 +908,9 @@ redirect_to:
                             </div>
                         </div>
                         <div class="caption">
-                            <h3 class="m-no-all">Jenny James</h3>
-                            <h5>Head Ringleader</h5>
-                            <h6>Company 123, Inc.</h6>
+                            <h3 class="m-no-all">Larry Baer</h3>
+                            <h5>Bid Leader</h5>
+                            <h6>San Francisco 2024</h6>
                         </div>
                     </div>
                 </div>               <!-- Modal a3-->
@@ -726,21 +956,6 @@ redirect_to:
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 fromPocket wow" data-wow-delay="0.20s">
-                 <div class="thumbnail">
-                    <div class="profile">
-                        <div class="hover-content md-trigger" data-modal="modal-a1">
-                            <img class="img-responsive" alt="Our team" src="assets/img/faces/generic-man.jpg">
-                            <div class="hover-fade">
-                                <i class="fa fa-expand"></i>
-                            </div>
-                        </div>
-                        <div class="caption">
-                            <h3 class="m-no-all">Gary Foxtrot</h3>
-                            <h5>Minister of Defense</h5>
-                            <h6>Fakeco.com</h6>
-                        </div>
-                    </div>
                 </div>
                <!-- Modal a4-->
                 <div class="md-modal md-effect-2" id="modal-a4">
@@ -789,18 +1004,15 @@ redirect_to:
     </div>
 
     <!-- secondary-->
-    <div class="bg-success secondary-team">
+    <div class="bg-warning secondary-team">
         <div class="section-lg container">
             <div class="md-overlay"></div>
             <ul class="list-unstyled list-team-sm">
                 <li class="easePulse wow" data-wow-delay="0.15s">
-                    <div class="hover-content md-trigger" data-modal="modal-a1">
+                    <div class="hover-content">
                         <img class="img-responsive" alt="Our team" src="assets/img/faces/generic-man.jpg">
-                        <div class="top-part">
-                            <i class="fa fa-expand"></i>
-                        </div>
                         <div class="bottom-part">
-                            <h3>Person Name</h3>
+                            <h3>Nick Cawthon<br/>Bid Dude</h3>
                         </div>
                     </div>
                     <!-- Modal Window for Item 1 -->
@@ -850,9 +1062,6 @@ redirect_to:
                 <li class="easePulse wow" data-wow-delay="0.25s">
                     <div class="hover-content md-trigger" data-modal="modal-a1">
                         <img class="img-responsive" alt="Our team" src="assets/img/faces/generic-man.jpg">
-                        <div class="top-part">
-                            <i class="fa fa-expand"></i>
-                        </div>
                         <div class="bottom-part">
                             <h3>Person Name</h3>
                         </div>
@@ -1445,6 +1654,40 @@ redirect_to:
     </div>
 
 
+    <div class="section-lg">
+        <div class="container">
+           <h3 class="lg-title text-grey m-no-bottom wow fadeIn">Our Coporate Partners</h3>
+
+           <div class="space-lg"></div>
+
+            <p class="subtitle-v2 m-no-bottom text-center text-grey wow fadeIn">Curabitur bibendum justo non orci. Aenean id metus id velit voluptatem quia sit. Bibendum justo non orci. Aenean id metus id velit.</p>
+
+           <div class="space-lg"></div>
+
+            <div class="row profile-grid">
+                <div class="col-lg-2 col-md-2 col-sm-4 fromPocket wow" data-wow-delay="0.80s">
+                        <img class="img-responsive" alt="Our team" src="assets/img/logos/edelman.jpg">
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 fromPocket wow" data-wow-delay="1.00s">
+                        <img class="img-responsive" alt="Our team" src="assets/img/logos/hanson.jpg">
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 fromPocket wow" data-wow-delay="1.20s">
+                        <img class="img-responsive" alt="Our team" src="assets/img/logos/deloitte.jpg">
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 fromPocket wow" data-wow-delay="1.40s">
+                        <img class="img-responsive" alt="Our team" src="assets/img/logos/populous.jpg">
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 fromPocket wow" data-wow-delay="1.60s">
+                        <img class="img-responsive" alt="Our team" src="assets/img/logos/aon.jpg">
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 fromPocket wow" data-wow-delay="1.80s">
+                        <img class="img-responsive" alt="Our team" src="assets/img/logos/ideo.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- BACKGROUND IMAGE -->
     <div class="bg-16 bg-center bg-fixed bg-cover">
         <div class="filling-section bg-filter"></div>
@@ -1459,27 +1702,27 @@ redirect_to:
             <h2 class="lg-title m-no-bottom">News</h2>
         </div>
     </div>
-    
+
     <div class="bg-grey">
         <div class="section-lg container">
             <div class="space-lg"></div>
             <div class="md-overlay"></div>
             <div class="timeline" id="newsFeed">
-                <div class="label-month">October 2014</div>
+                <div class="label-month fadeIn wow">October 2014</div>
                 <div class="row box-feed">
                     <div class="col-sm-6">
                         <div class="box-post left">
-                            <h3><a href="#">Rio 2016 Olympians Pass the Baton to San Francisco</a></h3>
-                            <img class="img-responsive" alt="..." src="assets/img/768w/basoc-1.jpg">
-                            <p class="text-block-v2 space-sm">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam posuere lacus quis dolor imperdiet...</p>
+                            <h3 class="fadeIn wow" data-wow-delay="0.15s"><a href="#">Rio 2016 Olympians Pass the Baton to San Francisco</a></h3>
+                            <img class="img-responsive fadeIn wow" data-wow-delay="0.25s" alt="..." src="assets/img/768w/basoc-1.jpg">
+                            <p class="text-block-v2 space-sm fadeIn wow" data-wow-delay="0.35s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam posuere lacus quis dolor imperdiet...</p>
                         </div>
                     </div>
 
                     <div class="col-sm-6">
                         <div class="box-post right">
-                            <h3><a href="#">Local Olympic Hopefuls head to 2016 trials</a></h3>
-                            <img class="img-responsive" alt="..." src="assets/img/768w/basoc-2.jpg">
-                            <p class="text-block-v2 space-sm">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam posuere lacus quis dolor imperdiet...</p>
+                            <h3 class="fadeIn wow" data-wow-delay="0.45s"><a href="#">Local Olympic Hopefuls head to 2016 trials</a></h3>
+                            <img class="img-responsive fadeIn wow" data-wow-delay="0.55s" alt="..." src="assets/img/768w/basoc-2.jpg">
+                            <p class="text-block-v2 space-sm fadeIn wow" data-wow-delay="0.65s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam posuere lacus quis dolor imperdiet...</p>
                         </div>
                     </div>
                 </div>
@@ -1487,15 +1730,15 @@ redirect_to:
                 <div class="row box-feed">
                     <div class="col-sm-6">
                         <div class="box-post left">
-                            <h3><a href="#">San Francisco City Hall to Host Olympic Viewing Parties</a></h3>
-                            <img class="img-responsive" alt="..." src="assets/img/768w/basoc-3.jpg">
-                            <p class="text-block-v2 space-sm">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam posuere lacus quis dolor imperdiet...</p>
+                            <h3 class="fadeIn wow" data-wow-delay="0.15s"><a href="#">San Francisco City Hall to Host Olympic Viewing Parties</a></h3>
+                            <img class="img-responsive fadeIn wow" data-wow-delay="0.25s" alt="..." src="assets/img/768w/basoc-3.jpg">
+                            <p class="text-block-v2 space-sm fadeIn wow" data-wow-delay="0.35s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam posuere lacus quis dolor imperdiet...</p>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="box-post right">
-                            <h3><a href="#">BASOC Hosts Road to Rio Dinner Gala</a></h3>
-                            <p class="text-block-v2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam posuere lacus quis dolor imperdiet...</p>
+                            <h3 class="fadeIn wow" data-wow-delay="0.45s"><a href="#">BASOC Hosts Road to Rio Dinner Gala</a></h3>
+                            <p class="text-block-v2 fadeIn wow" data-wow-delay="0.55s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam posuere lacus quis dolor imperdiet...</p>
                         </div>
                     </div>
                 </div>
@@ -1504,15 +1747,15 @@ redirect_to:
                 <div class="row box-feed">
                     <div class="col-sm-6">
                         <div class="box-post left">
-                            <h3><a href="#">HuffPo: Californians Make Up most of the US Olympic Team</a></h3>
-                            <p class="text-block-v2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam posuere lacus quis dolor imperdiet...</p>
+                            <h3 class="fadeIn wow" data-wow-delay="0.15s"><a href="#">HuffPo: Californians Make Up most of the US Olympic Team</a></h3>
+                            <p class="text-block-v2 fadeIn wow" data-wow-delay="0.25s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam posuere lacus quis dolor imperdiet...</p>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="box-post right">
-                            <h3><a href="#">Team USA's Jennifer Kessy<br /> Ask Me Anything</a></h3>
-                            <img class="img-responsive" alt="..." src="assets/img/768w/basoc-4.jpg">
-                            <p class="text-block-v2 space-sm">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam posuere lacus quis dolor imperdiet...</p>
+                            <h3 class="fadeIn wow" data-wow-delay="0.35s"><a href="#">Team USA's Jennifer Kessy<br /> Ask Me Anything</a></h3>
+                            <img class="img-responsive fadeIn wow" data-wow-delay="0.45s" alt="..." src="assets/img/768w/basoc-4.jpg">
+                            <p class="text-block-v2 space-sm fadeIn wow" data-wow-delay="0.55s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam posuere lacus quis dolor imperdiet...</p>
                         </div>
                     </div>
                 </div>
@@ -1529,62 +1772,6 @@ redirect_to:
     </div>
     <!--===/END NEWS SECTION ===-->
 
-    <!--=== Twitter ===-->
-    <div class="bg-dark-7 hidden-md hidden-sm hidden-xs">
-        <div class="container section">
-            <div class="row">
-                <div class="col-sm-5"><i class="fa fa-twitter icon-bg"></i>
-                </div>
-                <div class="col-sm-7">
-                    <div class="space-lg"></div>
-                    <div class="space-md"></div>
-                    <div id="twitterSlider" class="owl-carousel sm-pagination">
-                        <div class="item">
-                            <blockquote class="danger">
-                                <p>26 years ago today the rings fell from the sky. <a>#seoul88 #openingceremony #olympics</a>
-                                </p>
-                                <footer>@olympics <a href="https://twitter.com/brackets/status/519607551592112128">October 7, 2014</a>
-                                </footer>
-                            </blockquote>
-                        </div>
-                        <div class="item">
-                            <blockquote class="danger">
-                                <p>Over 15,000 of the best athletes in the world will be coming to join us at<a href="#">#Rio2016!</a> 
-                                </p>
-                                <footer>@Rio2016 <a href="https://twitter.com/brackets/status/519607551592112128">October 7, 2014</a>
-                                </footer>
-                            </blockquote>
-                        </div>
-                        <div class="item">
-                            <blockquote class="danger">
-                                <p>Hard work has made it easy. That is my secret. That is why I win.
-                                </p>
-                                <footer>@nadiacomaneci10 <a href="https://twitter.com/brackets/status/519607551592112128">October 7, 2014</a>
-                                </footer>
-                            </blockquote>
-                        </div>
-                        <div class="item">
-                            <blockquote class="danger">
-                                <p>#500 days to go to <a>#Lillehammer2016.</a> So happy to be an Ambassador again for the <a>#youtholympics.</a> Get active kids! 
-                                </p>
-                                <footer>@lindseyvonn <a href="https://twitter.com/brackets/status/519607551592112128">October 7, 2014</a>
-                                </footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-    <!-- BACKGROUND IMAGE -->
-    <div class="bg-15 bg-center bg-fixed bg-cover">
-        <div class="filling-section bg-filter"></div>
-    </div>
-    <!--/END BACKGROUND IMAGE -->
-
     <!-- CONTACT SECTION -->
     <span class="breakPoint" id="sContact"></span>
     <div class="bg-warning">
@@ -1593,10 +1780,13 @@ redirect_to:
         </div>
     </div>
 
+<<<<<<< HEAD
     <!--=== GOOGLE MAPS ===-->
     <!-- <div id="map"></div> -->
     <!--===/END GOOGLE MAPS ===-->
 
+=======
+>>>>>>> FETCH_HEAD
 
  <!--===    FOOTER     ===-->
     <footer class="footer">
@@ -1608,26 +1798,26 @@ redirect_to:
                         <ul class="info-list md-list i-primary">
                             <li>
                                 <i class="fa fa-envelope fa-fw"  style="color:#c0732c;"></i>
-                                <a href="mailto:influence.bootstrap@gmail.com">info@sf2024.org</a>
+                                <a href="mailto:info@sf2044.com">info@sf2024.org</a>
                             </li>
                             <li>
                                 <i class="fa fa-phone fa-fw"  style="color:#c0732c;"></i>
-                                1 (650) 323 9400
+                                1 (415) 972 2024
                             </li>
                             <li>
                                 <i class="fa fa-map-marker fa-fw"  style="color:#c0732c;"></i>
-                                81 Encina Ave - Upper Floor
+                                PO Box 2024 SF,CA 94105
                             </li>
                         </ul>
                     </div>
                     <div class="space-sm visible-sm visible-xs"></div>
                     <div class="col-md-4 col-lg-4  col-xs-12">
                         <h4 style="color:#c0732c;">About Us</h4>
-                        <p>The Bay Area Sports Organizing Committee is run by volunteers. Some of the Bay Area's most distinguished business and community leaders devote their time, energy and resources to this remarkable organization.</p>
+                        <p>Some of the Bay Area's most distinguished business and community leaders volunteer their time, energy and resources to this remarkable non-profit organization.</p>
                     </div>
                     <div class="space-sm visible-sm visible-xs"></div>
                     <div class="col-md-4 col-lg-4  col-xs-12">
-                        <h4 style="color:#c0732c;">Follow Us</h4>
+                        <h4 style="color:#c0732c;">Spread the Word</h4>
                         <ul class="circle-icons icons-list">
                             <li>
                                 <a href="#" title="Follow us">
@@ -1653,76 +1843,483 @@ redirect_to:
                     </div>
                 </div>
             </div>
+            <div class="space-lg"></div>
         </div>
 
-        <div class="footer-bottom">
+        <div class="section-lg" style="background:#222;">
+
+
+            <!--id="mc_embed_signup"-->
             <div class="container">
-                <p>© 2014 Bay Area Sports Organizing Committee. All Rights Reserved.</p>
+                <form action="//sf2024.us9.list-manage.com/subscribe/post?u=bd21388d1e57e5939f08d19e7&amp;id=a19d2bdbe7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline all-trn" target="_blank" novalidate>
+                    <div id="row">
+                        <div class="col-sm-4">
+                            <div class="form-group icon">
+                                <div class=" control input-group wow fadeIn " data-wow-delay="0.15s">
+                                    <input type="text" value="" name="NAME" class="required form-control" id="mce-NAME" placeholder="Your name" required>
+                                    <i class="fa fa-user"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group icon">
+                                <div class="control input-group wow fadeIn " data-wow-delay="0.25s">
+                                    <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Your email" required >
+                                     <i class="fa fa-envelope"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+
+                        <div style="position: absolute; left: -5000px;">
+                            <input type="text" name="b_bd21388d1e57e5939f08d19e7_a19d2bdbe7" tabindex="-1" value="">
+                        </div>
+
+                        <div class="col-sm-3">
+                            <input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="btn btn-warning btn-xlg btn-block wow fadeIn " data-wow-delay="0.35s">
+                        </div>
+                    </div>
+
+
+                    <div id="mce-responses">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom" style="background:#111;">
+            <div class="container">
+                <p>© 2014 San Francisco 2024. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
     <!--===/END    FOOTER     ===-->
 
 
-    <!-- Modernizr -->
-    <script src="assets/js/min/modernizr.custom.min.js"></script>
+	<!-- Modernizr -->
+	<script src="assets/js/min/modernizr.custom.min.js"></script>
 
-    <!-- jQuery -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	<!-- jQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 
-    <!-- Bootstrap JS -->
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<!-- jQuery for Angular (Angular only supports jQuery 2.1 and above) -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+		window.$jQueryAngular = jQuery.noConflict(true);
+	</script>
 
-    <!-- WOW.js - loading animations -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/wow/0.1.6/wow.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-    <!-- SMOOTH SCROLLING -->
-    <script src="http://cdn.jsdelivr.net/jquery.nicescroll/3.5.4/jquery.nicescroll.min.js" id="removeScrollPlugin"></script>
+	<!-- WOW.js - loading animations -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/wow/0.1.6/wow.min.js"></script>
 
-    <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
-    <script src="assets/plugins/slider-revolution/examples&amp;source/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-    <script src="assets/plugins/slider-revolution/examples&amp;source/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+	<!-- SMOOTH SCROLLING -->
+	<script src="http://cdn.jsdelivr.net/jquery.nicescroll/3.5.4/jquery.nicescroll.min.js" id="removeScrollPlugin"></script>
 
+	<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+	<script src="assets/plugins/slider-revolution/examples&amp;source/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+	<script src="assets/plugins/slider-revolution/examples&amp;source/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 
-    <!-- MODAL WINDOWS -->
-    <script src="assets/js/min/classie.min.js"></script>
-    <script src="assets/js/min/jquery.modalEffects.min.js"></script>
+	<!-- jQuery Waypoints -->
+	<script src="assets/plugins/imakewebthings-jquery-waypoints-415eb55/waypoints.js"></script>
+
+	<!-- MODAL WINDOWS -->
+	<script src="assets/js/min/classie.min.js"></script>
+	<script src="assets/js/min/jquery.modalEffects.min.js"></script>
+	<script>
+		// this is important for IEs
+		var polyfilter_scriptpath = "/js/";
+	</script>
+	<script src="assets/js/min/cssParser.min.js"></script>
+
+	<!-- OWL CAROUSEL -->
+	<script src="assets/plugins/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
+
+	<!-- jQuery Validate -->
+	<script src="assets/plugins/jquery-validation-1.13.1/dist/jquery.validate.min.js"></script>
+
+	<!-- Mailchimp -->
+	<script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+	<script>
+		(function ($) {
+			window.fnames = new Array();
+			window.ftypes = new Array();
+			fnames[1] = 'NAME';
+			ftypes[1] = 'text';
+			fnames[0] = 'EMAIL';
+			ftypes[0] = 'email';
+		}(jQuery));
+		// var $mcj = jQuery.noConflict(true);
+	</script>
+
+	<!-- Venue Map -->
+
+    <script src="https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js"></script>
+    <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js"></script>
+
+    <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-zoomslider/v0.7.0/L.Control.Zoomslider.js'></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="assets/js/map.js"></script>
     <script>
-        // this is important for IEs
-        var polyfilter_scriptpath = "/js/";
+      var makeRandomVenues = function (number) {
+        var venues = [];
+
+        for (var i = 0; i < number; i++) {
+          venues.push({
+            name: 'Golf Course',
+            description: 'Aute incididunt officia magna tempor ad id nulla incididunt Lorem non eiusmod culpa adipisicing voluptate. Laboris veniam duis do sit ea nostrud esse ea irure in cupidatat. Irure irure cillum Lorem ex cillum anim sit exercitation eu laboris culpa proident eiusmod. Sunt proident esse exercitation mollit aliquip culpa ad. Cillum laborum ea dolore est irure laboris sit nostrud reprehenderit eu laboris tempor eiusmod incididunt. Anim mollit excepteur culpa consequat eu proident Lorem eiusmod consequat est. Commodo culpa dolor pariatur culpa proident aliqua exercitation id in commodo ut.',
+            image: 'http://i.imgur.com/TWhC7.jpg',
+            lat: Math.floor(Math.random()*10),
+            lng: Math.floor(Math.random()*10)
+          });
+        }
+
+        return venues;
+      };
+
+			window.interactiveVenueMap = {};
+
+			// Leaflet map options (see http://leafletjs.com/reference.html#map-center)
+			window.interactiveVenueMap.mapOptions = {
+				zoom: 10,
+				 minZoom: 10,
+				 maxZoom: 16,
+				center: [37.6854951, -122.1934582]
+			};
+
+			// Cluster options (https://github.com/Leaflet/Leaflet.markercluster#all-options)
+			window.interactiveVenueMap.clusterOptions = {
+				showCoverageOnHover: false,
+                removeOutsideVisibleBounds:true,
+			};
+
+      window.interactiveVenueMap.venues = [{
+        category: 'Athletic Venues',
+        color: '#3a66b5',
+				icon: 'assets/img/icons/sport-all.svg',
+        subCategories: [{
+           category: 'Archery',
+          icon: 'assets/img/icons/sport-archery.svg',
+          venues:
+          [
+            {name: 'Archery | Stanford West Campus', lat: 37.426183, lng: -122.1839303, image:'assets/img/venues/sport-archery-stanford-west.png', description: 'This site provides an excellent location, close to the Olympic Village, within easy walking distance of the Olympic Stadium and Swimming Center, as well as within easy walking distance from Caltrain.'}
+            ]
+
+    },
+        {
+          category: 'Badminton',
+          icon: 'assets/img/icons/sport-badminton.svg',
+          venues:
+        [
+            {name: 'Badminton | Maples Pavilion', lat: 37.429587, lng: -122.160539, image:'assets/img/venues/sport-badminton-maples-pavilion.png', description: 'Maples Pavilion features the ceiling height necessary for Badminton’s high lobs. Its air-handling equipment can be turned off so as not to disturb the flight of the shuttlecock, yet because of its below-grade design, Maples Pavilion will still maintain comfortable temperatures, even in summer.'}
+            ]
+
+    },
+        {
+          category: 'Basketball',
+          icon: 'assets/img/icons/sport-basketball.svg',
+          venues:
+        [
+            {name: 'Basketball | Leavey Center', lat: 37.3491632, lng: -121.9351986, image:'assets/img/venues/sport-basketball-leavey-center.png', description: 'Leavey Center at Santa Clara University has recently completed an extensive renovation that expanded its capacity to 5,000 seats and provided for new team facilities, new club facilities, luxury suites, and many other amenities for the media and spectators. '},
+
+            {name: 'Basketball | Oracle Arena', lat: 37.750298, lng: -122.202881, image:'assets/img/venues/sport-basketball-oracle-arena.png', description: 'The 20,000 seat Oracle Arena will ensure that the men’s and women’s basketball tournaments can look forward to every single game being played in top-notch arenas for the 2024 Olympic Games in the San Francisco Bay Area. '}
+
+
+        ]
+    },
+//        {
+//          category: 'Beach Volleyball',
+//          icon: 'assets/img/icons/sport-beach-volleyball.svg',
+//          venues: makeRandomVenues(1)
+//        },
+        {
+          category: 'Boxing',
+          icon: 'assets/img/icons/sport-boxing.svg',
+          venues:
+          [
+            {name: 'Boxing | The Cow Palace', lat: 37.706675, lng: -122.41867, image:'assets/img/venues/sport-boxing-cow-palace.png', description: 'San Francisco’s Cow Palace has played host to generations of sports events of every imaginable type, yet it still possesses an allure that only the stately older venues can offer, an allure that will draw fans from around the globe to enjoy Olympic Boxing. Of equal importance, the Cow Palace provides vast support facilities in which to create an ideal environment for the Olympic boxers. With ample training facilities and custom-designed individual athlete rooms surrounding the saunas and weigh-in area, each athlete will have a private space in which to prepare for his match.'}
+            ]
+
+    },
+        {
+          category: 'Canoe - Slalom',
+          icon: 'assets/img/icons/sport-canoe-slalom.svg',
+          venues:
+          [
+            {name: 'Canoe - Slalom | Lake Natoma', lat: 38.635227, lng: -121.225977, image:'assets/img/venues/sport-canoe-slalom-lake-natoma.png', description: 'For years, whitewater enthusiasts have dreamed of a slalom course at Lake Natoma to complement the existing flatwater facilities and to provide a year-round venue in which to train and compete. SF2024 has joined with this group and is working with the California State Parks, the Bureau of Reclamation and several other agencies to bring this dream into reality. '} ]
+        },
+        {
+          category: 'Canoe - Sprint',
+          icon: 'assets/img/icons/sport-canoe-sprint.svg',
+          venues:
+          [
+            {name: 'Canoe - Sprint | Lake Natoma', lat: 38.638176, lng: -121.221578, image:'assets/img/venues/sport-canoe-slalom-lake-natoma.png', description: 'With the guidance of four-time Olympian Andy Toro, SF2024 proposes Lake Natoma as the site for the Canoe/Kayak – Sprint competition for the 2012 Olympic Games. Lake Natoma is a proven venue that has hosted numerous championships. The California State University at Sacramento (CSUS) Aquatics Center, which operates the venue with the California State Parks, is expanding and upgrading the facilities throughout, adding new boathouses, docks and spectator facilities. These renovations will create perhaps the finest canoeing, kayaking and rowing venue in the country. '} ] },
+        {
+          category: 'Cycling - BMX',
+          icon: 'assets/img/icons/sport-cycling-bmx.svg',
+          venues: makeRandomVenues(1)
+        },
+        {
+          category: 'Cycling - Mtn Bike',
+          icon: 'assets/img/icons/sport-cycling-mountain-bike.svg',
+          venues: makeRandomVenues(1)
+        },
+        {
+          category: 'Cycling - Road',
+          icon: 'assets/img/icons/sport-cycling-road.svg',
+          venues: makeRandomVenues(1)
+        },
+        {
+          category: 'Cycling - Track',
+          icon: 'assets/img/icons/sport-cycling-track.svg',
+          venues: makeRandomVenues(1)
+        },
+        {
+          category: 'Diving',
+          icon: 'assets/img/icons/sport-diving.svg',
+          venues: makeRandomVenues(1)
+        },
+        {
+          category: 'Equestrian - Dressage',
+          icon: 'assets/img/icons/sport-equestrian-dressage.svg',
+          venues: makeRandomVenues(1)
+        },
+        {
+          category: 'Equestrian - Eventing',
+          icon: 'assets/img/icons/sport-equestrian-eventing.svg',
+          venues: makeRandomVenues(1)
+        },
+        {
+          category: 'Equestrian - Jumping',
+          icon: 'assets/img/icons/sport-equestrian-jumping.svg',
+          venues: makeRandomVenues(1)
+        },
+        {
+          category: 'Fencing',
+          icon: 'assets/img/icons/sport-fencing.svg',
+          venues: makeRandomVenues(1)
+        },
+        {
+          category: 'Football',
+          icon: 'assets/img/icons/sport-football.svg',
+          venues: makeRandomVenues(1)
+        },
+        {
+          category: 'Golf',
+          icon: 'assets/img/icons/sport-golf.svg',
+          venues: makeRandomVenues(1)
+        },
+        {
+          category: 'Gymnastics - Artistic',
+          icon: 'assets/img/icons/sport-gymnastics-artistic.svg',
+          venues: makeRandomVenues(1)
+        },
+        {
+          category: 'Gymnastics - Rhythmic',
+          icon: 'assets/img/icons/sport-gymnastics-rhythmic.svg',
+          venues: makeRandomVenues(1)
+        },
+        {
+          category: 'Handball',
+          icon: 'assets/img/icons/sport-handball.svg',
+          venues: makeRandomVenues(1)
+        },
+        {
+          category: 'Hockey',
+          icon: 'assets/img/icons/sport-hockey.svg',
+          venues: makeRandomVenues(1)
+        },
+        {
+          category: 'Judo',
+          icon: 'assets/img/icons/sport-judo.svg',
+          venues: makeRandomVenues(1)
+        },
+        {
+          category: 'Modern Pentathlon',
+          icon: 'assets/img/icons/sport-modern-pentathlon.svg',
+          venues: makeRandomVenues(1)
+        },
+        {
+          category: 'Rowing',
+          icon: 'assets/img/icons/sport-rowing.svg',
+          venues: makeRandomVenues(1)
+        },
+        {
+          category: 'Rugby',
+          icon: 'assets/img/icons/sport-rugby.svg',
+          venues: makeRandomVenues(1)
+        },
+        {
+          category: 'Sailing',
+          icon: 'assets/img/icons/sport-sailing.svg',
+          venues: makeRandomVenues(1)
+        },
+        {
+          category: 'Shooting',
+          icon: 'assets/img/icons/sport-shooting.svg',
+          venues: makeRandomVenues(1)
+        },
+        {
+          category: 'Swimming',
+          icon: 'assets/img/icons/sport-swimming.svg',
+          venues: makeRandomVenues(1)
+        },
+        {
+          category: 'Synchronized Swimming',
+          icon: 'assets/img/icons/sport-synchronized-swimming.svg',
+          venues: makeRandomVenues(1)
+        },
+        {
+          category: 'Table Tennis',
+          icon: 'assets/img/icons/sport-table-tennis.svg',
+          venues: makeRandomVenues(1)
+        },
+         {
+          category: 'Tae Kwon Do',
+          icon: 'assets/img/icons/sport-taekwondo.svg',
+          venues: makeRandomVenues(1)
+        },
+         {
+          category: 'Tennis',
+          icon: 'assets/img/icons/sport-tennis.svg',
+          venues: makeRandomVenues(1)
+        },
+        {
+          category: 'Track & Field',
+          icon: 'assets/img/icons/sport-athletics.svg',
+          venues:
+          [
+            {name: 'Stanford Stadium', lat: 37.433974, lng: -122.161903, image:'assets/img/venues/stanford-stadium.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
+
+            {name: 'O.co Coliseum', lat: 37.751461, lng: -122.200134, image:'assets/img/venues/oakland-coliseum.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
+          ]
+        },
+         {
+          category: 'Trampoline',
+          icon: 'assets/img/icons/sport-trampoline.svg',
+          venues: makeRandomVenues(1)
+        },
+         {
+          category: 'Triathlon',
+          icon: 'assets/img/icons/sport-triathlon.svg',
+          venues: makeRandomVenues(1)
+        },
+         {
+          category: 'Volleyball',
+          icon: 'assets/img/icons/sport-volleyball.svg',
+          venues: makeRandomVenues(1)
+        },
+         {
+          category: 'Water Polo',
+          icon: 'assets/img/icons/sport-water-polo.svg',
+          venues: makeRandomVenues(1)
+        },
+         {
+          category: 'Weightlifting',
+          icon: 'assets/img/icons/sport-weightlifting.svg',
+          venues: makeRandomVenues(1)
+        },
+         {
+          category: 'Wrestling - Freestyle',
+          icon: 'assets/img/icons/sport-wrestling-freestyle.svg',
+          venues: makeRandomVenues(1)
+        },
+         {
+          category: 'Wrestling - Greco Roman',
+          icon: 'assets/img/icons/sport-wrestling-greco-roman.svg',
+          venues: makeRandomVenues(1)
+        }
+    ]
+      }, {
+        category: 'Event Venues',
+        color: '#c0372c',
+        subCategories: [{
+          category: 'Athletes Village',
+          icon: 'assets/img/icons/acc-athletes-village.svg',
+          venues: makeRandomVenues(3)
+        },
+        {
+          category: 'Ceremonies',
+          icon: 'assets/img/icons/acc-ceremonies.svg',
+          venues: makeRandomVenues(1)
+        },
+        {
+          category: 'Intl. Broadcast Center',
+          icon: 'assets/img/icons/acc-IBC.svg',
+          venues: makeRandomVenues(4)
+        },
+        {
+          category: 'IOC Hotel',
+          icon: 'assets/img/icons/acc-IOC-hotel.svg',
+          venues: makeRandomVenues(7)
+        },
+        {
+          category: 'Media Hotel',
+          icon: 'assets/img/icons/acc-media-hotel.svg',
+          venues: makeRandomVenues(1)
+        },
+        {
+          category: 'Media Village',
+          icon: 'assets/img/icons/acc-media-village.svg',
+          venues: makeRandomVenues(1)
+        },
+        {
+          category: 'Olympic Village',
+          icon: 'assets/img/icons/acc-olympic-village.svg',
+          venues: makeRandomVenues(1)
+        },
+        {
+          category: 'Ref. & Judges Village',
+          icon: 'assets/img/icons/acc-referees-village.svg',
+          venues: makeRandomVenues(1)
+        }
+    ]
+      }, {
+        category: 'Transportation',
+        color: '#c0732c',
+        subCategories: [
+        {
+          category: 'Airports',
+          icon: 'assets/img/icons/trans-airports.svg',
+          venues: makeRandomVenues(3)
+        },
+        {
+          category: 'Commuter Rail',
+          icon: 'assets/img/icons/trans-commuter.svg',
+          venues: makeRandomVenues(3)
+        },
+        {
+          category: 'Ferries',
+          icon: 'assets/img/icons/trans-ferry.svg',
+          venues: makeRandomVenues(4)
+        },
+        {
+          category: 'Ports',
+          icon: 'assets/img/icons/trans-ports.svg',
+          venues: makeRandomVenues(4)
+        },
+        {
+          category: 'Trains',
+          icon: 'assets/img/icons/trans-trains.svg',
+          venues: makeRandomVenues(4)
+        }
+    ]
+      }];
     </script>
-    <script src="assets/js/min/cssParser.min.js"></script>
 
-    <!-- OWL CAROUSEL -->
-    <script src="assets/plugins/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
-    
-    <!-- jQuery Validate -->
-    <script src="assets/plugins/jquery-validation-1.13.1/dist/jquery.validate.min.js"></script>
-    
-    <!-- Mailchimp -->
-    <script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-    <script>
-    (function ($) {
-        window.fnames = new Array();
-        window.ftypes = new Array();
-        fnames[1] = 'NAME';
-        ftypes[1] = 'text';
-        fnames[0] = 'EMAIL';
-        ftypes[0] = 'email';
-        }(jQuery));
-    var $mcj = jQuery.noConflict(true);
-    </script>
+    <!-- Social Connections -->
+    <script src="assets/js/social-connections.js"></script>
 
-    <!-- GOOGLE MAPS -->
-    <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-    <script src="assets/js/min/initmap.min.js"></script>
+	<!-- Must be last of all scripts -->
+	<script src="assets/js/one-page.js"></script>
 
-    <!-- Must be last of all scripts -->
-    <script src="assets/js/one-page.js"></script>
-
-    
-    <!--[if lt IE 9]>
+	<!--[if lt IE 9]>
       <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
       <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
