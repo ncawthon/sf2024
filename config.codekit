@@ -95,6 +95,49 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/css\/map.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/css\/map.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/css\/map.styl": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"fileType": 8,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"importCSS": 0,
+		"inputAbbreviatedPath": "\/assets\/css\/map.styl",
+		"outputAbbreviatedPath": "\/assets\/css\/map.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"resolveRelativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0
+		},
+	"\/assets\/css\/social-connections.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/css\/social-connections.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/css\/themes\/custom.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/css\/themes\/custom.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/assets\/img\/1920w\/at-t.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -337,6 +380,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/legacy\/1-transportation.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 286621,
+		"inputAbbreviatedPath": "\/assets\/img\/legacy\/1-transportation.png",
+		"outputAbbreviatedPath": "\/assets\/img\/legacy\/1-transportation.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/legacy\/2-accommodation.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 307559,
+		"inputAbbreviatedPath": "\/assets\/img\/legacy\/2-accommodation.png",
+		"outputAbbreviatedPath": "\/assets\/img\/legacy\/2-accommodation.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/legacy\/3-youth.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 281274,
+		"inputAbbreviatedPath": "\/assets\/img\/legacy\/3-youth.png",
+		"outputAbbreviatedPath": "\/assets\/img\/legacy\/3-youth.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -344,6 +420,83 @@
 		"initialSize": 8771,
 		"inputAbbreviatedPath": "\/assets\/img\/logo.png",
 		"outputAbbreviatedPath": "\/assets\/img\/logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/logos\/aon.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19443,
+		"inputAbbreviatedPath": "\/assets\/img\/logos\/aon.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/logos\/aon.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/logos\/deloitte.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3200,
+		"inputAbbreviatedPath": "\/assets\/img\/logos\/deloitte.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/logos\/deloitte.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/logos\/edelman.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3759,
+		"inputAbbreviatedPath": "\/assets\/img\/logos\/edelman.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/logos\/edelman.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/logos\/edelman.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9430,
+		"inputAbbreviatedPath": "\/assets\/img\/logos\/edelman.png",
+		"outputAbbreviatedPath": "\/assets\/img\/logos\/edelman.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/logos\/hanson.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3421,
+		"inputAbbreviatedPath": "\/assets\/img\/logos\/hanson.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/logos\/hanson.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/logos\/ideo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3088,
+		"inputAbbreviatedPath": "\/assets\/img\/logos\/ideo.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/logos\/ideo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/logos\/populous.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3732,
+		"inputAbbreviatedPath": "\/assets\/img\/logos\/populous.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/logos\/populous.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -425,6 +578,83 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/unnamed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9923,
+		"inputAbbreviatedPath": "\/assets\/img\/unnamed.png",
+		"outputAbbreviatedPath": "\/assets\/img\/unnamed.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/venues\/sport-archery-stanford-west.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 52474,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-archery-stanford-west.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-archery-stanford-west.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/venues\/sport-badminton-maples-pavilion.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 65634,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-badminton-maples-pavilion.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-badminton-maples-pavilion.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/venues\/sport-basketball-leavey-center.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 76826,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-basketball-leavey-center.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-basketball-leavey-center.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/venues\/sport-basketball-oracle-arena.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 72038,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-basketball-oracle-arena.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-basketball-oracle-arena.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/venues\/sport-boxing-cow-palace.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 55309,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-boxing-cow-palace.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-boxing-cow-palace.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/venues\/sport-canoe-slalom-lake-natoma.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 67354,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-canoe-slalom-lake-natoma.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-canoe-slalom-lake-natoma.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/js\/bootstrap-hover-dropdown.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -464,6 +694,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/jquery.modalEffects.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/jquery.modalEffects-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/js\/map.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/map.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/map-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -524,6 +765,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/js\/min\/map-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/min\/map-min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/min\/map-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/assets\/js\/min\/modernizr.custom.min.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -546,12 +798,34 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/js\/min\/social-connections-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/min\/social-connections-min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/min\/social-connections-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/assets\/js\/one-page.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/one-page.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/one-page-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/js\/social-connections.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/social-connections.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/social-connections-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -2200,6 +2474,318 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/CHANGELOG.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/CHANGELOG.md",
+		"outputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/CHANGELOG.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/examples\/dial-controls\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/examples\/dial-controls\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/examples\/scroll-analytics\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/examples\/scroll-analytics\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/infinite-scroll\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/infinite-scroll\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/infinite-scroll\/waypoints-infinite.coffee": {
+		"createSourceMap": 0,
+		"fileType": 32,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/infinite-scroll\/waypoints-infinite.coffee",
+		"minifyOutput": 1,
+		"outputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/infinite-scroll\/waypoints-infinite.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/infinite-scroll\/waypoints-infinite.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/infinite-scroll\/waypoints-infinite.js",
+		"outputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/infinite-scroll\/min\/waypoints-infinite-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/infinite-scroll\/waypoints-infinite.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/infinite-scroll\/waypoints-infinite.min.js",
+		"outputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/infinite-scroll\/min\/waypoints-infinite.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/sticky-elements\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/sticky-elements\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/sticky-elements\/waypoints-sticky.coffee": {
+		"createSourceMap": 0,
+		"fileType": 32,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/sticky-elements\/waypoints-sticky.coffee",
+		"minifyOutput": 1,
+		"outputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/sticky-elements\/waypoints-sticky.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/sticky-elements\/waypoints-sticky.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/sticky-elements\/waypoints-sticky.js",
+		"outputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/sticky-elements\/min\/waypoints-sticky-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/sticky-elements\/waypoints-sticky.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/sticky-elements\/waypoints-sticky.min.js",
+		"outputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/sticky-elements\/min\/waypoints-sticky.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/AMD.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/AMD.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/fixtures\/infinite.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/fixtures\/infinite.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/fixtures\/standard.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/fixtures\/standard.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/fixtures\/sticky.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/fixtures\/sticky.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/infinite.coffee": {
+		"createSourceMap": 0,
+		"fileType": 32,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/infinite.coffee",
+		"minifyOutput": 1,
+		"outputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/infinite.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/lib\/coffee-script.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/lib\/coffee-script.js",
+		"outputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/lib\/min\/coffee-script-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/lib\/jasmine-html.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/lib\/jasmine-html.js",
+		"outputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/lib\/min\/jasmine-html-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/lib\/jasmine-jquery.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/lib\/jasmine-jquery.js",
+		"outputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/lib\/min\/jasmine-jquery-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/lib\/jasmine.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/lib\/jasmine.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/lib\/jasmine.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/lib\/jasmine.js",
+		"outputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/lib\/min\/jasmine-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/lib\/require.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/lib\/require.js",
+		"outputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/lib\/min\/require-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/lib\/testloader.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/lib\/testloader.js",
+		"outputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/lib\/min\/testloader-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/sticky.coffee": {
+		"createSourceMap": 0,
+		"fileType": 32,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/sticky.coffee",
+		"minifyOutput": 1,
+		"outputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/sticky.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/waypoints.coffee": {
+		"createSourceMap": 0,
+		"fileType": 32,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/waypoints.coffee",
+		"minifyOutput": 1,
+		"outputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/test\/waypoints.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/waypoints.coffee": {
+		"createSourceMap": 0,
+		"fileType": 32,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/waypoints.coffee",
+		"minifyOutput": 1,
+		"outputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/waypoints.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/waypoints.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/waypoints.js",
+		"outputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/min\/waypoints-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/waypoints.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/waypoints.min.js",
+		"outputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/min\/waypoints.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/assets\/plugins\/jquery-validation-1.13.1\/demo\/ajaxSubmit-integration-demo.html": {
 		"fileType": 8192,

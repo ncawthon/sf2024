@@ -1817,7 +1817,7 @@
           icon: 'assets/img/icons/sport-archery.svg',
           venues:
           [
-            {name: 'Archery | Stanford West Campus', lat: 37.426183, lng: -122.1839303, image:'assets/img/venues/sport-archery-stanford-west.png', description: 'This site provides an excellent location, close to the Olympic Village, within easy walking distance of the Olympic Stadium and Swimming Center, as well as within easy walking distance from Caltrain.'}
+            {name: 'Archery | Stanford West Campus', lat: 37.426183, lng: -122.1839303, image:'assets/img/venues/sport-archery-stanford-west.png', zoomLevel:16, description: 'This site provides an excellent location, close to the Olympic Village, within easy walking distance of the Olympic Stadium and Swimming Center, as well as within easy walking distance from Caltrain.'}
             ]
 
     },
@@ -2094,10 +2094,20 @@
         color: '#c0732c',
         subCategories: [
         {
-          category: 'Airports',
+          category: 'Airports - Intl',
           icon: 'assets/img/icons/trans-airports.svg',
           venues: makeRandomVenues(3)
         },
+        {
+          category: 'Airports - Regional',
+          icon: 'assets/img/icons/trans-airports.svg',
+          venues: makeRandomVenues(3)
+        },
+        {
+          category: 'BART',
+          icon: 'assets/img/icons/trans-airports.svg',
+          venues: makeRandomVenues(3)
+        },                
         {
           category: 'Commuter Rail',
           icon: 'assets/img/icons/trans-commuter.svg',
@@ -2114,7 +2124,7 @@
           venues: makeRandomVenues(4)
         },
         {
-          category: 'Trains',
+          category: 'Amtrak Trains',
           icon: 'assets/img/icons/trans-trains.svg',
           venues: makeRandomVenues(4)
         }

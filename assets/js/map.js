@@ -85,7 +85,7 @@
     oldMarker.closePopup();
     this.venueClusterGroup.zoomToShowLayer(newMarker, function () {
       newMarker.openPopup();
-      this.map.panBy([0, -200]);
+      this.map.panBy([0,0]);
     }.bind(this));
   };
 
