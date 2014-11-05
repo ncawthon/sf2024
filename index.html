@@ -31,8 +31,8 @@
 	<!-- SLIDER REVOLUTION 4.x -->
 	<link rel="stylesheet" href="assets/plugins/slider-revolution/examples&amp;source/rs-plugin/css/settings.css" media="screen">
 
-	<!-- Owl carousel  -->
-	<link rel="stylesheet" href="assets/plugins/owl.carousel/owl-carousel/owl.carousel.css">
+    <!-- Social Connections -->
+    <link rel="stylesheet" href="assets/css/social-connections.css">
 
     <!-- venue map -->
     <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css">
@@ -55,8 +55,10 @@
     <!-- Potential Venue Map -->
     <link rel="stylesheet" href="assets/css/map.css">
 
-    <!-- Social Connections -->
-    <link rel="stylesheet" href="assets/css/social-connections.css">
+
+    <!-- Owl carousel  -->
+    <link rel="stylesheet" href="assets/plugins/owl.carousel/owl-carousel/owl.carousel.css">
+
 
 </head>
 
@@ -1724,6 +1726,9 @@
 	<!-- Bootstrap JS -->
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
+    <!-- Social Connections -->
+    <script src="assets/js/social-connections.js"></script>
+
 	<!-- WOW.js - loading animations -->
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/wow/0.1.6/wow.min.js"></script>
 
@@ -1817,7 +1822,7 @@
           icon: 'assets/img/icons/sport-archery.svg',
           venues:
           [
-            {name: 'Archery | Stanford West Campus', lat: 37.426183, lng: -122.1839303, image:'assets/img/venues/sport-archery-stanford-west.png', zoomLevel:16, description: 'This site provides an excellent location, close to the Olympic Village, within easy walking distance of the Olympic Stadium and Swimming Center, as well as within easy walking distance from Caltrain.'}
+            {name: 'Archery | Kezar Stadium', lat: 37.766798, lng: -122.456045, image:'assets/img/venues/sport-archery-stanford-west.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
             ]
 
     },
@@ -1826,7 +1831,7 @@
           icon: 'assets/img/icons/sport-badminton.svg',
           venues:
         [
-            {name: 'Badminton | Maples Pavilion', lat: 37.429587, lng: -122.160539, image:'assets/img/venues/sport-badminton-maples-pavilion.png', description: 'Maples Pavilion features the ceiling height necessary for Badminton’s high lobs. Its air-handling equipment can be turned off so as not to disturb the flight of the shuttlecock, yet because of its below-grade design, Maples Pavilion will still maintain comfortable temperatures, even in summer.'}
+            {name: 'Badminton | Moscone Center', lat: 37.783591, lng: -122.402136, image:'assets/img/venues/sport-badminton-moscone.png', description: 'Maples Pavilion features the ceiling height necessary for Badminton’s high lobs. Its air-handling equipment can be turned off so as not to disturb the flight of the shuttlecock, yet because of its below-grade design, Maples Pavilion will still maintain comfortable temperatures, even in summer.'}
             ]
 
     },
@@ -1835,18 +1840,20 @@
           icon: 'assets/img/icons/sport-basketball.svg',
           venues:
         [
-            {name: 'Basketball | Leavey Center', lat: 37.3491632, lng: -121.9351986, image:'assets/img/venues/sport-basketball-leavey-center.png', description: 'Leavey Center at Santa Clara University has recently completed an extensive renovation that expanded its capacity to 5,000 seats and provided for new team facilities, new club facilities, luxury suites, and many other amenities for the media and spectators. '},
-
-            {name: 'Basketball | Oracle Arena', lat: 37.750298, lng: -122.202881, image:'assets/img/venues/sport-basketball-oracle-arena.png', description: 'The 20,000 seat Oracle Arena will ensure that the men’s and women’s basketball tournaments can look forward to every single game being played in top-notch arenas for the 2024 Olympic Games in the San Francisco Bay Area. '}
+            {name: 'Basketball | SF Arena', lat: 37.757428, lng: -122.387309, image:'assets/img/venues/sport-basketball-sf-arena.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
 
 
         ]
-    },
-//        {
-//          category: 'Beach Volleyball',
-//          icon: 'assets/img/icons/sport-beach-volleyball.svg',
-//          venues: makeRandomVenues(1)
-//        },
+        },
+        {
+          category: 'Beach Volleyball',
+          icon: 'assets/img/icons/sport-beach-volleyball.svg',
+          venues:         [
+            {name: 'Beach Volleyball | Piers 30-32', lat: 37.786398, lng: -122.385035, image:'assets/img/venues/sport-beach-volleyball-pier30.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
+
+
+        ]
+        },
         {
           category: 'Boxing',
           icon: 'assets/img/icons/sport-boxing.svg',
@@ -1868,21 +1875,30 @@
           icon: 'assets/img/icons/sport-canoe-sprint.svg',
           venues:
           [
-            {name: 'Canoe - Sprint | Lake Natoma', lat: 38.638176, lng: -121.221578, image:'assets/img/venues/sport-canoe-slalom-lake-natoma.png', description: 'With the guidance of four-time Olympian Andy Toro, SF2024 proposes Lake Natoma as the site for the Canoe/Kayak – Sprint competition for the 2012 Olympic Games. Lake Natoma is a proven venue that has hosted numerous championships. The California State University at Sacramento (CSUS) Aquatics Center, which operates the venue with the California State Parks, is expanding and upgrading the facilities throughout, adding new boathouses, docks and spectator facilities. These renovations will create perhaps the finest canoeing, kayaking and rowing venue in the country. '} ] },
+            {name: 'Canoe - Sprint | Lake Natoma', lat: 38.638176, lng: -121.221578, image:'assets/img/venues/sport-canoe-sprint-lake-natoma.png', description: 'With the guidance of four-time Olympian Andy Toro, SF2024 proposes Lake Natoma as the site for the Canoe/Kayak – Sprint competition for the 2012 Olympic Games. Lake Natoma is a proven venue that has hosted numerous championships. The California State University at Sacramento (CSUS) Aquatics Center, which operates the venue with the California State Parks, is expanding and upgrading the facilities throughout, adding new boathouses, docks and spectator facilities. These renovations will create perhaps the finest canoeing, kayaking and rowing venue in the country. '} ]
+        },
         {
           category: 'Cycling - BMX',
           icon: 'assets/img/icons/sport-cycling-bmx.svg',
-          venues: makeRandomVenues(1)
+          venues: 
+        [
+            {name: 'Cycling - BMX | Treasure Island', lat: 37.823425, lng: -122.371645, image:'assets/img/venues/sport-cycling-bmx-ti.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'} ]
+
         },
         {
           category: 'Cycling - Mtn Bike',
           icon: 'assets/img/icons/sport-cycling-mountain-bike.svg',
-          venues: makeRandomVenues(1)
+          venues:
+        [
+            {name: 'Moutnain Biking | Marin Headlands', lat: 37.844596, lng: -122.506485, image:'assets/img/venues/sport-cycling-mtnbike-marin-headlands.png', description: 'Mount Tamalpais, considered by many to be the birthplace of mountain biking, boasts a long and colorful history. Mount Tamalpais  offers plenty of great riding through widely varied terrain and vegetation. The southern and western slopes of Mount Tam are largely covered in scrub with intermittent stands of evergreen trees. The northern slopes are more heavily wooded with oak and evergreen forests punctuated by meadows and lakes. The rides also offer great bay, city and ocean views.'} ]
         },
+
         {
           category: 'Cycling - Road',
           icon: 'assets/img/icons/sport-cycling-road.svg',
-          venues: makeRandomVenues(1)
+          venues:
+        [
+            {name: 'Cycling - Road | Marina Green', lat: 37.807084, lng: -122.429152, image:'assets/img/venues/sport-cycling-road-marina-green.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'} ]
         },
         {
           category: 'Cycling - Track',
@@ -1892,7 +1908,10 @@
         {
           category: 'Diving',
           icon: 'assets/img/icons/sport-diving.svg',
-          venues: makeRandomVenues(1)
+          venues: 
+          [
+        {name: 'Diving | Pier 80', lat: 37.753017, lng: -122.383790, image:'assets/img/venues/sport-diving-pier80.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
+          ]
         },
         {
           category: 'Equestrian - Dressage',
@@ -1912,7 +1931,10 @@
         {
           category: 'Fencing',
           icon: 'assets/img/icons/sport-fencing.svg',
-          venues: makeRandomVenues(1)
+          venues: 
+        [
+            {name: 'Fencing | Moscone Center', lat: 37.783862, lng: -122.399497, image:'assets/img/venues/sport-fencing-moscone.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
+        ]          
         },
         {
           category: 'Football',
@@ -1922,22 +1944,38 @@
         {
           category: 'Golf',
           icon: 'assets/img/icons/sport-golf.svg',
-          venues: makeRandomVenues(1)
+          venues:
+        [
+            {name: 'Golf | Harding Park', lat: 37.724739, lng: -122.493689, image:'assets/img/venues/sport-golf-harding-park.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'} ]
         },
         {
           category: 'Gymnastics - Artistic',
           icon: 'assets/img/icons/sport-gymnastics-artistic.svg',
-          venues: makeRandomVenues(1)
+          venues:
+          [  {name: 'Artistic Gymnastics | SF Arena', lat: 37.757768, lng: -122.381473, image:'assets/img/venues/sport-gymnastics-art-sfarena.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
+        ]          
         },
         {
           category: 'Gymnastics - Rhythmic',
           icon: 'assets/img/icons/sport-gymnastics-rhythmic.svg',
-          venues: makeRandomVenues(1)
+          venues:
+        [
+            {name: 'Rhymthic Gymnastics | Moscone Cntr.', lat: 37.784173, lng: -122.401557, image:'assets/img/venues/sport-gymnastics-moscone.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
+        ]
         },
+        {
+          category: 'Gymnastics - Trampoline',
+          icon: 'assets/img/icons/sport-trampoline.svg',
+          venues: 
+          [  {name: 'Trampoline | SF Arena', lat: 37.759328, lng: -122.384734, image:'assets/img/venues/sport-gymnastics-sfarena.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
+        ]
+        },        
         {
           category: 'Handball',
           icon: 'assets/img/icons/sport-handball.svg',
-          venues: makeRandomVenues(1)
+          venues:
+          [
+            {name: 'Handball | Oracle Arena', lat: 37.750298, lng: -122.202881, image:'assets/img/venues/sport-handball-oracle-arena.png', description: 'The 20,000 seat Oracle Arena will ensure that the men’s and women’s handball tournaments can look forward to every single game being played in top-notch arenas for the 2024 Olympic Games in the San Francisco Bay Area. '}]
         },
         {
           category: 'Hockey',
@@ -1948,6 +1986,15 @@
           category: 'Judo',
           icon: 'assets/img/icons/sport-judo.svg',
           venues: makeRandomVenues(1)
+        },
+        {
+          category: 'Marathon - Swimming',
+          icon: 'assets/img/icons/sport-marathon-swimming.svg',
+          venues:
+        [
+            {name: 'Marathon - Swimming | Marina Green', lat: 37.819425, lng: -122.434988, image:'assets/img/venues/sport-marathon-swimming-marina-green.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'},
+            {name: 'Marathon - Swimming | Pier 80', lat: 37.750239, lng: -122.379575, image:'assets/img/venues/sport-marathon-swimming-pier80.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
+        ]
         },
         {
           category: 'Modern Pentathlon',
@@ -1967,7 +2014,10 @@
         {
           category: 'Sailing',
           icon: 'assets/img/icons/sport-sailing.svg',
-          venues: makeRandomVenues(1)
+          venues: 
+          [
+        {name: 'Sailing | Treasure Island', lat: 37.823561, lng: -122.356367, image:'assets/img/venues/sport-sailing-ti.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
+        ]          
         },
         {
           category: 'Shooting',
@@ -1982,7 +2032,10 @@
         {
           category: 'Synchronized Swimming',
           icon: 'assets/img/icons/sport-synchronized-swimming.svg',
-          venues: makeRandomVenues(1)
+          venues: 
+          [
+        {name: 'Synchronized Swimming | Pier 80', lat: 37.751524, lng: -122.380185, image:'assets/img/venues/sport-swimming-synchro.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
+        ]  
         },
         {
           category: 'Table Tennis',
@@ -2004,21 +2057,17 @@
           icon: 'assets/img/icons/sport-athletics.svg',
           venues:
           [
-            {name: 'Stanford Stadium', lat: 37.433974, lng: -122.161903, image:'assets/img/venues/stanford-stadium.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
-
-            {name: 'O.co Coliseum', lat: 37.751461, lng: -122.200134, image:'assets/img/venues/oakland-coliseum.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
+            {name: 'Stanford Stadium', lat: 37.433974, lng: -122.161903, image:'assets/img/venues/stanford-stadium.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
           ]
-        },
-         {
-          category: 'Trampoline',
-          icon: 'assets/img/icons/sport-trampoline.svg',
-          venues: makeRandomVenues(1)
         },
          {
           category: 'Triathlon',
           icon: 'assets/img/icons/sport-triathlon.svg',
-          venues: makeRandomVenues(1)
+          venues:        
+          [
+            {name: 'Triathlon | Marina Green', lat: 37.806067, lng: -122.441425, image:'assets/img/venues/sport-triathlon-marina-green.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'} ]
         },
+
          {
           category: 'Volleyball',
           icon: 'assets/img/icons/sport-volleyball.svg',
@@ -2027,12 +2076,17 @@
          {
           category: 'Water Polo',
           icon: 'assets/img/icons/sport-water-polo.svg',
-          venues: makeRandomVenues(1)
+          venues:
+          [
+            {name: 'Water Polo | Pier 80', lat: 37.748606, lng: -122.384734, image:'assets/img/venues/sport-waterpolo-pier80.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
+        ]            
         },
          {
           category: 'Weightlifting',
           icon: 'assets/img/icons/sport-weightlifting.svg',
-          venues: makeRandomVenues(1)
+          venues:
+        [
+            {name: 'Weightlifting | Bill Graham Civic Audit.', lat: 37.778077, lng: -122.417403, image:'assets/img/venues/sport-weightlifting-bill-graham.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'} ]
         },
          {
           category: 'Wrestling - Freestyle',
@@ -2081,7 +2135,9 @@
         {
           category: 'Olympic Village',
           icon: 'assets/img/icons/acc-olympic-village.svg',
-          venues: makeRandomVenues(1)
+          venues:
+          [
+            {name: 'Olympic Village | Hunters Point', lat: 37.727609, lng: -122.370261, image:'assets/img/venues/acc-olympic-village.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'} ]          
         },
         {
           category: 'Ref. & Judges Village',
@@ -2132,8 +2188,7 @@
       }];
     </script>
 
-    <!-- Social Connections -->
-    <script src="assets/js/social-connections.js"></script>
+
 
 	<!-- Must be last of all scripts -->
 	<script src="assets/js/one-page.js"></script>
