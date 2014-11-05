@@ -27,13 +27,14 @@
     // this.zoomControl.addTo(this.map);
 
     // Add zoomslider etc.
-    L.control.fullscreen({
-      position: 'bottomleft'
+    L.control.zoomslider({
+      position: 'topleft'
     }).addTo(this.map);
 
-    L.control.zoomslider({
-      position: 'bottomright'
+    L.control.fullscreen({
+      position: 'topleft'
     }).addTo(this.map);
+
   };
 
   InteractiveVenueMap.prototype._clusterToMarkers = function (cluster) {

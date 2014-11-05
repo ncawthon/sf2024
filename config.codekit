@@ -589,6 +589,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/venues\/acc-olympic-village.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 54204,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/acc-olympic-village.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/acc-olympic-village.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/venues\/sport-archery-stanford-west.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -607,6 +618,17 @@
 		"initialSize": 65634,
 		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-badminton-maples-pavilion.png",
 		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-badminton-maples-pavilion.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/venues\/sport-badminton-moscone.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 65634,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-badminton-moscone.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-badminton-moscone.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -633,6 +655,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/venues\/sport-basketball-sf-arena.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 66477,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-basketball-sf-arena.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-basketball-sf-arena.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/venues\/sport-beach-volleyball-pier30.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 71598,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-beach-volleyball-pier30.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-beach-volleyball-pier30.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/venues\/sport-boxing-cow-palace.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -651,6 +695,204 @@
 		"initialSize": 67354,
 		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-canoe-slalom-lake-natoma.png",
 		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-canoe-slalom-lake-natoma.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/venues\/sport-canoe-sprint-lake-natoma.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 70844,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-canoe-sprint-lake-natoma.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-canoe-sprint-lake-natoma.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/venues\/sport-cycling-bmx-ti.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 51672,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-cycling-bmx-ti.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-cycling-bmx-ti.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/venues\/sport-cycling-mtnbike-marin-headlands.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 68115,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-cycling-mtnbike-marin-headlands.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-cycling-mtnbike-marin-headlands.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/venues\/sport-cycling-road-marina-green.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 73083,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-cycling-road-marina-green.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-cycling-road-marina-green.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/venues\/sport-diving-pier80.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 61152,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-diving-pier80.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-diving-pier80.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/venues\/sport-fencing-moscone.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 57908,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-fencing-moscone.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-fencing-moscone.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/venues\/sport-golf-harding-park.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 53262,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-golf-harding-park.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-golf-harding-park.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/venues\/sport-gymnastics-art-sfarena.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 44746,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-gymnastics-art-sfarena.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-gymnastics-art-sfarena.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/venues\/sport-gymnastics-moscone.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 42413,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-gymnastics-moscone.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-gymnastics-moscone.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/venues\/sport-gymnastics-sfarena.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 27709,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-gymnastics-sfarena.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-gymnastics-sfarena.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/venues\/sport-handball-oracle-arena.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 71709,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-handball-oracle-arena.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-handball-oracle-arena.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/venues\/sport-marathon-swimming-marina-green.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 60251,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-marathon-swimming-marina-green.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-marathon-swimming-marina-green.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/venues\/sport-marathon-swimming-pier80.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 65845,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-marathon-swimming-pier80.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-marathon-swimming-pier80.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/venues\/sport-sailing-ti.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 64363,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-sailing-ti.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-sailing-ti.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/venues\/sport-swimming-synchro.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 67383,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-swimming-synchro.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-swimming-synchro.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/venues\/sport-triathlon-marina-green.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 57869,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-triathlon-marina-green.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-triathlon-marina-green.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/venues\/sport-waterpolo-pier80.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 71079,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-waterpolo-pier80.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-waterpolo-pier80.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/venues\/sport-weightlifting-bill-graham.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 63669,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-weightlifting-bill-graham.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-weightlifting-bill-graham.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

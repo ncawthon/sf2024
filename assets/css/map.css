@@ -38,7 +38,7 @@
   padding: 0.5em;
 }
 #interactive-venue-map .filter header .toggle {
-  background: rgba(245,130,31,0.9);
+  background: #c0732c;
 }
 #interactive-venue-map .filter header .toggle .inactive {
   display: none;
@@ -256,4 +256,13 @@ color:#3a66b5;
 
 .leaflet-popup-content-wrapper, .map-legends, .map-tooltip {
   box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+.leaflet-top {
+  top:40px;
+}
+
+.pure-u-1-1 {
+  margin-left:5px;
+  text-indent: 5px;
 }
