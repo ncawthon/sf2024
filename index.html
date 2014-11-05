@@ -42,8 +42,9 @@
 
     <link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-zoomslider/v0.7.0/L.Control.Zoomslider.css' rel='stylesheet' />
 
+		<link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v0.0.3/leaflet.fullscreen.css' rel='stylesheet' />
 
-    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+		<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
 
     <!--[if lte IE 8]>
       <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.5.0/base-min.css&pure/0.5.0/grids-min.css&pure/0.5.0/grids-responsive-old-ie-min.css">
@@ -1778,6 +1779,8 @@
 
     <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-zoomslider/v0.7.0/L.Control.Zoomslider.js'></script>
 
+		<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v0.0.3/Leaflet.fullscreen.min.js'></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
     <script src="assets/js/map.js"></script>
     <script>
@@ -1810,7 +1813,7 @@
 			// Cluster options (https://github.com/Leaflet/Leaflet.markercluster#all-options)
 			window.interactiveVenueMap.clusterOptions = {
 				showCoverageOnHover: false,
-                removeOutsideVisibleBounds:true,
+        removeOutsideVisibleBounds: true
 			};
 
       window.interactiveVenueMap.venues = [{
@@ -1880,7 +1883,7 @@
         {
           category: 'Cycling - BMX',
           icon: 'assets/img/icons/sport-cycling-bmx.svg',
-          venues: 
+          venues:
         [
             {name: 'Cycling - BMX | Treasure Island', lat: 37.823425, lng: -122.371645, image:'assets/img/venues/sport-cycling-bmx-ti.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'} ]
 
@@ -1908,7 +1911,7 @@
         {
           category: 'Diving',
           icon: 'assets/img/icons/sport-diving.svg',
-          venues: 
+          venues:
           [
         {name: 'Diving | Pier 80', lat: 37.753017, lng: -122.383790, image:'assets/img/venues/sport-diving-pier80.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
           ]
@@ -1931,10 +1934,10 @@
         {
           category: 'Fencing',
           icon: 'assets/img/icons/sport-fencing.svg',
-          venues: 
+          venues:
         [
             {name: 'Fencing | Moscone Center', lat: 37.783862, lng: -122.399497, image:'assets/img/venues/sport-fencing-moscone.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
-        ]          
+        ]
         },
         {
           category: 'Football',
@@ -1953,7 +1956,7 @@
           icon: 'assets/img/icons/sport-gymnastics-artistic.svg',
           venues:
           [  {name: 'Artistic Gymnastics | SF Arena', lat: 37.757768, lng: -122.381473, image:'assets/img/venues/sport-gymnastics-art-sfarena.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
-        ]          
+        ]
         },
         {
           category: 'Gymnastics - Rhythmic',
@@ -1966,10 +1969,10 @@
         {
           category: 'Gymnastics - Trampoline',
           icon: 'assets/img/icons/sport-trampoline.svg',
-          venues: 
+          venues:
           [  {name: 'Trampoline | SF Arena', lat: 37.759328, lng: -122.384734, image:'assets/img/venues/sport-gymnastics-sfarena.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
         ]
-        },        
+        },
         {
           category: 'Handball',
           icon: 'assets/img/icons/sport-handball.svg',
@@ -2014,10 +2017,10 @@
         {
           category: 'Sailing',
           icon: 'assets/img/icons/sport-sailing.svg',
-          venues: 
+          venues:
           [
         {name: 'Sailing | Treasure Island', lat: 37.823561, lng: -122.356367, image:'assets/img/venues/sport-sailing-ti.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
-        ]          
+        ]
         },
         {
           category: 'Shooting',
@@ -2032,10 +2035,10 @@
         {
           category: 'Synchronized Swimming',
           icon: 'assets/img/icons/sport-synchronized-swimming.svg',
-          venues: 
+          venues:
           [
         {name: 'Synchronized Swimming | Pier 80', lat: 37.751524, lng: -122.380185, image:'assets/img/venues/sport-swimming-synchro.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
-        ]  
+        ]
         },
         {
           category: 'Table Tennis',
@@ -2063,7 +2066,7 @@
          {
           category: 'Triathlon',
           icon: 'assets/img/icons/sport-triathlon.svg',
-          venues:        
+          venues:
           [
             {name: 'Triathlon | Marina Green', lat: 37.806067, lng: -122.441425, image:'assets/img/venues/sport-triathlon-marina-green.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'} ]
         },
@@ -2079,7 +2082,7 @@
           venues:
           [
             {name: 'Water Polo | Pier 80', lat: 37.748606, lng: -122.384734, image:'assets/img/venues/sport-waterpolo-pier80.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
-        ]            
+        ]
         },
          {
           category: 'Weightlifting',
@@ -2137,7 +2140,7 @@
           icon: 'assets/img/icons/acc-olympic-village.svg',
           venues:
           [
-            {name: 'Olympic Village | Hunters Point', lat: 37.727609, lng: -122.370261, image:'assets/img/venues/acc-olympic-village.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'} ]          
+            {name: 'Olympic Village | Hunters Point', lat: 37.727609, lng: -122.370261, image:'assets/img/venues/acc-olympic-village.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'} ]
         },
         {
           category: 'Ref. & Judges Village',
@@ -2163,7 +2166,7 @@
           category: 'BART',
           icon: 'assets/img/icons/trans-airports.svg',
           venues: makeRandomVenues(3)
-        },                
+        },
         {
           category: 'Commuter Rail',
           icon: 'assets/img/icons/trans-commuter.svg',

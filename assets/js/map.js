@@ -15,19 +15,25 @@
     mapOptions = mapOptions || {};
     mapOptions.mapboxId = 'nickcawthon.6eeb8650';
 
-    mapOptions.zoomControl = false;
-    mapOptions.scrollWheelZoom = false;
+    mapOptions.zoomControl = mapOptions.zoomControl || false;
+    mapOptions.scrollWheelZoom = mapOptions.scrollWheelZoom || false;
 
     this.map = L.mapbox.map(this.mapElement, mapOptions.mapboxId, mapOptions);
 
-    this.zoomControl = L.control.zoom({
-      position: 'bottomright'
-    });
+    // this.zoomControl = L.control.zoom({
+    //   position: 'bottomright'
+    // });
 
-   // this.zoomControl.addTo(this.map);
+    // this.zoomControl.addTo(this.map);
 
     // Add zoomslider etc.
-  //   L.control.zoomslider().addTo(this.map);
+    L.control.fullscreen({
+      position: 'bottomleft'
+    }).addTo(this.map);
+
+    L.control.zoomslider({
+      position: 'bottomright'
+    }).addTo(this.map);
   };
 
   InteractiveVenueMap.prototype._clusterToMarkers = function (cluster) {

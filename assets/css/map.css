@@ -1,9 +1,16 @@
+
 #interactive-venue-map {
 
   position: relative;
 }
 #interactive-venue-map * {
   box-sizing: border-box;
+}
+#interactive-venue-map .leaflet-control-zoomslider-knob { width:14px; height:6px; }
+#interactive-venue-map .leaflet-container .leaflet-control-zoomslider-body {
+  -webkit-box-sizing:content-box;
+     -moz-box-sizing:content-box;
+          box-sizing:content-box;
 }
 #interactive-venue-map [ng-click] {
   cursor: pointer;
