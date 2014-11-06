@@ -124,7 +124,7 @@
       url: 'http://twitter.com/' + tweet.user.screen_name,
       image: tweet.user.profile_image_url,
       username: tweet.user.screen_name,
-      location: tweet.user.location
+      location: (tweet.user.location || '')
     });
   };
 
@@ -152,7 +152,7 @@
       url: 'http://instagram.com/' + data.data.user.username,
       image: data.data.user.profile_picture,
       username: data.data.user.username,
-      location: (data.data.location|| '')
+      location: (data.data.location || '')
     });
   };
 

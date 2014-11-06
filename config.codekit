@@ -501,6 +501,72 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/news\/fencing.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 23697,
+		"inputAbbreviatedPath": "\/assets\/img\/news\/fencing.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/news\/fencing.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/news\/levis.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 59425,
+		"inputAbbreviatedPath": "\/assets\/img\/news\/levis.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/news\/levis.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/news\/sfo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 30001,
+		"inputAbbreviatedPath": "\/assets\/img\/news\/sfo.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/news\/sfo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/news\/sfo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 527654,
+		"inputAbbreviatedPath": "\/assets\/img\/news\/sfo.png",
+		"outputAbbreviatedPath": "\/assets\/img\/news\/sfo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/news\/superbowl.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18509,
+		"inputAbbreviatedPath": "\/assets\/img\/news\/superbowl.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/news\/superbowl.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/news\/vlahos.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13670,
+		"inputAbbreviatedPath": "\/assets\/img\/news\/vlahos.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/news\/vlahos.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/pictograms\/cycling.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -9232,15 +9298,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
-		},
-	"\/index.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/temp\/css\/bootstrap.css": {
 		"fileType": 16,
