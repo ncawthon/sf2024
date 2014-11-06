@@ -321,6 +321,6 @@
 
       $newTile.hide();
       $newTile.removeClass('flip out').addClass('flip in').show();
-    }, Math.round(Math.random()*7500));
+    }, Math.round(Math.random()*5000));
   });
 }).call(this, jQuery);
