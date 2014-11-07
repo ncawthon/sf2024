@@ -436,8 +436,8 @@
                       <i class="icon ion-navicon-round" ng-if="!showFilter"></i><i class="icon ion-close" ng-if="showFilter"></i>
                     </span>
 
-                    <span ng-if="showFilter">Hide Map Categories</span>
-                    <span ng-if="!showFilter">Show Map Categories</span>
+                    <span ng-if="showFilter">Hide Map Categories & Legend</span>
+                    <span ng-if="!showFilter">Show Map Categories & Legend</span>
                   </div>
                 </header>
                 <main ng-if="showFilter">
@@ -689,7 +689,7 @@
 
             <div class="row profile-grid">
 
-                <div class="col-lg-4 col-md-4 col-sm-6 fromPocket wow" data-wow-delay="0.80s">
+                <div class="col-lg-4 col-md-4 col-sm-6 easePulse wow" data-wow-delay="0.40s">
                     <div class="thumbnail">
                         <div class="profile">
                             <div class="hover-content md-trigger" data-modal="modal-a1">
@@ -749,7 +749,7 @@
                         </div>
                     </div>
 
-                <div class="col-lg-4 col-md-4 col-sm-6 fromPocket wow" data-wow-delay="0.60s">
+                <div class="col-lg-4 col-md-4 col-sm-6 easePulse wow" data-wow-delay="0.60s">
                     <div class="thumbnail">
                         <div class="profile">
                             <div class="hover-content md-trigger" data-modal="modal-a2">
@@ -808,7 +808,7 @@
                             </div>
                         </div>
                     </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 fromPocket wow" data-wow-delay="0.40s">
+                <div class="col-lg-4 col-md-4 col-sm-6 easePulse wow" data-wow-delay="0.50s">
                     <div class="thumbnail">
                         <div class="profile">
                             <div class="hover-content md-trigger" data-modal="modal-a3">
@@ -1447,8 +1447,8 @@
 
         for (var i = 0; i < number; i++) {
           venues.push({
-            name: 'Golf Course',
-            description: 'Aute incididunt officia magna tempor ad id nulla incididunt Lorem non eiusmod culpa adipisicing voluptate. Laboris veniam duis do sit ea nostrud esse ea irure in cupidatat. Irure irure cillum Lorem ex cillum anim sit exercitation eu laboris culpa proident eiusmod. Sunt proident esse exercitation mollit aliquip culpa ad. Cillum laborum ea dolore est irure laboris sit nostrud reprehenderit eu laboris tempor eiusmod incididunt. Anim mollit excepteur culpa consequat eu proident Lorem eiusmod consequat est. Commodo culpa dolor pariatur culpa proident aliqua exercitation id in commodo ut.',
+            name: 'Random Location',
+            description: 'Aute incididunt officia magna tempor ad id nulla incididunt Lorem non eiusmod culpa adipisicing voluptate. Laboris veniam duis do sit ea nostrud esse ea irure in cupidatat. Irure irure cillum Lorem ex cillum anim sit exercitation eu laboris culpa proident eiusmod.',
             image: 'http://i.imgur.com/TWhC7.jpg',
             lat: Math.floor(Math.random()*10),
             lng: Math.floor(Math.random()*10)
@@ -1475,10 +1475,20 @@
             };
 
       window.interactiveVenueMap.venues = [{
-        category: 'Athletic Venues',
+        category: 'Olympic Venues',
         color: '#3a66b5',
                 icon: 'assets/img/icons/sport-all.svg',
-        subCategories: [{
+        subCategories: [
+        {
+          category: 'Track & Field',
+          icon: 'assets/img/icons/sport-athletics.svg',
+          venues:
+          [
+            {name: 'Athletics | Baylands Olympic Park', lat: 37.699325, lng: -122.392442, image:'assets/img/venues/sport-athletics.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
+          ]
+        },
+
+        {
            category: 'Archery',
           icon: 'assets/img/icons/sport-archery.svg',
           venues:
@@ -1486,7 +1496,7 @@
             {name: 'Archery | Kezar Stadium', lat: 37.766798, lng: -122.456045, image:'assets/img/venues/sport-archery-stanford-west.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
             ]
 
-    },
+        },
         {
           category: 'Badminton',
           icon: 'assets/img/icons/sport-badminton.svg',
@@ -1501,7 +1511,8 @@
           icon: 'assets/img/icons/sport-basketball.svg',
           venues:
         [
-            {name: 'Basketball | SF Arena', lat: 37.757428, lng: -122.387309, image:'assets/img/venues/sport-basketball-sf-arena.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
+            {name: 'Basketball | SF Arena', lat: 37.757428, lng: -122.387309, image:'assets/img/venues/sport-basketball-sf-arena.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'},
+            {name: 'Basketball | Maples Pavilion', lat: 37.429587, lng: -122.160539, image:'assets/img/venues/sport-basketball-maples.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
 
 
         ]
@@ -1525,29 +1536,29 @@
 
     },
         {
-          category: 'Canoe - Slalom',
+          category: 'Canoe : Slalom',
           icon: 'assets/img/icons/sport-canoe-slalom.svg',
           venues:
           [
             {name: 'Canoe - Slalom | Lake Natoma', lat: 38.635227, lng: -121.225977, image:'assets/img/venues/sport-canoe-slalom-lake-natoma.png', description: 'For years, whitewater enthusiasts have dreamed of a slalom course at Lake Natoma to complement the existing flatwater facilities and to provide a year-round venue in which to train and compete. SF2024 has joined with this group and is working with the California State Parks, the Bureau of Reclamation and several other agencies to bring this dream into reality. '} ]
         },
         {
-          category: 'Canoe - Sprint',
+          category: 'Canoe : Sprint',
           icon: 'assets/img/icons/sport-canoe-sprint.svg',
           venues:
           [
             {name: 'Canoe - Sprint | Lake Natoma', lat: 38.638176, lng: -121.221578, image:'assets/img/venues/sport-canoe-sprint-lake-natoma.png', description: 'With the guidance of four-time Olympian Andy Toro, SF2024 proposes Lake Natoma as the site for the Canoe/Kayak – Sprint competition for the 2012 Olympic Games. Lake Natoma is a proven venue that has hosted numerous championships. The California State University at Sacramento (CSUS) Aquatics Center, which operates the venue with the California State Parks, is expanding and upgrading the facilities throughout, adding new boathouses, docks and spectator facilities. These renovations will create perhaps the finest canoeing, kayaking and rowing venue in the country. '} ]
         },
         {
-          category: 'Cycling - BMX',
+          category: 'Cycling : BMX',
           icon: 'assets/img/icons/sport-cycling-bmx.svg',
           venues:
         [
-            {name: 'Cycling - BMX | Treasure Island', lat: 37.823425, lng: -122.371645, image:'assets/img/venues/sport-cycling-bmx-ti.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'} ]
+            {name: 'Cycling : BMX | Treasure Island', lat: 37.823425, lng: -122.371645, image:'assets/img/venues/sport-cycling-bmx-ti.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'} ]
 
         },
         {
-          category: 'Cycling - Mtn Bike',
+          category: 'Cycling : Mtn Bike',
           icon: 'assets/img/icons/sport-cycling-mountain-bike.svg',
           venues:
         [
@@ -1555,16 +1566,17 @@
         },
 
         {
-          category: 'Cycling - Road',
+          category: 'Cycling : Road',
           icon: 'assets/img/icons/sport-cycling-road.svg',
           venues:
         [
-            {name: 'Cycling - Road | Marina Green', lat: 37.807084, lng: -122.429152, image:'assets/img/venues/sport-cycling-road-marina-green.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'} ]
+            {name: 'Cycling : Road | Marina Green', lat: 37.807084, lng: -122.429152, image:'assets/img/venues/sport-cycling-road-marina-green.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'} ]
         },
         {
-          category: 'Cycling - Track',
+          category: 'Cycling : Track',
           icon: 'assets/img/icons/sport-cycling-track.svg',
-          venues: makeRandomVenues(1)
+          venues:         [
+            {name: 'Cycling : Track | Baylands Olympic Park', lat: 37.699125, lng: -122.396442, image:'assets/img/venues/sport-cycling-track.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'} ]
         },
         {
           category: 'Diving',
@@ -1575,19 +1587,28 @@
           ]
         },
         {
-          category: 'Equestrian - Dressage',
+          category: 'Equestrian : Dressage',
           icon: 'assets/img/icons/sport-equestrian-dressage.svg',
-          venues: makeRandomVenues(1)
+          venues:           
+          [
+        {name: 'Equ. Dressage | Woodside Horse Park', lat: 37.416106, lng: -122.2265537, image:'assets/img/venues/sport-equestrian.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
+          ]
         },
         {
-          category: 'Equestrian - Eventing',
+          category: 'Equestrian : Eventing',
           icon: 'assets/img/icons/sport-equestrian-eventing.svg',
-          venues: makeRandomVenues(1)
+          venues:
+        [
+        {name: 'Equ. Eventing | Woodside Horse Park', lat: 37.418306, lng: -122.2267537, image:'assets/img/venues/sport-equestrian.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
+          ]
         },
         {
-          category: 'Equestrian - Jumping',
+          category: 'Equestrian : Jumping',
           icon: 'assets/img/icons/sport-equestrian-jumping.svg',
-          venues: makeRandomVenues(1)
+          venues:
+          [
+        {name: 'Equ. Jumping | Woodside Horse Park', lat: 37.419506, lng: -122.2269537, image:'assets/img/venues/sport-equestrian.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
+          ]
         },
         {
           category: 'Fencing',
@@ -1600,7 +1621,10 @@
         {
           category: 'Football',
           icon: 'assets/img/icons/sport-football.svg',
-          venues: makeRandomVenues(1)
+          venues: 
+        [
+            {name: 'Football | Levi’s Stadium', lat: 37.403196, lng: -121.969888, image:'assets/img/venues/sport-football-levis.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
+        ]
         },
         {
           category: 'Golf',
@@ -1610,14 +1634,14 @@
             {name: 'Golf | Harding Park', lat: 37.724739, lng: -122.493689, image:'assets/img/venues/sport-golf-harding-park.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'} ]
         },
         {
-          category: 'Gymnastics - Artistic',
+          category: 'Gymnastics : Artistic',
           icon: 'assets/img/icons/sport-gymnastics-artistic.svg',
           venues:
           [  {name: 'Artistic Gymnastics | SF Arena', lat: 37.757768, lng: -122.381473, image:'assets/img/venues/sport-gymnastics-art-sfarena.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
         ]
         },
         {
-          category: 'Gymnastics - Rhythmic',
+          category: 'Gymnastics : Rhythmic',
           icon: 'assets/img/icons/sport-gymnastics-rhythmic.svg',
           venues:
         [
@@ -1625,7 +1649,7 @@
         ]
         },
         {
-          category: 'Gymnastics - Trampoline',
+          category: 'Gymnastics : Trampoline',
           icon: 'assets/img/icons/sport-trampoline.svg',
           venues:
           [  {name: 'Trampoline | SF Arena', lat: 37.759328, lng: -122.384734, image:'assets/img/venues/sport-gymnastics-sfarena.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
@@ -1641,36 +1665,38 @@
         {
           category: 'Hockey',
           icon: 'assets/img/icons/sport-hockey.svg',
-          venues: makeRandomVenues(1)
+          venues: makeRandomVenues(0)
         },
         {
           category: 'Judo',
           icon: 'assets/img/icons/sport-judo.svg',
-          venues: makeRandomVenues(1)
+          venues: makeRandomVenues(0)
         },
         {
-          category: 'Marathon - Swimming',
+          category: 'Marathon : Swimming',
           icon: 'assets/img/icons/sport-marathon-swimming.svg',
           venues:
         [
-            {name: 'Marathon - Swimming | Marina Green', lat: 37.819425, lng: -122.434988, image:'assets/img/venues/sport-marathon-swimming-marina-green.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'},
+            {name: 'Marathon : Swimming | Marina Green', lat: 37.819425, lng: -122.434988, image:'assets/img/venues/sport-marathon-swimming-marina-green.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'},
             {name: 'Marathon - Swimming | Pier 80', lat: 37.750239, lng: -122.379575, image:'assets/img/venues/sport-marathon-swimming-pier80.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
         ]
         },
         {
           category: 'Modern Pentathlon',
           icon: 'assets/img/icons/sport-modern-pentathlon.svg',
-          venues: makeRandomVenues(1)
+          venues: [
+        {name: 'Modern Pentathlon | Stanford University', lat: 37.427474, lng: -122.169719, image:'assets/img/venues/sport-modern-pentathlon.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
+        ]
         },
         {
           category: 'Rowing',
           icon: 'assets/img/icons/sport-rowing.svg',
-          venues: makeRandomVenues(1)
+          venues: makeRandomVenues(0)
         },
         {
           category: 'Rugby',
           icon: 'assets/img/icons/sport-rugby.svg',
-          venues: makeRandomVenues(1)
+          venues: makeRandomVenues(0)
         },
         {
           category: 'Sailing',
@@ -1683,12 +1709,12 @@
         {
           category: 'Shooting',
           icon: 'assets/img/icons/sport-shooting.svg',
-          venues: makeRandomVenues(1)
+          venues: makeRandomVenues(0)
         },
         {
           category: 'Swimming',
           icon: 'assets/img/icons/sport-swimming.svg',
-          venues: makeRandomVenues(1)
+          venues: makeRandomVenues(0)
         },
         {
           category: 'Synchronized Swimming',
@@ -1701,25 +1727,17 @@
         {
           category: 'Table Tennis',
           icon: 'assets/img/icons/sport-table-tennis.svg',
-          venues: makeRandomVenues(1)
+          venues: makeRandomVenues(0)
         },
          {
           category: 'Tae Kwon Do',
           icon: 'assets/img/icons/sport-taekwondo.svg',
-          venues: makeRandomVenues(1)
+          venues: makeRandomVenues(0)
         },
          {
           category: 'Tennis',
           icon: 'assets/img/icons/sport-tennis.svg',
-          venues: makeRandomVenues(1)
-        },
-        {
-          category: 'Track & Field',
-          icon: 'assets/img/icons/sport-athletics.svg',
-          venues:
-          [
-            {name: 'Stanford Stadium', lat: 37.433974, lng: -122.161903, image:'assets/img/venues/stanford-stadium.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
-          ]
+          venues: makeRandomVenues(0)
         },
          {
           category: 'Triathlon',
@@ -1732,14 +1750,15 @@
          {
           category: 'Volleyball',
           icon: 'assets/img/icons/sport-volleyball.svg',
-          venues: makeRandomVenues(1)
+          venues: makeRandomVenues(0)
         },
          {
           category: 'Water Polo',
           icon: 'assets/img/icons/sport-water-polo.svg',
           venues:
           [
-            {name: 'Water Polo | Pier 80', lat: 37.748606, lng: -122.384734, image:'assets/img/venues/sport-waterpolo-pier80.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
+            {name: 'Water Polo | Pier 80', lat: 37.748606, lng: -122.384734, image:'assets/img/venues/sport-waterpolo-pier80.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'},
+            {name: 'Water Polo | Haines Int’l Swim Center', lat: 37.403196, lng: -121.969888, image:'assets/img/venues/sport-waterpolo-haines.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}            
         ]
         },
          {
@@ -1752,12 +1771,12 @@
          {
           category: 'Wrestling - Freestyle',
           icon: 'assets/img/icons/sport-wrestling-freestyle.svg',
-          venues: makeRandomVenues(1)
+          venues: makeRandomVenues(0)
         },
          {
           category: 'Wrestling - Greco Roman',
           icon: 'assets/img/icons/sport-wrestling-greco-roman.svg',
-          venues: makeRandomVenues(1)
+          venues: makeRandomVenues(0)
         }
     ]
       }, {
@@ -1766,33 +1785,35 @@
         subCategories: [{
           category: 'Athletes Village',
           icon: 'assets/img/icons/acc-athletes-village.svg',
-          venues: makeRandomVenues(3)
-        },
-        {
-          category: 'Ceremonies',
-          icon: 'assets/img/icons/acc-ceremonies.svg',
-          venues: makeRandomVenues(1)
+          venues: makeRandomVenues(0)
         },
         {
           category: 'Intl. Broadcast Center',
           icon: 'assets/img/icons/acc-IBC.svg',
-          venues: makeRandomVenues(4)
+          venues: makeRandomVenues(0)
         },
         {
           category: 'IOC Hotel',
           icon: 'assets/img/icons/acc-IOC-hotel.svg',
-          venues: makeRandomVenues(7)
+          venues: makeRandomVenues(0)
         },
         {
-          category: 'Media Hotel',
+          category: 'Hotel Cluster',
           icon: 'assets/img/icons/acc-media-hotel.svg',
-          venues: makeRandomVenues(1)
+          venues: makeRandomVenues(0)
         },
         {
           category: 'Media Village',
           icon: 'assets/img/icons/acc-media-village.svg',
-          venues: makeRandomVenues(1)
+          venues: makeRandomVenues(0)
         },
+        {
+          category: 'Olympic Stadium',
+          icon: 'assets/img/icons/acc-ceremonies.svg',
+          venues:
+          [
+            {name: 'Olympic Stadium | Baylands Oly. Park', lat: 37.702625, lng: -122.39742, image:'assets/img/venues/acc-ceremonies.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'} ]
+        },        
         {
           category: 'Olympic Village',
           icon: 'assets/img/icons/acc-olympic-village.svg',
@@ -1803,7 +1824,7 @@
         {
           category: 'Ref. & Judges Village',
           icon: 'assets/img/icons/acc-referees-village.svg',
-          venues: makeRandomVenues(1)
+          venues: makeRandomVenues(0)
         }
     ]
       }, {
@@ -1812,38 +1833,39 @@
         subCategories: [
         {
           category: 'Airports - Intl',
-          icon: 'assets/img/icons/trans-airports.svg',
-          venues: makeRandomVenues(3)
+          icon: 'assets/img/icons/trans-airports-intl.svg',
+          venues: [
+            {name: 'Airports - Int’l | Oakland', lat: 37.712569, lng: -122.219743, image:'assets/img/venues/trans-airports-intl-oak.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
+            {name: 'Airports - Int’l | Mineta San José', lat: 37.3638873, lng: -121.9284981, image:'assets/img/venues/trans-airports-intl-sj.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
+            {name: 'Airports - Int’l | San Francisco', lat: 37.621313, lng: -122.378955, image:'assets/img/venues/trans-airports-intl-sf.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
+
+
+             ]
         },
         {
           category: 'Airports - Regional',
           icon: 'assets/img/icons/trans-airports.svg',
-          venues: makeRandomVenues(3)
-        },
-        {
-          category: 'BART',
-          icon: 'assets/img/icons/trans-airports.svg',
-          venues: makeRandomVenues(3)
+          venues: makeRandomVenues(0)
         },
         {
           category: 'Commuter Rail',
           icon: 'assets/img/icons/trans-commuter.svg',
-          venues: makeRandomVenues(3)
+          venues: makeRandomVenues(0)
         },
         {
           category: 'Ferries',
           icon: 'assets/img/icons/trans-ferry.svg',
-          venues: makeRandomVenues(4)
+          venues: makeRandomVenues(0)
         },
         {
           category: 'Ports',
           icon: 'assets/img/icons/trans-ports.svg',
-          venues: makeRandomVenues(4)
+          venues: makeRandomVenues(0)
         },
         {
           category: 'Amtrak Trains',
           icon: 'assets/img/icons/trans-trains.svg',
-          venues: makeRandomVenues(4)
+          venues: makeRandomVenues(0)
         }
     ]
       }];
