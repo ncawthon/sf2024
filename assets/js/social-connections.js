@@ -29,15 +29,15 @@
       var index_map = {}
 
       $.each(tweet.entities.urls, function(i,entry) {
-          index_map[entry.indices[0]] = [entry.indices[1], function(text) {return "<a href='"+escapeHTML(entry.url)+"'>"+escapeHTML(text)+"</a>"}]
+          index_map[entry.indices[0]] = [entry.indices[1], function(text) {return "<a href='"+escapeHTML(entry.url)+"' target='_blank'>"+escapeHTML(text)+"</a>"}]
       })
 
       $.each(tweet.entities.hashtags, function(i,entry) {
-          index_map[entry.indices[0]] = [entry.indices[1], function(text) {return "<a href='http://twitter.com/search?q="+escape("#"+entry.text)+"'>"+escapeHTML(text)+"</a>"}]
+          index_map[entry.indices[0]] = [entry.indices[1], function(text) {return "<a href='http://twitter.com/search?q="+escape("#"+entry.text)+"' target='_blank'>"+escapeHTML(text)+"</a>"}]
       })
 
       $.each(tweet.entities.user_mentions, function(i,entry) {
-          index_map[entry.indices[0]] = [entry.indices[1], function(text) {return "<a title='"+escapeHTML(entry.name)+"' href='http://twitter.com/"+escapeHTML(entry.screen_name)+"'>"+escapeHTML(text)+"</a>"}]
+          index_map[entry.indices[0]] = [entry.indices[1], function(text) {return "<a title='"+escapeHTML(entry.name)+"' href='http://twitter.com/"+escapeHTML(entry.screen_name)+"'  target='_blank'>"+escapeHTML(text)+"</a>"}]
       })
 
       var result = ""
@@ -321,6 +321,6 @@
 
       $newTile.hide();
       $newTile.removeClass('flip out').addClass('flip in').show();
-    }, Math.round(Math.random()*5000));
+    }, Math.round(Math.random()*7500));
   });
 }).call(this, jQuery);

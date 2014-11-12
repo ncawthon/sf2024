@@ -74,9 +74,12 @@
 #social-connections-popup-overlay .author div .location,
 #social-connections-popup .author div .location {
   color: rgba(255,255,255,0.6);
-  font-size: 1.0vw;
   line-height: 150%;
+  font-size: 1.0vw;
+
 }
+
+
 #social-connections-popup-overlay {
   background: rgba(0,0,0,0.8);
   position: fixed;
@@ -302,4 +305,60 @@
 #social-connections .container {
   margin:0px;
   padding: 0px;
+}
+
+@media (max-width: 1199px) {
+  #social-connections .author,
+  #social-connections .author div .location, 
+  #social-connections-popup .author div .location,
+  #social-connections-popup .author a,
+  #social-connections-popup main p
+    {
+    font-size: 1.25vw;
+  }
+}
+@media (max-width: 992px) {
+  #social-connections .author,
+  #social-connections .author div .location, 
+  {
+    font-size: 1.00vw;
+  } 
+}
+
+@media (max-width: 992px) {
+  #social-connections-popup .author div .location,
+  #social-connections-popup .author a,
+  #social-connections-popup main p
+  {
+    font-size: 1.5vw;    
+  }
+}
+
+@media (max-width: 768px) {
+  #social-connections .author,
+  #social-connections .author div .location, 
+  #social-connections-popup .author div .location,
+  #social-connections-popup .author a,
+  #social-connections-popup main p
+   {
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 547px) {
+  #social-connections .author,
+  #social-connections .author div .location, 
+  #social-connections-popup .author div .location,
+  #social-connections-popup .author a,
+  #social-connections-popup main p
+   {
+    font-size: 3.0vw;
+  }
+}
+
+@media (max-width: 547px) {
+  #social-connections .content 
+  {
+    font-size: 6.5vw;    
+  }
 }
