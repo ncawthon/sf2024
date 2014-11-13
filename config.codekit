@@ -655,6 +655,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/venues\/acc-ceremonies.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 70769,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/acc-ceremonies.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/acc-ceremonies.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/venues\/acc-olympic-village.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -673,6 +684,17 @@
 		"initialSize": 52474,
 		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-archery-stanford-west.png",
 		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-archery-stanford-west.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/venues\/sport-athletics.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 63269,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-athletics.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-athletics.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -706,6 +728,17 @@
 		"initialSize": 76826,
 		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-basketball-leavey-center.png",
 		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-basketball-leavey-center.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/venues\/sport-basketball-maples.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 74952,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-basketball-maples.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-basketball-maples.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -809,6 +842,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/venues\/sport-cycling-track.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 62948,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-cycling-track.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-cycling-track.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/venues\/sport-diving-pier80.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -820,6 +864,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/venues\/sport-equestrian.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 72001,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-equestrian.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-equestrian.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/venues\/sport-fencing-moscone.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -827,6 +882,17 @@
 		"initialSize": 57908,
 		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-fencing-moscone.png",
 		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-fencing-moscone.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/venues\/sport-football-levis.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 74019,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-football-levis.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-football-levis.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -908,6 +974,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/venues\/sport-modern-pentathlon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 77450,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-modern-pentathlon.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-modern-pentathlon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/venues\/sport-sailing-ti.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -941,6 +1018,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/venues\/sport-waterpolo-haines.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 70863,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-waterpolo-haines.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-waterpolo-haines.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/venues\/sport-waterpolo-pier80.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -959,6 +1047,39 @@
 		"initialSize": 63669,
 		"inputAbbreviatedPath": "\/assets\/img\/venues\/sport-weightlifting-bill-graham.png",
 		"outputAbbreviatedPath": "\/assets\/img\/venues\/sport-weightlifting-bill-graham.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/venues\/trans-airports-intl-oak.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 64278,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/trans-airports-intl-oak.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/trans-airports-intl-oak.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/venues\/trans-airports-intl-sf.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 63891,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/trans-airports-intl-sf.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/trans-airports-intl-sf.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/venues\/trans-airports-intl-sj.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 49720,
+		"inputAbbreviatedPath": "\/assets\/img\/venues\/trans-airports-intl-sj.png",
+		"outputAbbreviatedPath": "\/assets\/img\/venues\/trans-airports-intl-sj.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -9298,6 +9419,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/temp\/css\/bootstrap.css": {
 		"fileType": 16,

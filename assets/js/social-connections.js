@@ -91,11 +91,11 @@
   var renderAuthor = function (author) {
     return $(
       '<div class="author">' +
-        '<a href="' + author.url + '" class="avatar-container">' +
+        '<a href="' + author.url + '" class="avatar-container" target="_blank">' +
           '<img src="' + author.image + '">' +
         '</a>' +
         '<div>' +
-          '<a href="' + author.url + '">@' + author.username + '</a>' +
+          '<a target="_blank" href="' + author.url + '">@' + author.username + '</a>' +
           '<span class="location">' + author.location + '</span>' +
         '</div>' +
       '</div>'
@@ -266,8 +266,8 @@
 
     var $containers = [];
 
-    for (var i = 0; i < 6; i++) {
-      var $container = $('<div />').addClass('pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-6 container')  ;
+    for (var i = 0; i < (socialConnections.options.containers || 6); i++) {
+      var $container = $('<div />').addClass(['container', socialConnections.options.containerClass].join(' '));
       $containers.push($container);
       $socialConnectionsEl.append($container);
     }
@@ -321,6 +321,6 @@
 
       $newTile.hide();
       $newTile.removeClass('flip out').addClass('flip in').show();
-    }, Math.round(Math.random()*7500));
+    }, Math.round(Math.random()*5000));
   });
 }).call(this, jQuery);
