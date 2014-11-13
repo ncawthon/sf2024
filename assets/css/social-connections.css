@@ -106,7 +106,7 @@
   margin: 3em auto;
   text-align: left;
   max-width: 100%;
-  width: 400px;
+  width: 500px;
   border: 1px solid #fff;
 }
 #social-connections-popup main .close {
@@ -315,8 +315,6 @@
   #social-connections-popup main p
     {
     font-size: 1.25vw;
-    white-space: nowrap;
-    text-overflow: ellipsis;
   }
 }
 @media (max-width: 992px) {
@@ -324,8 +322,6 @@
   #social-connections .author div .location, 
   {
     font-size: 1.00vw;
-    white-space: nowrap;
-    text-overflow: ellipsis;
   } 
 }
 
@@ -335,8 +331,6 @@
   #social-connections-popup main p
   {
     font-size: 1.5vw;    
-    white-space: nowrap;
-    text-overflow: ellipsis;
   }
 }
 
@@ -348,8 +342,6 @@
   #social-connections-popup main p
    {
     font-size: 2.5vw;
-    white-space: nowrap;
-    text-overflow: ellipsis;
   }
 }
 
@@ -361,8 +353,6 @@
   #social-connections-popup main p
    {
     font-size: 3.0vw;
-    white-space: nowrap;
-    text-overflow: ellipsis;
   }
 }
 
@@ -370,7 +360,12 @@
   #social-connections .content 
   {
     font-size: 6.5vw;
-    white-space: nowrap;    
-    text-overflow: ellipsis;
   }
+}
+
+  #social-connections .author,
+  #social-connections .author div .location {
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: hidden;
 }
