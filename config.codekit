@@ -2,6 +2,39 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "18027",
 "files": {
+	"\/assets\/_master\/-111814-AK007.JPG": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 303190,
+		"inputAbbreviatedPath": "\/assets\/_master\/-111814-AK007.JPG",
+		"outputAbbreviatedPath": "\/assets\/_master\/-111814-AK007.JPG",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/_master\/-111814-AK016.JPG": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 510417,
+		"inputAbbreviatedPath": "\/assets\/_master\/-111814-AK016.JPG",
+		"outputAbbreviatedPath": "\/assets\/_master\/-111814-AK016.JPG",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/_master\/-111814-AK039.JPG": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 394505,
+		"inputAbbreviatedPath": "\/assets\/_master\/-111814-AK039.JPG",
+		"outputAbbreviatedPath": "\/assets\/_master\/-111814-AK039.JPG",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/_master\/13873872915_74201e67c8_o.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -24,35 +57,57 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/_master\/legacy\/1-transportation.png": {
+	"\/assets\/_master\/bar-blue.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 286621,
-		"inputAbbreviatedPath": "\/assets\/_master\/legacy\/1-transportation.png",
-		"outputAbbreviatedPath": "\/assets\/_master\/legacy\/1-transportation.png",
+		"initialSize": 2345,
+		"inputAbbreviatedPath": "\/assets\/_master\/bar-blue.png",
+		"outputAbbreviatedPath": "\/assets\/_master\/bar-blue.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/_master\/legacy\/2-accommodation.png": {
+	"\/assets\/_master\/bar-gold.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 307559,
-		"inputAbbreviatedPath": "\/assets\/_master\/legacy\/2-accommodation.png",
-		"outputAbbreviatedPath": "\/assets\/_master\/legacy\/2-accommodation.png",
+		"initialSize": 2345,
+		"inputAbbreviatedPath": "\/assets\/_master\/bar-gold.png",
+		"outputAbbreviatedPath": "\/assets\/_master\/bar-gold.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/_master\/legacy\/3-youth.png": {
+	"\/assets\/_master\/bar-green.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 281274,
-		"inputAbbreviatedPath": "\/assets\/_master\/legacy\/3-youth.png",
-		"outputAbbreviatedPath": "\/assets\/_master\/legacy\/3-youth.png",
+		"initialSize": 2345,
+		"inputAbbreviatedPath": "\/assets\/_master\/bar-green.png",
+		"outputAbbreviatedPath": "\/assets\/_master\/bar-green.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/_master\/bar-red.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2345,
+		"inputAbbreviatedPath": "\/assets\/_master\/bar-red.png",
+		"outputAbbreviatedPath": "\/assets\/_master\/bar-red.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/_master\/raw-video\/Parks and Recreation-Golden Gate Park_Children's Playground 23.jpg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 540243,
+		"inputAbbreviatedPath": "\/assets\/_master\/raw-video\/Parks and Recreation-Golden Gate Park_Children's Playground 23.jpg.jpg",
+		"outputAbbreviatedPath": "\/assets\/_master\/raw-video\/Parks and Recreation-Golden Gate Park_Children's Playground 23.jpg.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -490,17 +545,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/logos\/edelman.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 9430,
-		"inputAbbreviatedPath": "\/assets\/img\/logos\/edelman.png",
-		"outputAbbreviatedPath": "\/assets\/img\/logos\/edelman.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/assets\/img\/logos\/hanson.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -596,28 +640,6 @@
 		"initialSize": 6184,
 		"inputAbbreviatedPath": "\/assets\/img\/pictograms\/table-tennis.png",
 		"outputAbbreviatedPath": "\/assets\/img\/pictograms\/table-tennis.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/transamerica.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 144149,
-		"inputAbbreviatedPath": "\/assets\/img\/transamerica.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/transamerica.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/unnamed.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 9923,
-		"inputAbbreviatedPath": "\/assets\/img\/unnamed.png",
-		"outputAbbreviatedPath": "\/assets\/img\/unnamed.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -800,7 +822,7 @@
 		},
 	"\/assets\/js\/min\/map-min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/min\/map-min.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/min\/map-min-min.js",
@@ -833,7 +855,7 @@
 		},
 	"\/assets\/js\/min\/social-connections-min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/min\/social-connections-min.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/min\/social-connections-min-min.js",
@@ -2562,7 +2584,7 @@
 		},
 	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/infinite-scroll\/waypoints-infinite.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/infinite-scroll\/waypoints-infinite.js",
 		"outputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/infinite-scroll\/min\/waypoints-infinite-min.js",
@@ -2606,7 +2628,7 @@
 		},
 	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/sticky-elements\/waypoints-sticky.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/sticky-elements\/waypoints-sticky.js",
 		"outputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/sticky-elements\/min\/waypoints-sticky-min.js",
@@ -2800,7 +2822,7 @@
 		},
 	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/waypoints.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/waypoints.js",
 		"outputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/min\/waypoints-min.js",
@@ -9002,50 +9024,6 @@
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 1
 		},
-	"\/assets\/video\/coit-cover.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 49444,
-		"inputAbbreviatedPath": "\/assets\/video\/coit-cover.jpg",
-		"outputAbbreviatedPath": "\/assets\/video\/coit-cover.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/video\/coit-cover.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2.88524e+06,
-		"inputAbbreviatedPath": "\/assets\/video\/coit-cover.png",
-		"outputAbbreviatedPath": "\/assets\/video\/coit-cover.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/video\/connecting-placement.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 255703,
-		"inputAbbreviatedPath": "\/assets\/video\/connecting-placement.png",
-		"outputAbbreviatedPath": "\/assets\/video\/connecting-placement.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/video\/venue-map-placement.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 266614,
-		"inputAbbreviatedPath": "\/assets\/video\/venue-map-placement.png",
-		"outputAbbreviatedPath": "\/assets\/video\/venue-map-placement.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -9251,7 +9229,7 @@
 		},
 	"\/temp\/js\/min\/app-min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/temp\/js\/min\/app-min.js",
 		"outputAbbreviatedPath": "\/temp\/js\/min\/min\/app-min-min.js",
@@ -9339,7 +9317,7 @@
 		},
 	"\/temp\/js\/min\/one-page-min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/temp\/js\/min\/one-page-min.js",
 		"outputAbbreviatedPath": "\/temp\/js\/min\/min\/one-page-min-min.js",
@@ -13708,7 +13686,7 @@
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "dev.sf2024",
+	"displayValue": "sf2024",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "compass_yellow"
 	},
@@ -14292,7 +14270,7 @@
 	"sassAutoOutputPathStyle": 2,
 	"sassCreateSourceMap": 0,
 	"sassDebugStyle": 0,
-	"sassDecimalPrecision": 10,
+	"sassDecimalPrecision": 5,
 	"sassOutputStyle": 0,
 	"sassUseLibsass": 0,
 	"shouldRunAutoprefixer": 0,
@@ -14304,7 +14282,7 @@
 	"slimAutoOutputPathReplace1": "",
 	"slimAutoOutputPathReplace2": "",
 	"slimAutoOutputPathStyle": 0,
-	"slimCompileOnly": 1,
+	"slimCompileOnly": 0,
 	"slimLogicless": 0,
 	"slimOutputStyle": 1,
 	"slimRailsCompatible": 0,
