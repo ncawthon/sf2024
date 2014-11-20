@@ -29,15 +29,15 @@
       var index_map = {}
 
       $.each(tweet.entities.urls, function(i,entry) {
-          index_map[entry.indices[0]] = [entry.indices[1], function(text) {return "<a href='"+escapeHTML(entry.url)+"'>"+escapeHTML(text)+"</a>"}]
+          index_map[entry.indices[0]] = [entry.indices[1], function(text) {return "<a href='"+escapeHTML(entry.url)+"' target='_blank'>"+escapeHTML(text)+"</a>"}]
       })
 
       $.each(tweet.entities.hashtags, function(i,entry) {
-          index_map[entry.indices[0]] = [entry.indices[1], function(text) {return "<a href='http://twitter.com/search?q="+escape("#"+entry.text)+"'>"+escapeHTML(text)+"</a>"}]
+          index_map[entry.indices[0]] = [entry.indices[1], function(text) {return "<a href='http://twitter.com/search?q="+escape("#"+entry.text)+"' target='_blank'>"+escapeHTML(text)+"</a>"}]
       })
 
       $.each(tweet.entities.user_mentions, function(i,entry) {
-          index_map[entry.indices[0]] = [entry.indices[1], function(text) {return "<a title='"+escapeHTML(entry.name)+"' href='http://twitter.com/"+escapeHTML(entry.screen_name)+"'>"+escapeHTML(text)+"</a>"}]
+          index_map[entry.indices[0]] = [entry.indices[1], function(text) {return "<a title='"+escapeHTML(entry.name)+"' href='http://twitter.com/"+escapeHTML(entry.screen_name)+"'  target='_blank'>"+escapeHTML(text)+"</a>"}]
       })
 
       var result = ""
@@ -91,11 +91,11 @@
   var renderAuthor = function (author) {
     return $(
       '<div class="author">' +
-        '<a href="' + author.url + '" class="avatar-container">' +
+        '<a href="' + author.url + '" class="avatar-container" target="_blank">' +
           '<img src="' + author.image + '">' +
         '</a>' +
         '<div>' +
-          '<a href="' + author.url + '">@' + author.username + '</a>' +
+          '<a target="_blank" href="' + author.url + '">@' + author.username + '</a>' +
           '<span class="location">' + author.location + '</span>' +
         '</div>' +
       '</div>'
@@ -124,7 +124,7 @@
       url: 'http://twitter.com/' + tweet.user.screen_name,
       image: tweet.user.profile_image_url,
       username: tweet.user.screen_name,
-      location: tweet.user.location
+      location: (tweet.user.location || '')
     });
   };
 
@@ -152,7 +152,7 @@
       url: 'http://instagram.com/' + data.data.user.username,
       image: data.data.user.profile_picture,
       username: data.data.user.username,
-      location: (data.data.location|| '')
+      location: (data.data.location || '')
     });
   };
 
@@ -266,8 +266,8 @@
 
     var $containers = [];
 
-    for (var i = 0; i < 6; i++) {
-      var $container = $('<div />').addClass('pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-6 container')  ;
+    for (var i = 0; i < (socialConnections.options.containers || 6); i++) {
+      var $container = $('<div />').addClass(['container', socialConnections.options.containerClass].join(' '));
       $containers.push($container);
       $socialConnectionsEl.append($container);
     }
@@ -321,6 +321,6 @@
 
       $newTile.hide();
       $newTile.removeClass('flip out').addClass('flip in').show();
-    }, Math.round(Math.random()*7500));
+    }, Math.round(Math.random()*5000));
   });
 }).call(this, jQuery);

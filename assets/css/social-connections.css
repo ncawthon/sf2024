@@ -39,7 +39,7 @@
 #social-connections-popup .author {
   background: rgba(0,0,0,0.6);
   color: #fff;
-  font-size: 1em;
+  font-size: 1.1vw;
   height: 48px;
   position: relative;
   text-align: left;
@@ -73,10 +73,13 @@
 #social-connections .author div .location,
 #social-connections-popup-overlay .author div .location,
 #social-connections-popup .author div .location {
-  color: rgba(255,255,255,0.9);
-  font-size: 1em;
+  color: rgba(255,255,255,0.6);
   line-height: 150%;
+  font-size: 1.0vw;
+
 }
+
+
 #social-connections-popup-overlay {
   background: rgba(0,0,0,0.8);
   position: fixed;
@@ -103,7 +106,7 @@
   margin: 3em auto;
   text-align: left;
   max-width: 100%;
-  width: 400px;
+  width: 500px;
   border: 1px solid #fff;
 }
 #social-connections-popup main .close {
@@ -122,7 +125,7 @@
   padding: 1em 1em 0.5em;
   margin: 0;
   color: #fff;
-  font-size: 1.25em;
+  font-size: 1.3vw;
 }
 #social-connections-popup main p:first-child {
   border-bottom: 1px solid rgba(240,240,240,0.8);
@@ -202,7 +205,7 @@
     min-height: 16vw;
   }
   #social-connections section .content {
-    font-size: 1.25em;
+    font-size: 1.3vw;
   }
 }
 .flip {
@@ -302,4 +305,67 @@
 #social-connections .container {
   margin:0px;
   padding: 0px;
+}
+
+@media (max-width: 1199px) {
+  #social-connections .author,
+  #social-connections .author div .location, 
+  #social-connections-popup .author div .location,
+  #social-connections-popup .author a,
+  #social-connections-popup main p
+    {
+    font-size: 1.25vw;
+  }
+}
+@media (max-width: 992px) {
+  #social-connections .author,
+  #social-connections .author div .location, 
+  {
+    font-size: 1.00vw;
+  } 
+}
+
+@media (max-width: 992px) {
+  #social-connections-popup .author div .location,
+  #social-connections-popup .author a,
+  #social-connections-popup main p
+  {
+    font-size: 1.5vw;    
+  }
+}
+
+@media (max-width: 768px) {
+  #social-connections .author,
+  #social-connections .author div .location, 
+  #social-connections-popup .author div .location,
+  #social-connections-popup .author a,
+  #social-connections-popup main p
+   {
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 547px) {
+  #social-connections .author,
+  #social-connections .author div .location, 
+  #social-connections-popup .author div .location,
+  #social-connections-popup .author a,
+  #social-connections-popup main p
+   {
+    font-size: 3.0vw;
+  }
+}
+
+@media (max-width: 547px) {
+  #social-connections .content 
+  {
+    font-size: 6.5vw;
+  }
+}
+
+  #social-connections .author,
+  #social-connections .author div .location {
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: hidden;
 }

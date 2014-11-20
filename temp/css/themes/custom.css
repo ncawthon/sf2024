@@ -585,8 +585,14 @@ blockquote.info {
   color: #fff;
   font-size: 67.5px;
   font-weight: 300;
-  text-align: center;
+  text-align: left;
 }
+
+.action-verb {
+  font-weight: 100 !important;
+  text-align: right !important;
+}
+
 /*
  * ===================================
  * Forms

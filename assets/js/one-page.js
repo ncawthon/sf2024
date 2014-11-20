@@ -131,11 +131,9 @@ $(document).ready(function () {
 			"opacity": "1"
 		});
 		$(".box-load").removeClass("box-load");
-		$("#loadNews").text("That's all for now");
-		$('.md-trigger').modalEffects();
 	});
 
-	/*
+	/* 
 	 * ===================================
 	 * Animations during scrolling down using jQuery WayPoints plugin
 	 * ===================================
