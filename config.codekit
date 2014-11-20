@@ -208,6 +208,15 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0
 		},
+	"\/assets\/css\/min\/social-connections.min.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/css\/min\/social-connections.min.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/assets\/css\/social-connections.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -222,6 +231,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/css\/themes\/custom.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/css\/themes\/custom.min.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/css\/themes\/custom.min.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -380,6 +398,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/faces\/bchastain.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21344,
+		"inputAbbreviatedPath": "\/assets\/img\/faces\/bchastain.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/faces\/bchastain.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/faces\/bhiggins.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -413,6 +442,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/faces\/bvilla.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19062,
+		"inputAbbreviatedPath": "\/assets\/img\/faces\/bvilla.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/faces\/bvilla.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/faces\/cgranger.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -442,6 +482,28 @@
 		"initialSize": 13946,
 		"inputAbbreviatedPath": "\/assets\/img\/faces\/dkaval.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/faces\/dkaval.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/faces\/dwilsey.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15020,
+		"inputAbbreviatedPath": "\/assets\/img\/faces\/dwilsey.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/faces\/dwilsey.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/faces\/dwisely.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15020,
+		"inputAbbreviatedPath": "\/assets\/img\/faces\/dwisely.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/faces\/dwisely.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -655,6 +717,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/faces\/jazzi.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15338,
+		"inputAbbreviatedPath": "\/assets\/img\/faces\/jazzi.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/faces\/jazzi.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/faces\/jbloom.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -809,6 +882,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/faces\/mjohnson.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13842,
+		"inputAbbreviatedPath": "\/assets\/img\/faces\/mjohnson.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/faces\/mjohnson.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/faces\/mking.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -820,6 +904,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/faces\/mkoroleva.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15868,
+		"inputAbbreviatedPath": "\/assets\/img\/faces\/mkoroleva.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/faces\/mkoroleva.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/faces\/pmarathe.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -827,6 +922,17 @@
 		"initialSize": 12898,
 		"inputAbbreviatedPath": "\/assets\/img\/faces\/pmarathe.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/faces\/pmarathe.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/faces\/rsilvesteri.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10057,
+		"inputAbbreviatedPath": "\/assets\/img\/faces\/rsilvesteri.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/faces\/rsilvesteri.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1007,6 +1113,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/logos\/clark.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13405,
+		"inputAbbreviatedPath": "\/assets\/img\/logos\/clark.png",
+		"outputAbbreviatedPath": "\/assets\/img\/logos\/clark.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/logos\/deloitte.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1091,6 +1208,28 @@
 		"initialSize": 5798,
 		"inputAbbreviatedPath": "\/assets\/img\/logos\/kings.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/logos\/kings.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/logos\/nate-ballard.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 24020,
+		"inputAbbreviatedPath": "\/assets\/img\/logos\/nate-ballard.png",
+		"outputAbbreviatedPath": "\/assets\/img\/logos\/nate-ballard.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/logos\/pj.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16875,
+		"inputAbbreviatedPath": "\/assets\/img\/logos\/pj.png",
+		"outputAbbreviatedPath": "\/assets\/img\/logos\/pj.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1190,6 +1329,17 @@
 		"initialSize": 19039,
 		"inputAbbreviatedPath": "\/assets\/img\/logos\/warriors.png",
 		"outputAbbreviatedPath": "\/assets\/img\/logos\/warriors.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/logos\/wsp.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 35445,
+		"inputAbbreviatedPath": "\/assets\/img\/logos\/wsp.png",
+		"outputAbbreviatedPath": "\/assets\/img\/logos\/wsp.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1900,7 +2050,7 @@
 		},
 	"\/assets\/js\/min\/map-min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/min\/map-min.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/min\/map-min-min.js",
@@ -1933,7 +2083,7 @@
 		},
 	"\/assets\/js\/min\/social-connections-min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/min\/social-connections-min.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/min\/social-connections-min-min.js",
@@ -3662,7 +3812,7 @@
 		},
 	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/infinite-scroll\/waypoints-infinite.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/infinite-scroll\/waypoints-infinite.js",
 		"outputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/infinite-scroll\/min\/waypoints-infinite-min.js",
@@ -3706,7 +3856,7 @@
 		},
 	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/sticky-elements\/waypoints-sticky.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/sticky-elements\/waypoints-sticky.js",
 		"outputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/shortcuts\/sticky-elements\/min\/waypoints-sticky-min.js",
@@ -3900,7 +4050,7 @@
 		},
 	"\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/waypoints.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/waypoints.js",
 		"outputAbbreviatedPath": "\/assets\/plugins\/imakewebthings-jquery-waypoints-415eb55\/min\/waypoints-min.js",
@@ -10318,7 +10468,7 @@
 		},
 	"\/temp\/js\/min\/app-min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/temp\/js\/min\/app-min.js",
 		"outputAbbreviatedPath": "\/temp\/js\/min\/min\/app-min-min.js",
@@ -10406,7 +10556,7 @@
 		},
 	"\/temp\/js\/min\/one-page-min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/temp\/js\/min\/one-page-min.js",
 		"outputAbbreviatedPath": "\/temp\/js\/min\/min\/one-page-min-min.js",

@@ -1984,17 +1984,17 @@ fieldset[disabled] .navbar-trn .btn-link:focus {
 }
 .thumbnail .profile .caption > h3 {
   margin: 0;
-  font-size: 24px;
+  font-size: 22px;
 }
 .thumbnail .profile .caption > h5 {
   margin:5px auto;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: lighter;
 }
 
 .thumbnail .profile .caption > h6 {
   margin:5px auto;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: lighter;  
 }
 
@@ -2611,6 +2611,10 @@ fieldset[disabled] .navbar-trn .btn-link:focus {
   font-size: 95%;
 }
 
+#partners ul li{
+  margin:20px auto;
+}
+
 .center-me{
   text-align:center;
   display:inline-block;
@@ -2620,4 +2624,8 @@ fieldset[disabled] .navbar-trn .btn-link:focus {
 
 ul.big-list {
   margin-left: -40px;
+}
+
+.caption h5 {
+  font-size: 85%
 }
