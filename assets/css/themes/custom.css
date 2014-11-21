@@ -2560,22 +2560,13 @@ fieldset[disabled] .navbar-trn .btn-link:focus {
   opacity: 1;
 }
 
-.olympians img {
-  margin: auto;
-}
-
 .olympians {
   margin-top: 20px;
 }
 
-
-
-
-.olympians img {
-  margin:10px auto;
-  border:1px #aaa solid;
-  min-width: 140px;
-  max-width: 160px;
+.olympians ul li{
+  display:block;
+  min-height: 300px;
 }
 
 .olympians h4, .olympians h5, .olympians h6 {
@@ -2587,6 +2578,33 @@ fieldset[disabled] .navbar-trn .btn-link:focus {
 
 .olympians h5 {
   font-size: 95%;
+}
+
+
+.olympians img {
+  margin:10px auto;
+  border:1px #aaa solid;
+}
+
+@media (min-width: 1200px) {
+  .olympians img {
+      width:200px;
+  }
+}
+@media (max-width: 1199px) {
+  .olympians img {
+      width:200px;
+  }
+}
+@media (max-width: 992px) {
+  .olympians img {
+      width:200px;
+  }
+}
+@media (max-width: 768px) {
+  .olympians img {
+      width:200px;
+  }
 }
 
 .teams {
@@ -2615,13 +2633,6 @@ fieldset[disabled] .navbar-trn .btn-link:focus {
   margin:20px auto;
 }
 
-.center-me{
-  text-align:center;
-  display:inline-block;
-  margin:auto;
-  background:blue;
-}
-
 ul.big-list {
   margin-left: -40px;
 }
@@ -2629,3 +2640,8 @@ ul.big-list {
 .caption h5 {
   font-size: 85%
 }
+
+@media (min-width: 892px) {
+  .join-us {
+  padding-top: 60px;
+  }

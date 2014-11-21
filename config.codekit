@@ -519,6 +519,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/faces\/gmeinhart.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11667,
+		"inputAbbreviatedPath": "\/assets\/img\/faces\/gmeinhart.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/faces\/gmeinhart.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/faces\/gshultz.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -768,6 +779,28 @@
 		"initialSize": 12898,
 		"inputAbbreviatedPath": "\/assets\/img\/faces\/pmarathe.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/faces\/pmarathe.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/faces\/pvarellas.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9915,
+		"inputAbbreviatedPath": "\/assets\/img\/faces\/pvarellas.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/faces\/pvarellas.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/faces\/rkimball.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9149,
+		"inputAbbreviatedPath": "\/assets\/img\/faces\/rkimball.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/faces\/rkimball.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
