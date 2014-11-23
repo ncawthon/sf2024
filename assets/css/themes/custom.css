@@ -1263,23 +1263,6 @@ i.only-i:before,
   color: #c0732c;
 }
 
-.social-follow {
-  color:#fff;
-  margin:auto 8px;
-  font-size: 18px !Important;
-  height: 45px;
-  padding:10px;
-  border-radius: 2px;
-  border:1px solid rgba(255,255,255,0.35);
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;  
-}
-
-.social-follow:hover {
-  color:#eee;
-  background: rgba(255,255,255,0.35);
-}
-
 
 /*
  * ===================================
@@ -2566,7 +2549,7 @@ fieldset[disabled] .navbar-trn .btn-link:focus {
 
 .olympians ul li{
   display:block;
-  min-height: 300px;
+  min-height: 350px;
 }
 
 .olympians h4, .olympians h5, .olympians h6 {
@@ -2607,15 +2590,40 @@ fieldset[disabled] .navbar-trn .btn-link:focus {
   }
 }
 
+
+
 .teams {
   margin-top:20px;
 }
 .teams img {
-  height:200px;
-  min-width: 200px;
-  min-height: 200px;
   display:block;
   margin: auto;  
+}
+
+@media (min-width: 1200px) {
+  .teams img {
+      width:200px;
+  }
+}
+@media (max-width: 1199px) {
+  .teams img {
+      width:220px;
+  }
+}
+@media (max-width: 992px) {
+  .teams img {
+      width:200px;
+  }
+}
+@media (max-width: 768px) {
+  .teams img {
+      width:160px;
+  }
+}
+@media (min-width: 767px) {
+  .teams img {
+      width:140px;
+  }
 }
 
 .teams h4, .teams h5, .teams h6  {
@@ -2641,7 +2649,28 @@ ul.big-list {
   font-size: 85%
 }
 
-@media (min-width: 892px) {
-  .join-us {
-  padding-top: 60px;
+@media (min-width: 767px) {
+  .social-list li {
+    margin-bottom:40px;
   }
+}
+
+.social-list li {
+  font-size: 18px !Important;
+  height: 45px;
+  padding:10px;
+  border-radius: 2px;
+  border:1px solid rgba(255,255,255,0.35);
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;  
+}
+
+.social-list li a {
+    color:#fff;
+}
+
+.social-list li:hover {
+  color:#eee;
+  background: rgba(255,255,255,0.35);
+}
+
