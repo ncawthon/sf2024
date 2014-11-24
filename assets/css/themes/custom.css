@@ -19,6 +19,7 @@ html {
 #ascrail2000-hr {
 	display: none !important;
 }
+
 /*
  * ===================================
  * Media Queries
@@ -2625,6 +2626,29 @@ fieldset[disabled] .navbar-trn .btn-link:focus {
       width:140px;
   }
 }
+
+
+@media (min-width: 897px) {
+  .big-list {
+    text-align: left;
+  }
+  .big-title {
+    text-align: left;
+  }
+}
+
+
+@media (max-width: 896px) {
+  .big-list {
+    text-align: center;
+  }
+  .big-title {
+    text-align: center;
+  }
+}
+
+
+
 
 .teams h4, .teams h5, .teams h6  {
   font-size:115%;
