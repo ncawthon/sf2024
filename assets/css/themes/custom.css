@@ -2698,3 +2698,17 @@ ul.big-list {
   background: rgba(255,255,255,0.35);
 }
 
+.quote {
+  text-align: center;
+  font-style: italic;
+  font-size:150%;
+  margin:auto 40px;
+  color:#888;
+}
+
+.quote-attribute {
+  text-align: center;
+  font-size:115%;
+  color:#888;
+}
+
