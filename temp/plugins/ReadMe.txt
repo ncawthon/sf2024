@@ -1,1 +1,0 @@
-This folder contain all needed plugins for the Dragonfly template.
