@@ -207,11 +207,16 @@ $(document).ready(function () {
 		bouncescroll: false,
 		spacebarenabled: true,
 		disableoutline: true,
+        enablemousewheel: true, // nicescroll can manage mouse wheel events
+        enablekeyboard: true,
 		smoothscroll: true,
-		sensitiverail: false,
+		sensitiverail: true,
 		autohidemode: false,
+        gesturezoom: true, // (only when boxzoom=true and with touch devices) zoom activated when pinch out/in on box
+        grabcursorenabled: true, // (only when touchbehavior=true) display "grab" icon
+		enablescrollonselection: true,
 		cursordragspeed: 0.3,
-		zindex: 999999
+		zindex: 999999,
 	});
 
 	/*
