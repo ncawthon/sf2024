@@ -60,7 +60,18 @@
 
     <!--=== CSS  ===-->
     <link href="assets/css/themes/custom.css" rel="stylesheet" id="stylesheet">
+    
+    <!--[if lte IE 8]>
+        <style type="text/css" rel="stylesheet" id="stylesheet">
+            .IE8hide {
+                display:none !important;
+            }
 
+            .nonIE8show {
+                display:visible !important;
+            }
+        </style>
+    <![endif]-->
 
 </head>
 
@@ -69,7 +80,7 @@
     <!-- Main Navigation -->
     <nav class="navbar navbar-trn navbar-fixed-top navbar-height" role="navigation" id="navbarSettings" style="background-color:rgba(255, 255, 255, 0.498039);">
         <div class="container">
-            <div class="hidden-sm hidden-md hidden-lg">
+            <div class="hidden-sm hidden-md hidden-lg IE8hide">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span>
@@ -109,33 +120,33 @@
                 <div class="col-sm-5">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
-                            <a href="#sWelcome" class="scroll wow fadeIn" data-wow-delay="0.55s">Welcome</a>
+                            <a href="#sWelcome" class="scroll">Welcome</a>
                         </li>
                         <li class="dropdown">
-                            <a href="#sJoinUs" class="scroll wow fadeIn" data-wow-delay="0.45s">Join Us</a>
+                            <a href="#sJoinUs" class="scroll">Join Us</a>
                         </li>
                         <li class="dropdown">
-                            <a href="#sOurCity" class="scroll wow fadeIn" data-wow-delay="0.35s">Our City</a>
+                            <a href="#sOurCity" class="scroll">Our City</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-sm-2">
                     <div class="navbar-header centerX">
                         <a class="navbar-logo scroll" href="#sWelcome">
-                            <img class="wow fadeIn" data-wow-delay="0.25s" width="150" height="90" alt="sf2024" src="assets/img/logo.png">
+                            <img class="" height="90" alt="sf2024" src="assets/img/logo.png">
                         </a>
                     </div>
                 </div>
                 <div class="col-sm-5">
                     <ul class="nav navbar-nav navbar-left">
                         <li class="dropdown">
-                            <a href="#sOurTeam" class="scroll wow fadeIn" data-wow-delay="0.35s">Our Team</a>
+                            <a href="#sOurTeam" class="scroll">Our Team</a>
                         </li>
                         <li class="dropdown">
-                            <a href="#sNews" class="scroll wow fadeIn" data-wow-delay="0.45s">News</a>
+                            <a href="#sNews" class="scroll">News</a>
                         </li>
                         <li class="dropdown">
-                            <a href="#sContact" class="scroll wow fadeIn" data-wow-delay="0.55s">Contact</a>
+                            <a href="#sContact" class="scroll">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -143,15 +154,15 @@
         </div>
     </nav>
 
+    <!--[if lte IE 8]>
+    <div class="row nonIE8show">
+            <img class="col-sm-12 img-responsive nonIE8show" src='assets/video/bridge-cover.jpg'>
+    </div>
+    <![endif]-->
 
     <!--  Welcome Section  -->
     <span class="breakPoint" id="sWelcome"></span>
-
-    <div class="row">
-            <img class="visible-xs visible-sm col-sm-12 img-responsive" src='assets/video/bridge-cover.jpg'>
-    </div>
-
-    <div class="tp-banner-container visible-md visible-lg visible-xl">
+    <div class="tp-banner-container visible-md visible-lg visible-xl IE8hide">
 
         <div class="tp-banner" >
             <ul>
@@ -554,7 +565,7 @@
         </div>
     </div>
 
-    <div class="bg-warning visible-sm visible-md visible-lg visible-xl" style="margin-bottom:0px; margin-top:0px;">
+    <div class="bg-warning visible-sm visible-md visible-lg visible-xl IE8hide" style="margin-bottom:0px; margin-top:0px;">
         <section id="social-connections-popup-overlay"></section>
 
         <section id="social-connections-popup"></section>
@@ -967,7 +978,7 @@
                                     <div class="hover-content md-trigger" data-modal="modal-a3">
                                         <img class="img-responsive" alt="Our team" src="assets/img/faces/lbaer.jpg">
                                         <div class="hover-fade">
-                                            <i class="fa fa-expand"></i>
+                                            <i class="fa fa-expand IE8hide"></i>
                                         </div>
                                     </div>
                                     <div class="caption">
@@ -1026,7 +1037,7 @@
                                     <div class="hover-content md-trigger" data-modal="modal-a2">
                                         <img class="img-responsive" alt="Our team" src="assets/img/faces/acribbs.jpg">
                                         <div class="hover-fade">
-                                            <i class="fa fa-expand"></i>
+                                            <i class="fa fa-expand IE8hide"></i>
                                         </div>
                                     </div>
                                     <div class="caption">
@@ -1076,7 +1087,7 @@
                                     <div class="hover-content md-trigger" data-modal="modal-a1">
                                         <img class="img-responsive" alt="Our team" src="assets/img/faces/sstrandberg.jpg">
                                         <div class="hover-fade">
-                                            <i class="fa fa-expand"></i>
+                                            <i class="fa fa-expand IE8hide"></i>
                                         </div>
                                     </div>
                                     <div class="caption">
@@ -1707,14 +1718,14 @@
                         <ul class="info-list md-list i-primary">
                             <li>
                                 <i class="fa fa-envelope fa-fw"  style="color:#c0732c;"></i>
-                                <a href="mailto:info@sf2024.org">info@sf2024.org</a>
+                                <a href="mailto:info@sf2024.org" style="color:#eee;">info@sf2024.org</a>
                             </li>
                             <li>
-                                <i class="fa fa-phone fa-fw"  style="color:#c0732c;"></i>
+                                <i class="fa fa-phone fa-fw"></i>
                                 1 (415) 409 2024
                             </li>
                             <li>
-                                <i class="fa fa-map-marker fa-fw"  style="color:#c0732c;"></i>
+                                <i class="fa fa-map-marker fa-fw"></i>
                                 PO Box 2024 SF,CA 94105
                             </li>
                         </ul>
@@ -1722,19 +1733,19 @@
                     <div class="space-sm visible-sm visible-xs"></div>
                     <div class="col-md-4 col-lg-4  col-xs-12">
                         <h4 style="color:#c0732c;">Thank You</h4>
-                        <p> Background imagery courtesy of Darren Atekson from <b><a href="http://yosemitelandscapes.zenfolio.com/" target="_blank">Yosemite Landscapes</a></b>, <b><a href="http://contrastphotography.com" target="_blank">Contrast Photography</a></b> courtesy Cal Athletics and John Todd from <b><a href="http://www.isiphotos.com/" target="_blank">ISI Photos</a></b>. Special thanks to all our volunteers for their continued work behind the scenes.</p>
+                        <p> Background imagery courtesy of Darren Atekson from <b><a href="http://yosemitelandscapes.zenfolio.com/" target="_blank" style="color:#eee;">Yosemite Landscapes</a></b>, <b><a href="http://contrastphotography.com" target="_blank" style="color:#eee;">Contrast Photography</a></b> courtesy Cal Athletics and John Todd from <b><a href="http://www.isiphotos.com/" target="_blank" style="color:#eee;">ISI Photos</a></b>. Special thanks to all our volunteers for their continued work behind the scenes.</p>
                     </div>
                     <div class="space-sm visible-sm visible-xs"></div>
                     <div class="col-md-4 col-lg-4  col-xs-12">
                         <h4 style="color:#c0732c;">Spread the Word</h4>
                            <ul class="list-unstyled">
                             <li>
-                                <a href="http://twitter.com/sf2024" target="_blank" title="Follow us">
+                                <a href="http://twitter.com/sf2024" target="_blank" title="Follow us" style="color:#eee;">
                                     <i class="fa fa-twitter"> FOLLOW @SF2024</i>
                                 </a>
                             </li>
                             <li style="margin-top:10px;">
-                                <a href="http://facebook.com/sf2024" target="_blank" title="Friend us">
+                                <a href="http://facebook.com/sf2024" target="_blank" title="Friend us" style="color:#eee;">
                                     <i class="fa fa-facebook"> FRIEND SF2024</i>
                                 </a>
                             </li>

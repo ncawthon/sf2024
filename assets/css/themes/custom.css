@@ -2726,3 +2726,7 @@ ul.big-list {
   }
 
 }
+
+.nonIE8show {
+  display: hidden;
+}
