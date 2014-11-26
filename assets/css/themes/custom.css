@@ -2550,7 +2550,7 @@ fieldset[disabled] .navbar-trn .btn-link:focus {
 
 .olympians ul li{
   display:block;
-  min-height: 350px;
+  min-height: 330px;
 }
 
 .olympians h4, .olympians h5, .olympians h6 {
@@ -2591,8 +2591,6 @@ fieldset[disabled] .navbar-trn .btn-link:focus {
   }
 }
 
-
-
 .teams li{
   margin-top:20px;
   min-height:240px;
@@ -2600,10 +2598,10 @@ fieldset[disabled] .navbar-trn .btn-link:focus {
 
 @media (max-width: 600px) {
   .teams li{
-  min-height:180px;  
+  min-height:320px;  
   }
   .olympians ul li{
-  min-height: 180px;
+  min-height: 320px;
   }
 }
 
