@@ -2598,6 +2598,15 @@ fieldset[disabled] .navbar-trn .btn-link:focus {
   min-height:240px;
 }
 
+@media (max-width: 600px) {
+  .teams li{
+  min-height:180px;  
+  }
+  .olympians ul li{
+  min-height: 180px;
+  }
+}
+
 .teams img {
   display:block;
   margin: auto;  
