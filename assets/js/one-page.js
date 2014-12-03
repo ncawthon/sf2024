@@ -124,7 +124,7 @@ $(document).ready(function () {
 	 * */
 
 	$("#loadNews").on("click", function () {
-		$("#newsFeed").find(".box-feed").last().load("assets/ajax-load/news.html");
+		$("#newsFeed").find(".box-wrap").last().load("assets/ajax-load/news.html");
 	});
 	$(document).ajaxComplete(function (event, request, settings) {
 		$(".box-load").animate({
