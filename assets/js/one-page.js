@@ -131,11 +131,11 @@ $(document).ready(function () {
 	//		}
 	//	});
 
-	var ajaxContent1,
-		ajaxContent2,
-		ajaxContent3,
-		ajaxContent4,
-		ajaxContent5;
+	var ajaxContent1 = "",
+		ajaxContent2 = "",
+		ajaxContent3 = "",
+		ajaxContent4 = "",
+		ajaxContent5 = "";
 	$.get("assets/ajax-load/news1.html", function (data) {
 		ajaxContent1 = data;
 	});
@@ -151,7 +151,7 @@ $(document).ready(function () {
 	$.get("assets/ajax-load/news5.html", function (data) {
 		ajaxContent5 = data;
 	});
-
+ 
 	$("#loadNews").on("click", function () {
 		$("#loadHere").append("<div class='row box-feed'>" + ajaxContent1 + "</div>" + "<div class='row box-feed'>" + ajaxContent2 + "</div>" + "<div class='row box-feed'>" + ajaxContent3 + "</div>" + "<div class='row box-feed'>" + ajaxContent4 + "</div>" + "<div class='row box-feed'>" + ajaxContent5 + "</div>");
 		$("#loadNews").hide();
