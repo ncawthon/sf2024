@@ -1,0 +1,21 @@
+@media (min-width: 768px) {
+    .navbar-height.navbar-trn .navbar-nav > .active > a,
+    .navbar-height.navbar-trn .navbar-nav > .active > a:hover,
+    .navbar-height.navbar-trn .navbar-nav > .active > a:focus,
+    .navbar-height.navbar-trn .navbar-nav > li > a:hover,
+    .navbar-height.navbar-trn .navbar-nav > li > a:focus {
+        background: #f5f5f5 !important;
+    }
+}
+.navbar-height.navbar-trn {
+    background: #f5f5f5 !important;
+}
+.navbar-trn {
+    background: #222 !important;
+}
+.social-list li {
+    border: 1px solid #f5f5f5;
+}
+.icon .form-control {
+    padding-top: 13px;
+}
