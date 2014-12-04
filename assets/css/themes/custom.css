@@ -2674,6 +2674,11 @@ fieldset[disabled] .navbar-trn .btn-link:focus {
   margin:20px auto;
 }
 
+#partners ul li img{
+  max-height:140px;
+  margin:auto auto;
+}
+
 ul.big-list {
   margin-left: -40px;
 }
@@ -2688,23 +2693,24 @@ ul.big-list {
   }
 }
 
-.social-list li {
+.social-list li a{
+  color:#fff;
+  width:90%;
+  display: inline-block;
   font-size: 18px !Important;
   height: 45px;
-  padding:10px;
+  padding:10px 0px;
+  margin:auto 5px;
   border-radius: 2px;
-  border:1px solid rgba(255,255,255,0.35);
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;  
+  border:2px solid rgba(255,255,255,0.35);
 }
 
-.social-list li a {
-    color:#fff;
-}
 
-.social-list li:hover {
+.social-list li a:hover {
   color:#eee;
   background: rgba(255,255,255,0.35);
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;  
 }
 
 .quote {
