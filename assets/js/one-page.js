@@ -41,7 +41,7 @@ $(document).ready(function () {
 
 	// Must add the class "scroll" to the link - <a href="#someID" class="scroll">
 	$('a.scroll').click(function () {
-		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+		if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
 			var target = $(this.hash);
 			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 			if (target.length) {
@@ -122,15 +122,40 @@ $(document).ready(function () {
 	 * Load next news
 	 * ===================================
 	 * */
+	//	$.ajax({
+	//		type: "GET",
+	//		url: "assets/ajax-load/news.html",
+	//		async: false,
+	//		success: function (text) {
+	//			ajaxContent = text;
+	//		}
+	//	});
 
-	$("#loadNews").on("click", function () {
-		$("#newsFeed").find(".box-feed").last().load("assets/ajax-load/news.html");
+	var ajaxContent1 = "",
+		ajaxContent2 = "",
+		ajaxContent3 = "",
+		ajaxContent4 = "",
+		ajaxContent5 = "";
+	$.get("assets/ajax-load/news1.html", function (data) {
+		ajaxContent1 = data;
 	});
-	$(document).ajaxComplete(function (event, request, settings) {
-		$(".box-load").animate({
-			"opacity": "1"
-		});
-		$(".box-load").removeClass("box-load");
+	$.get("assets/ajax-load/news2.html", function (data) {
+		ajaxContent2 = data;
+	});
+	$.get("assets/ajax-load/news3.html", function (data) {
+		ajaxContent3 = data;
+	});
+	$.get("assets/ajax-load/news4.html", function (data) {
+		ajaxContent4 = data;
+	});
+	$.get("assets/ajax-load/news5.html", function (data) {
+		ajaxContent5 = data;
+	});
+ 
+	$("#loadNews").on("click", function () {
+		$("#loadHere").append("<div class='row box-feed'>" + ajaxContent1 + "</div>" + "<div class='row box-feed'>" + ajaxContent2 + "</div>" + "<div class='row box-feed'>" + ajaxContent3 + "</div>" + "<div class='row box-feed'>" + ajaxContent4 + "</div>" + "<div class='row box-feed'>" + ajaxContent5 + "</div>");
+		$("#loadNews").hide();
+		$("#messageAfter").show();
 	});
 
 	/* 
@@ -157,6 +182,7 @@ $(document).ready(function () {
 			$("#pricesSlider").find(".fourth").removeClass("flipping");
 		}, 1450);
 	});
+
 
 	//news section
 	$("#sNews").waypoint(function () {
@@ -207,9 +233,14 @@ $(document).ready(function () {
 		bouncescroll: false,
 		spacebarenabled: true,
 		disableoutline: true,
+		enablemousewheel: true, // nicescroll can manage mouse wheel events
+		enablekeyboard: true,
 		smoothscroll: true,
-		sensitiverail: false,
+		sensitiverail: true,
 		autohidemode: false,
+		gesturezoom: true, // (only when boxzoom=true and with touch devices) zoom activated when pinch out/in on box
+		grabcursorenabled: true, // (only when touchbehavior=true) display "grab" icon
+		enablescrollonselection: true,
 		cursordragspeed: 0.3,
 		zindex: 999999
 	});
@@ -303,30 +334,6 @@ $(document).ready(function () {
 	/*=== Validator for form ===*/
 	$(".validate").validate();
 
-
-	/*=== WOW - Loading animations ===*/
-	new WOW({
-		boxClass: 'wow',
-		animateClass: 'animated',
-		offset: 50,
-		mobile: false
-	}).init();
-
-	/*=== Google Maps ===*/
-	// $('#map').initMap({
-	// 	markers: {
-	// 		marker1: {
-	// 			position: [37.4395881, -122.15977, 14]
-	// 		}
-	// 	},
-	// 	options: {
-	// 		zoom: 14,
-	// 		draggable: false,
-	// 		scrollwheel: false,
-	// 		disableDoubleClickZoom: true,
-	// 		zoomControl: true
-	// 	},
-	// 	type: 'roadmap',
-	// 	center: [37.4395881, -122.15977]
-	// });
+	/*=== Placeholders ===*/
+	$('input, textarea').placeholder();
 });
