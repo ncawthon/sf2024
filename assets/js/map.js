@@ -20,13 +20,6 @@
 
     this.map = L.mapbox.map(this.mapElement, mapOptions.mapboxId, mapOptions);
 
-    // this.zoomControl = L.control.zoom({
-    //   position: 'bottomright'
-    // });
-
-    // this.zoomControl.addTo(this.map);
-
-    // Add zoomslider etc.
     L.control.zoomslider({
       position: 'topleft'
     }).addTo(this.map);
@@ -34,6 +27,27 @@
     L.control.fullscreen({
       position: 'topleft'
     }).addTo(this.map);
+
+    new L.Control.MiniMap(L.mapbox.tileLayer('examples.map-i86nkdio'), {
+                position: 'topright',
+                toggleDisplay: false,
+                zoomLevelOffset: -5,
+                zoomLevelFixed: false,
+                zoomAnimation: false,
+                autoToggleDisplay: false,
+                width: 150,
+                height: 150,
+                aimingRectOptions: {color: "#ff7800", weight: 1, clickable: false},
+                shadowRectOptions: {color: "#000000", weight: 1, clickable: false, opacity:0, fillOpacity:0},
+            })
+            .addTo(this.map);
+
+
+     var imageUrl = 'http://gaugedesign.com/white-logo.svg',
+         imageBounds = [[37.605738, -122.310541], [37.705738, -122.210541]];
+
+    L.imageOverlay(imageUrl, imageBounds).addTo(this.map);
+
 
   };
 
@@ -128,21 +142,43 @@
 
     var venueIndex = this.venues.indexOf(venue);
 
-    var previousLink = $jQueryAngular('<a href="#" class="previous-venue">&laquo; Previous</a>').click(function (event) {
-      event.preventDefault();
-      var previousVenue = self.venues[venueIndex - 1];
-      self._jumpTo(self.map, venue._marker, previousVenue._marker);
-      return false;
+    var children = [];
+    angular.forEach(window.interactiveVenueMap.venues, function (mv) {
+      children = children.concat(mv.subCategories[0].venues);
     });
+
+    if(children.length){
+      var i = children.indexOf(venue);
+    }
+
+
+    if (i > 0) {
+      // setup prev link
+        var previousLink = $jQueryAngular('<a href="#" class="previous-venue">&laquo; Previous</a>').click(function (event) {
+          event.preventDefault();
+          var previousVenue = self.venues[venueIndex - 1];
+          self._jumpTo(self.map, venue._marker, previousVenue._marker);
+          return false;
+        });
+
+    }
+
+    if (i >= 0 && i < children.length - 1) {
+      //setup next link
+      var nextLink = $jQueryAngular('<a href="#" class="next-venue">Next &raquo;</a>').click(function (event) {
+        event.preventDefault();
+        var nextVenue = self.venues[venueIndex + 1];
+        self._jumpTo(self.map, venue._marker, nextVenue._marker);
+        return false;
+      });
+    }
+
+
+
 
     var progressReport = $jQueryAngular('<span class="progress">' + (venueIndex + 1) + '/' + this.venues.length + '</span>');
 
-    var nextLink = $jQueryAngular('<a href="#" class="next-venue">Next &raquo;</a>').click(function (event) {
-      event.preventDefault();
-      var nextVenue = self.venues[venueIndex + 1];
-      self._jumpTo(self.map, venue._marker, nextVenue._marker);
-      return false;
-    });
+
 
     progressReport.append(previousLink);
     progressReport.append(nextLink);
@@ -256,8 +292,9 @@
 
     for (var i = 0; i < $scope.venues.length; i++) {
       var category = $scope.venues[i];
-      $scope.toggleCategory(category);
-      $scope.toggleCategory(category);
+      if (category.disabled) {
+        $scope.toggleCategory(category);
+      }
     }
   }]);
 }).call(this, jQuery);

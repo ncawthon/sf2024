@@ -1180,7 +1180,7 @@ textarea.form-control {
 /* === Background Images === */
 
 .bg-15 {
-	background-image: url("../../img/1920w/cable-car.jpg");
+	background-image: url("../../img/1920w/us-soccer.jpg");
 }
 .bg-16 {
 	background-image: url("../../img/1920w/swimming.jpg");
@@ -1585,7 +1585,7 @@ i.only-i:before,
 .navbar {
 	margin-bottom: 0;
 	border: none;
-	z-index: 999;
+	z-index: 99999;
 	-webkit-transition: all 0.35s ease;
 	transition: all 0.35s ease;
 }

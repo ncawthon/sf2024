@@ -49,6 +49,8 @@
 
 	<link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v0.0.3/leaflet.fullscreen.css' rel='stylesheet' />
 
+    <link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-minimap/v1.0.0/Control.MiniMap.css' rel='stylesheet' />
+
 	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
 
 	<!--[if lte IE 8]>
@@ -100,10 +102,10 @@
 				<div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right nav-mobile">
 						<li class="dropdown">
-							<a href="#sWelcome" class="scroll">Welcome</a>
+							<a href="#sJoinUs" class="scroll">Join Us</a>
 						</li>
 						<li class="dropdown">
-							<a href="#sJoinUs" class="scroll">Join Us</a>
+							<a href="#sVenueMap" class="scroll">Venue Map</a>
 						</li>
 						<li class="dropdown">
 							<a href="#sOurCity" class="scroll">Our City</a>
@@ -125,10 +127,10 @@
 				<div class="col-sm-5">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="dropdown">
-							<a href="#sWelcome" class="scroll">Welcome</a>
+							<a href="#sJoinUs" class="scroll">Join Us</a>
 						</li>
 						<li class="dropdown">
-							<a href="#sJoinUs" class="scroll">Join Us</a>
+							<a href="#sVenueMap" class="scroll">Venue Map</a>
 						</li>
 						<li class="dropdown">
 							<a href="#sOurCity" class="scroll">Our City</a>
@@ -686,6 +688,72 @@
 
 
     <!-- BACKGROUND IMAGE -->
+    <div class="bg-16 bg-center bg-fixed bg-cover visible-md visible-lg visible-xl">
+        <div class="filling-section bg-filter"></div>
+    </div>
+    <!--/END BACKGROUND IMAGE -->
+
+    <span class="breakPoint" id="sVenueMap"></span>
+    <div class="bg-danger">
+        <div class="container section">
+            <h2 class="lg-title m-no-bottom wow fadeIn">Potential Venue Map</h2>
+        </div>
+    </div>
+
+            <div id="interactive-venue-map" ng-app="InteractiveVenueMap">
+             
+              <div style="visibility:none;" class="filter" ng-controller="FilterCtrl" ng-class="{'active': showFilter}">
+                <header class="pure-g">
+                  <div class="pure-u-1-1" ng-click="showFilter = !showFilter">
+                    <span class="toggle">
+                      <i class="icon ion-navicon-round" ng-if="!showFilter"></i><i class="icon ion-close" ng-if="showFilter"></i>
+                    </span>
+
+                    <span ng-if="showFilter">Hide Map Categories & Legend</span>
+                    <span ng-if="!showFilter">Show Map Categories & Legend</span>
+                  </div>
+                </header>
+                <main ng-if="showFilter">
+                  <nav>
+                    <ul class="pure-g">
+                      <li ng-repeat="category in venues" ng-class="{'selected': (selectedCategory === category)}" class="pure-u-1-2">
+                        <span></span>
+                        <a href="" ng-click="changeCategory(category)">
+                          {{category.category}}
+                        </a>
+                        <span></span>
+                      </li>
+                    </ul>
+                  </nav>
+                 <section class="pure-g">
+                    <div class="pure-u-1-3 sub-category" ng-class="{'selected': !selectedCategory.hidden}">
+                      <a href="" ng-click="toggleCategory(selectedCategory)">
+                        <div class="venue" style="background: {{selectedCategory.color}}"><img ng-src="{{selectedCategory.icon}}" ng-if="selectedCategory.icon"></div>
+                        <strong>All {{selectedCategory.category}} ({{countVenues(selectedCategory)}})</strong>
+                      </a>
+                    </div>
+                    <div class="pure-u-1-3 sub-category" ng-repeat="subCategory in selectedCategory.subCategories" ng-class="{'selected': !subCategory.hidden}">
+                      <a href="" ng-click="toggleCategory(selectedCategory, subCategory)">
+                        <div class="venue" style="background: {{selectedCategory.color}}"><img ng-src="{{subCategory.icon}}" ng-if="subCategory.icon"></div>
+                        {{subCategory.category}} ({{subCategory.venues.length}})
+                      </a>
+                    </div>
+                  </section>
+                </main>
+              </div> 
+              
+              <div class="map"></div>
+
+                <div class="attribution">
+                    <div class="container">
+                        <div>Open source mapping via <a href="#" target="_blank">MapBox</a>, with some venue descriptions comprised from <a href="#" target="_blank">Wikipedia</a>.</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+    <!-- BACKGROUND IMAGE -->
     <div class="bg-19 bg-center bg-fixed bg-cover visible-md visible-lg visible-xl">
         <div class="filling-section bg-filter"></div>
     </div>
@@ -749,62 +817,6 @@
                     </div>
                 </div>
             </div>
-
-<!--
-        <div class="container">
-            <hr />
-           <div class="space-lg"></div>
-
-           <h3 class="lg-title text-grey ">Existing Venue Map</h3>
-        </div>
-
-            <div id="interactive-venue-map" ng-app="InteractiveVenueMap">
-             
-              <div style="visibility:none;" class="filter" ng-controller="FilterCtrl" ng-class="{'active': showFilter}">
-                <header class="pure-g">
-                  <div class="pure-u-1-1" ng-click="showFilter = !showFilter">
-                    <span class="toggle">
-                      <i class="icon ion-navicon-round" ng-if="!showFilter"></i><i class="icon ion-close" ng-if="showFilter"></i>
-                    </span>
-
-                    <span ng-if="showFilter">Hide Map Categories & Legend</span>
-                    <span ng-if="!showFilter">Show Map Categories & Legend</span>
-                  </div>
-                </header>
-                <main ng-if="showFilter">
-                  <nav>
-                    <ul class="pure-g">
-                      <li ng-repeat="category in venues" ng-class="{'selected': (selectedCategory === category)}" class="pure-u-1-3">
-                        <span></span>
-                        <a href="" ng-click="changeCategory(category)">
-                          {{category.category}}
-                        </a>
-                        <span></span>
-                      </li>
-                    </ul>
-                  </nav>
-                 <section class="pure-g">
-                    <div class="pure-u-1-5 sub-category" ng-class="{'selected': !selectedCategory.hidden}">
-                      <a href="" ng-click="toggleCategory(selectedCategory)">
-                        <div class="venue" style="background: {{selectedCategory.color}}"></div>
-                        <strong>All {{selectedCategory.category}} ({{countVenues(selectedCategory)}})</strong>
-                      </a>
-                    </div>
-                    <div class="pure-u-1-5 sub-category" ng-repeat="subCategory in selectedCategory.subCategories" ng-class="{'selected': !subCategory.hidden}">
-                      <a href="" ng-click="toggleCategory(selectedCategory, subCategory)">
-                        <div class="venue" style="background: {{selectedCategory.color}}"><img ng-src="{{subCategory.icon}}" ng-if="subCategory.icon"></div>
-                        {{subCategory.category}} ({{subCategory.venues.length}})
-                      </a>
-                    </div>
-                  </section>
-                </main>
-              </div>
-              
-              <div class="map"></div>
-            </div>
-
--->
-
 
 		<div class="container">
     
@@ -1239,6 +1251,12 @@
                             <h5><span itemprop="title">Chairman</span>, <span itemprop="affiliation">Intuit</span></h5>
                         </li>
                         <li class="col-lg-2 col-md-4 col-sm-4 col-xs-6" itemscope itemtype="http://data-vocabulary.org/Person">
+                            <img itemprop="photo" class="img-responsive" alt="David Cush | San Francisco 2024 Olympic Bid Exploratory Committee" src="assets/img/faces/dcush.jpg">              
+                            <h4><span itemprop="name">David Cush</span></h4>
+                            <h5><span itemprop="title">President &amp; CEO</span></h5>
+                            <h5><span itemprop="affiliation">Virgin America</span></h5>
+                        </li>                        
+                        <li class="col-lg-2 col-md-4 col-sm-4 col-xs-6" itemscope itemtype="http://data-vocabulary.org/Person">
                             <img itemprop="photo" class="img-responsive" alt="Lloyd Dean | San Francisco 2024 Olympic Bid Exploratory Committee" src="assets/img/faces/ldean.jpg">
                             <h4><span itemprop="name">Lloyd Dean</span></h4>
                             <h5><span itemprop="title">CEO</span></h5>
@@ -1249,6 +1267,12 @@
                             <h4><span itemprop="name">John Goldman</span></h4>
                             <h5><span itemprop="title">Former President</span></h5>
                             <h5><span itemprop="affilitation">San Francisco Symphony</span></h5>
+                        </li>
+                        <li class="col-lg-2 col-md-4 col-sm-4 col-xs-6" itemscope itemtype="http://data-vocabulary.org/Person">
+                            <img itemprop="photo" class="img-responsive" alt="Carl Guardino | San Francisco 2024 Olympic Bid Exploratory Committee" src="assets/img/faces/cguardino.jpg"> 
+                            <h4><span itemprop="name">Carl Guardino</span></h4>
+                            <h5><span itemprop="title">President &amp; CEO</span></h5>
+                            <h5><span itemprop="affilitation">Silicon Valley Leadership Group</span></h5>
                         </li>
                         <li class="col-lg-2 col-md-4 col-sm-4 col-xs-6" itemscope itemtype="http://data-vocabulary.org/Person">
                             <img itemprop="photo" class="img-responsive" alt="Frank Herringer | San Francisco 2024 Olympic Bid Exploratory Committee" src="assets/img/faces/fherringer.jpg"> 
@@ -1292,7 +1316,7 @@
                             <h5><span itemprop="title">Founder / CEO</span></h5>
                             <h5><span itemprop="affilitation">ValueAct</span></h5>
                         </li>
-                        <li class="col-lg-2 col-md-4 col-sm-4 col-xs-6 col-lg-offset-1" itemscope itemtype="http://data-vocabulary.org/Person">
+                        <li class="col-lg-2 col-md-4 col-sm-4 col-xs-6" itemscope itemtype="http://data-vocabulary.org/Person">
                             <img itemprop="photo" class="img-responsive" alt="Greg Wendt | San Francisco 2024 Olympic Bid Exploratory Committee" src="assets/img/faces/gwendt.jpg"> 
                             <h4><span itemprop="name">Greg Wendt</span></h4>
                             <h5><span itemprop="title">Senior Vice President</span></h5>
@@ -1318,7 +1342,7 @@
 
                             <h5>&nbsp;</h5>
                         </li>
-                        <li class="col-lg-2 col-md-4 col-sm-4 col-xs-6" itemscope itemtype="http://data-vocabulary.org/Person">
+                        <li class="col-lg-12 col-md-12 col-sm-12 col-xs-12" itemscope itemtype="http://data-vocabulary.org/Person">
                             <img itemprop="photo" class="img-responsive" alt="Geoff Yang | San Francisco 2024 Olympic Bid Exploratory Committee" src="assets/img/faces/gyang.jpg">
                             <h4><span itemprop="name">Geoff Yang</span></h4>
                             <h5><span itemprop="title">Founding Partner</span></h5>
@@ -1368,6 +1392,14 @@
                             <h5>Swimming/Cycling</h5>
                             <h5>2004, 2008, 2012</h5>
                         </li>
+
+                        <li class="col-lg-2 col-md-4 col-sm-4 col-xs-6" itemscope itemtype="http://data-vocabulary.org/Person">
+                            <img itemprop="photo" class="img-responsive" alt="Dick Fosbury | San Francisco 2024 Olympic Bid Supporter" src="assets/img/faces/dfosbury.jpg"> 
+                            <h4><span itemprop="name">Dick Fosbury</span></h4>
+                            <h5>Athletics</h5>
+                            <h5>1968</h5>
+                        </li>
+
 
                         <li class="col-lg-2 col-md-4 col-sm-4 col-xs-6" itemscope itemtype="http://data-vocabulary.org/Person">
                             <img itemprop="photo" class="img-responsive" alt="Michael Johnson | San Francisco 2024 Olympic Bid Supporter" src="assets/img/faces/mjohnson.jpg"> 
@@ -1452,6 +1484,13 @@
                             <h5>2008, 2012</h5>
                         </li>
                         <li class="col-lg-2 col-md-4 col-sm-4 col-xs-6" itemscope itemtype="http://data-vocabulary.org/Person">
+                            <img itemprop="photo" class="img-responsive" alt="Johnny Moesely | San Francisco 2024 Olympic Bid Supporter" src="assets/img/faces/jmoesely.jpg"> 
+                            <h4><span itemprop="name">Johnny Moesely</span></h4>
+                            <h5>Freestyle Skiing</h5>
+                            <h5>1998</h5>
+                        </li>
+
+                        <li class="col-lg-2 col-md-4 col-sm-4 col-xs-6" itemscope itemtype="http://data-vocabulary.org/Person">
                             <img itemprop="photo" class="img-responsive" alt="Greg Massialas | San Francisco 2024 Olympic Bid Supporter" src="assets/img/faces/jmunoz.jpg">
                             <h4><span itemprop="name">Julian Munoz</span></h4>
                             <h5>Alpine Skiing (Costa Rica)</h5>
@@ -1489,7 +1528,7 @@
                             <h5>1988, 2000</h5>
                         </li>
 
-                        <li class="col-lg-2 col-md-4 col-sm-4 col-xs-6" itemscope itemtype="http://data-vocabulary.org/Person">
+                        <li class="col-lg-2 col-md-4 col-sm-4 col-xs-6 col-sm-offset-2 col-md-offset-2 col-lg-offset-4" itemscope itemtype="http://data-vocabulary.org/Person">
                             <img itemprop="photo" class="img-responsive" alt="Peter Varellas | San Francisco 2024 Olympic Bid Supporter" src="assets/img/faces/pvarellas.jpg">
                             <h4><span itemprop="name">Peter Varellas</span></h4>
                             <h5>Water Polo</h5>
@@ -1507,8 +1546,17 @@
         </div>
     </div>
 
+        <div class="section-sm">
+            <div class="container text-center">
+               <hr class="hr" />
+               <img alt="Northern Californian Olympic and Paralympic Association logo | San Francisco 2024 Olympic Bid Supporter" src="assets/img/logos/nor-cal.png">
+            </div>
+        </div>
+
     <div class="section-md">
+
         <div class="container">
+        <hr class="hr" />
            <h3 class="lg-title text-grey m-no-bottom">Professional Sports Council</h3>
 
             <div class="row profile-grid teams">
@@ -1619,6 +1667,11 @@
                         <li class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
                             <img class="img-responsive" alt="Nixon Peabody logo | Partner Company for the San Francisco 2024 Olympic Bid" src="assets/img/logos/nixon-peabody.png">                       
                         </li>
+
+                        <li class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                            <img class="img-responsive" alt="Parsons Brinckerhoff | Partner Company for the San Francisco 2024 Olympic Bid" src="assets/img/logos/wsp.png">
+                        </li>
+
                         <li class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
                             <img class="img-responsive" alt="PJ Johnston logo | Partner Company for the San Francisco 2024 Olympic Bid" src="assets/img/logos/pj.png"> 
                         </li>
@@ -1626,9 +1679,7 @@
                         <li class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
                             <img class="img-responsive" alt="Populous logo | Partner Company for the San Francisco 2024 Olympic Bid" src="assets/img/logos/populous.jpg"> 
                         </li>
-                        <li class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                            <img class="img-responsive" alt="WSP logo | Partner Company for the San Francisco 2024 Olympic Bid" src="assets/img/logos/wsp.png">
-                        </li>
+
                 </div>
               </div>
 
@@ -1639,7 +1690,7 @@
 
 
     <!-- BACKGROUND IMAGE -->
-    <div class="bg-16 bg-center bg-fixed bg-cover visible-md visible-lg visible-xl">
+    <div class="bg-15 bg-center bg-fixed bg-cover visible-md visible-lg visible-xl">
         <div class="filling-section bg-filter"></div>
     </div>
     <!--/END BACKGROUND IMAGE -->
@@ -1658,6 +1709,26 @@
             <div class="space-lg"></div>
             <div class="md-overlay"></div>
             <div class="timeline" id="newsFeed">
+
+
+                <div class="label-month">December 2014</div>
+
+                <div class="row box-feed">
+                    <div class="col-sm-6">
+                        <div class="box-post left" itemscope itemtype="http://schema.org/CreativeWork">
+                            <h3 class="fadeIn wow" data-wow-delay="0.15s"><a itemprop="headline" href="http://www.teamusa.org/News/2014/December/04/San-Jose-Calif-St-Louis-will-host-2016-US-Olympic-Team-Trials-for-gymnastics" target="_blank">San Jose will host 2016 U.S. Olympic Team Trials For Gymnastics</a></h3>
+
+                            <a href="http://www.teamusa.org/News/2014/December/04/San-Jose-Calif-St-Louis-will-host-2016-US-Olympic-Team-Trials-for-gymnastics" target="_blank">
+                                <img itemprop="image" class="img-responsive fadeIn wow" data-wow-delay="0.25s" alt="San Francisco 2024 Olympic Bid" src="assets/img/news/gym-trials.jpg">
+                            </a>
+
+                            <p itemprop="about" class="text-block-v2 space-sm fadeIn wow" data-wow-delay="0.35s">"San Jose and St. Louis knocked it out of the park with these two premier championship events in 2012,” said Steve Penny, president of USA Gymnastics. “We are confident that these two cities are the perfect setting for determining the gymnasts who will represent the United States at the 2016 Olympic Games..."</p>
+
+                            <p><a href="http://www.teamusa.org/News/2014/December/04/San-Jose-Calif-St-Louis-will-host-2016-US-Olympic-Team-Trials-for-gymnastics" target="_blank" class="text-grey"><span itemprop="publisher">TeamUSA</span> | <span itemprop="dateCreated">December 4th, 2014</span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="label-month">November 2014</div>
 
@@ -2012,401 +2083,100 @@
             window.interactiveVenueMap = {};
             // Leaflet map options (see http://leafletjs.com/reference.html#map-center)
             window.interactiveVenueMap.mapOptions = {
-                zoom: 11,
-                 minZoom: 11,
+                zoom: 10,
+                 minZoom: 10,
                  maxZoom: 16,
                 center: [37.605738, -122.310541]
             };
             // Cluster options (https://github.com/Leaflet/Leaflet.markercluster#all-options)
             window.interactiveVenueMap.clusterOptions = {
                 showCoverageOnHover: false,
-        removeOutsideVisibleBounds: true
+                removeOutsideVisibleBounds: true,
+                maxClusterRadius: 100,
+                disableClusteringAtZoom: 14
             };
+
+
       window.interactiveVenueMap.venues = [{
-        category: 'Olympic Venues',
-        color: '#3a66b5',
-                icon: 'assets/img/icons/sport-all.svg',
-        subCategories: [
-        {
-          category: 'Existing',
-          icon: 'assets/img/icons/sport-athletics.svg',
-          venues:
-          [
-            {name: 'Baylands Olympic Park', lat: 37.699325, lng: -122.392442, image:'assets/img/venues/sport-athletics.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
-          ]
-        },
-        {
-          category: 'Planned',
-          icon: 'assets/img/icons/sport-archery.svg',
-          venues:
-          [
-            {name: 'Kezar Stadium', lat: 37.766798, lng: -122.456045, image:'assets/img/venues/sport-archery-stanford-west.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
-            ]
-        },
-        {
-          category: 'Infrastructure',
-          icon: 'assets/img/icons/sport-badminton.svg',
-          venues:
-        [
-            {name: 'Moscone Center', lat: 37.783591, lng: -122.402136, image:'assets/img/venues/sport-badminton-moscone.png', description: 'Maples Pavilion features the ceiling height necessary for Badminton’s high lobs. Its air-handling equipment can be turned off so as not to disturb the flight of the shuttlecock, yet because of its below-grade design, Maples Pavilion will still maintain comfortable temperatures, even in summer.'}
-            ]
+    category: 'Competition',
+    color: '#3a66b5',
+    icon: 'assets/img/icons/sport-all.svg',
+    disabled: false,
+    subCategories: [{
+        category: 'Competition Venues',
+        icon: 'assets/img/icons/sport-athletics.svg',
+        venues: [{
+            name: 'Airports - Int’l | Oakland',
+            lat: 37.712569,
+            lng: -122.219743,
+            image: 'assets/img/venues/trans-airports-intl-oak.png',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        }, {
+            name: 'Airports - Int’l | Mineta San José',
+            lat: 37.3638873,
+            lng: -121.9284981,
+            image: 'assets/img/venues/trans-airports-intl-sj.png',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        }, {
+            name: 'Airports - Int’l | San Francisco',
+            lat: 37.621313,
+            lng: -122.378955,
+            image: 'assets/img/venues/trans-airports-intl-sf.png',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        }]
+    }]
+}, {
+    category: 'Transportation',
+    color: '#c0732c',
+    icon: 'assets/img/icons/sport-all.svg',
+    disabled: true,
+    subCategories: [{
+        category: 'Airports - Intl',
+        icon: 'assets/img/icons/trans-airports-intl.svg',
+        venues: [{
+            name: 'Airports - Int’l | Oakland',
+            lat: 37.712569,
+            lng: -122.219743,
+            image: 'assets/img/venues/trans-airports-intl-oak.png',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequats.'
+        }, {
+            name: 'Airports - Int’l | Mineta San José',
+            lat: 37.3638873,
+            lng: -121.9284981,
+            image: 'assets/img/venues/trans-airports-intl-sj.png',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequats.'
+        }, {
+            name: 'Airports - Int’l | San Francisco',
+            lat: 37.621313,
+            lng: -122.378955,
+            image: 'assets/img/venues/trans-airports-intl-sf.png',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequats.'
+        }]
     },
-        {
-          category: 'Temporary',
-          icon: 'assets/img/icons/sport-basketball.svg',
-          venues:
-        [
-            {name: 'Basketball | SF Arena', lat: 37.757428, lng: -122.387309, image:'assets/img/venues/sport-basketball-sf-arena.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
-        ]
-        },
-        {
-          category: 'Existing',
-          icon: 'assets/img/icons/sport-beach-volleyball.svg',
-          venues:         [
-            {name: 'Beach Volleyball | Piers 30-32', lat: 37.786398, lng: -122.385035, image:'assets/img/venues/sport-beach-volleyball-pier30.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
-        ]
-        },
-        {
-          category: 'Boxing',
-          icon: 'assets/img/icons/sport-boxing.svg',
-          venues:
-          [
-            {name: 'The Cow Palace', lat: 37.706675, lng: -122.41867, image:'assets/img/venues/sport-boxing-cow-palace.png', description: 'San Francisco’s Cow Palace has played host to generations of sports events of every imaginable type, yet it still possesses an allure that only the stately older venues can offer, an allure that will draw fans from around the globe to enjoy Olympic Boxing. Of equal importance, the Cow Palace provides vast support facilities in which to create an ideal environment for the Olympic boxers. With ample training facilities and custom-designed individual athlete rooms surrounding the saunas and weigh-in area, each athlete will have a private space in which to prepare for his match.'}
-            ]
-    },
-        {
-          category: 'Canoe : Slalom',
-          icon: 'assets/img/icons/sport-canoe-slalom.svg',
-          venues:
-          [
-            {name: 'Canoe - Slalom | Lake Natoma', lat: 38.635227, lng: -121.225977, image:'assets/img/venues/sport-canoe-slalom-lake-natoma.png', description: 'For years, whitewater enthusiasts have dreamed of a slalom course at Lake Natoma to complement the existing flatwater facilities and to provide a year-round venue in which to train and compete. SF2024 has joined with this group and is working with the California State Parks, the Bureau of Reclamation and several other agencies to bring this dream into reality. '} ]
-        },
-        {
-          category: 'Canoe : Sprint',
-          icon: 'assets/img/icons/sport-canoe-sprint.svg',
-          venues:
-          [
-            {name: 'Canoe - Sprint | Lake Natoma', lat: 38.638176, lng: -121.221578, image:'assets/img/venues/sport-canoe-sprint-lake-natoma.png', description: 'With the guidance of four-time Olympian Andy Toro, SF2024 proposes Lake Natoma as the site for the Canoe/Kayak – Sprint competition for the 2012 Olympic Games. Lake Natoma is a proven venue that has hosted numerous championships. The California State University at Sacramento (CSUS) Aquatics Center, which operates the venue with the California State Parks, is expanding and upgrading the facilities throughout, adding new boathouses, docks and spectator facilities. These renovations will create perhaps the finest canoeing, kayaking and rowing venue in the country. '} ]
-        },
-        {
-          category: 'Cycling : BMX',
-          icon: 'assets/img/icons/sport-cycling-bmx.svg',
-          venues:
-        [
-            {name: 'Cycling : BMX | Treasure Island', lat: 37.823425, lng: -122.371645, image:'assets/img/venues/sport-cycling-bmx-ti.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'} ]
-        },
-        {
-          category: 'Cycling : Mtn Bike',
-          icon: 'assets/img/icons/sport-cycling-mountain-bike.svg',
-          venues:
-        [
-            {name: 'Mountain Biking | Marin Headlands', lat: 37.844596, lng: -122.506485, image:'assets/img/venues/sport-cycling-mtnbike-marin-headlands.png', description: 'Mount Tamalpais, considered by many to be the birthplace of mountain biking, boasts a long and colorful history. Mount Tamalpais  offers plenty of great riding through widely varied terrain and vegetation. The southern and western slopes of Mount Tam are largely covered in scrub with intermittent stands of evergreen trees. The northern slopes are more heavily wooded with oak and evergreen forests punctuated by meadows and lakes. The rides also offer great bay, city and ocean views.'} ]
-        },
-        {
-          category: 'Cycling : Road',
-          icon: 'assets/img/icons/sport-cycling-road.svg',
-          venues:
-        [
-            {name: 'Cycling : Road | Marina Green', lat: 37.807084, lng: -122.429152, image:'assets/img/venues/sport-cycling-road-marina-green.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'} ]
-        },
-        {
-          category: 'Cycling : Track',
-          icon: 'assets/img/icons/sport-cycling-track.svg',
-          venues:         [
-            {name: 'Cycling : Track | Baylands Olympic Park', lat: 37.699125, lng: -122.396442, image:'assets/img/venues/sport-cycling-track.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'} ]
-        },
-        {
-          category: 'Diving',
-          icon: 'assets/img/icons/sport-diving.svg',
-          venues:
-          [
-        {name: 'Diving | Pier 80', lat: 37.753017, lng: -122.383790, image:'assets/img/venues/sport-diving-pier80.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
-          ]
-        },
-        {
-          category: 'Equestrian : Dressage',
-          icon: 'assets/img/icons/sport-equestrian-dressage.svg',
-          venues:           
-          [
-        {name: 'Equ. Dressage | Woodside Horse Park', lat: 37.416106, lng: -122.2265537, image:'assets/img/venues/sport-equestrian.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
-          ]
-        },
-        {
-          category: 'Equestrian : Eventing',
-          icon: 'assets/img/icons/sport-equestrian-eventing.svg',
-          venues:
-        [
-        {name: 'Equ. Eventing | Woodside Horse Park', lat: 37.418306, lng: -122.2267537, image:'assets/img/venues/sport-equestrian.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
-          ]
-        },
-        {
-          category: 'Equestrian : Jumping',
-          icon: 'assets/img/icons/sport-equestrian-jumping.svg',
-          venues:
-          [
-        {name: 'Equ. Jumping | Woodside Horse Park', lat: 37.419506, lng: -122.2269537, image:'assets/img/venues/sport-equestrian.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
-          ]
-        },
-        {
-          category: 'Fencing',
-          icon: 'assets/img/icons/generic-pin-blue.svg',
-          venues:
-        [
-            {name: 'Fencing | Moscone Center', lat: 37.783862, lng: -122.399497, image:'assets/img/venues/sport-fencing-moscone.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
-        ]
-        },
-        {
-          category: 'Football',
-          icon: 'assets/img/icons/sport-football.svg',
-          venues: 
-        [
-            {name: 'Football | Levi’s Stadium', lat: 37.403196, lng: -121.969888, image:'assets/img/venues/sport-football-levis.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
-        ]
-        },
-        {
-          category: 'Golf',
-          icon: 'assets/img/icons/sport-golf.svg',
-          venues:
-        [
-            {name: 'Golf | Harding Park', lat: 37.724739, lng: -122.493689, image:'assets/img/venues/sport-golf-harding-park.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'} ]
-        },
-        {
-          category: 'Gymnastics : Artistic',
-          icon: 'assets/img/icons/sport-gymnastics-artistic.svg',
-          venues:
-          [  {name: 'Artistic Gymnastics | SF Arena', lat: 37.757768, lng: -122.381473, image:'assets/img/venues/sport-gymnastics-art-sfarena.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
-        ]
-        },
-        {
-          category: 'Gymnastics : Rhythmic',
-          icon: 'assets/img/icons/sport-gymnastics-rhythmic.svg',
-          venues:
-        [
-            {name: 'Rhymthic Gymnastics | Moscone Cntr.', lat: 37.784173, lng: -122.401557, image:'assets/img/venues/sport-gymnastics-moscone.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
-        ]
-        },
-        {
-          category: 'Gymnastics : Trampoline',
-          icon: 'assets/img/icons/sport-trampoline.svg',
-          venues:
-          [  {name: 'Trampoline | SF Arena', lat: 37.759328, lng: -122.384734, image:'assets/img/venues/sport-gymnastics-sfarena.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
-        ]
-        },
-        {
-          category: 'Handball',
-          icon: 'assets/img/icons/sport-handball.svg',
-          venues:
-          [
-            {name: 'Handball | Oracle Arena', lat: 37.750298, lng: -122.202881, image:'assets/img/venues/sport-handball-oracle-arena.png', description: 'The 20,000 seat Oracle Arena will ensure that the men’s and women’s handball tournaments can look forward to every single game being played in top-notch arenas for the 2024 Olympic Games in the San Francisco Bay Area. '}]
-        },
-        {
-          category: 'Hockey',
-          icon: 'assets/img/icons/sport-hockey.svg',
-          venues: makeRandomVenues(0)
-        },
-        {
-          category: 'Judo',
-          icon: 'assets/img/icons/sport-judo.svg',
-          venues: makeRandomVenues(0)
-        },
-        {
-          category: 'Marathon : Swimming',
-          icon: 'assets/img/icons/sport-marathon-swimming.svg',
-          venues:
-        [
-            {name: 'Marathon : Swimming | Marina Green', lat: 37.819425, lng: -122.434988, image:'assets/img/venues/sport-marathon-swimming-marina-green.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'},
-            {name: 'Marathon - Swimming | Pier 80', lat: 37.750239, lng: -122.379575, image:'assets/img/venues/sport-marathon-swimming-pier80.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
-        ]
-        },
-        {
-          category: 'Modern Pentathlon',
-          icon: 'assets/img/icons/sport-modern-pentathlon.svg',
-          venues: [
-        {name: 'Modern Pentathlon | Stanford University', lat: 37.427474, lng: -122.169719, image:'assets/img/venues/sport-modern-pentathlon.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
-        ]
-        },
-        {
-          category: 'Rowing',
-          icon: 'assets/img/icons/sport-rowing.svg',
-          venues: makeRandomVenues(0)
-        },
-        {
-          category: 'Rugby',
-          icon: 'assets/img/icons/sport-rugby.svg',
-          venues: makeRandomVenues(0)
-        },
-        {
-          category: 'Sailing',
-          icon: 'assets/img/icons/sport-sailing.svg',
-          venues:
-          [
-        {name: 'Sailing | Treasure Island', lat: 37.823561, lng: -122.356367, image:'assets/img/venues/sport-sailing-ti.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
-        ]
-        },
-        {
-          category: 'Shooting',
-          icon: 'assets/img/icons/sport-shooting.svg',
-          venues: makeRandomVenues(0)
-        },
-        {
-          category: 'Swimming',
-          icon: 'assets/img/icons/sport-swimming.svg',
-          venues: makeRandomVenues(0)
-        },
-        {
-          category: 'Synchronized Swimming',
-          icon: 'assets/img/icons/sport-synchronized-swimming.svg',
-          venues:
-          [
-        {name: 'Synchronized Swimming | Pier 80', lat: 37.751524, lng: -122.380185, image:'assets/img/venues/sport-swimming-synchro.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
-        ]
-        },
-        {
-          category: 'Table Tennis',
-          icon: 'assets/img/icons/sport-table-tennis.svg',
-          venues: makeRandomVenues(0)
-        },
-         {
-          category: 'Tae Kwon Do',
-          icon: 'assets/img/icons/sport-taekwondo.svg',
-          venues: makeRandomVenues(0)
-        },
-         {
-          category: 'Tennis',
-          icon: 'assets/img/icons/sport-tennis.svg',
-          venues: makeRandomVenues(0)
-        },
-         {
-          category: 'Triathlon',
-          icon: 'assets/img/icons/sport-triathlon.svg',
-          venues:
-          [
-            {name: 'Triathlon | Marina Green', lat: 37.806067, lng: -122.441425, image:'assets/img/venues/sport-triathlon-marina-green.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'} ]
-        },
-         {
-          category: 'Volleyball',
-          icon: 'assets/img/icons/sport-volleyball.svg',
-          venues: makeRandomVenues(0)
-        },
-         {
-          category: 'Water Polo',
-          icon: 'assets/img/icons/sport-water-polo.svg',
-          venues:
-          [
-            {name: 'Water Polo | Pier 80', lat: 37.748606, lng: -122.384734, image:'assets/img/venues/sport-waterpolo-pier80.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'},
-            {name: 'Water Polo | Haines Int’l Swim Center', lat: 37.403196, lng: -121.969888, image:'assets/img/venues/sport-waterpolo-haines.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}            
-        ]
-        },
-         {
-          category: 'Weightlifting',
-          icon: 'assets/img/icons/sport-weightlifting.svg',
-          venues:
-        [
-            {name: 'Weightlifting | Bill Graham Civic Audit.', lat: 37.778077, lng: -122.417403, image:'assets/img/venues/sport-weightlifting-bill-graham.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'} ]
-        },
-         {
-          category: 'Wrestling - Freestyle',
-          icon: 'assets/img/icons/sport-wrestling-freestyle.svg',
-          venues: makeRandomVenues(0)
-        },
-         {
-          category: 'Wrestling - Greco Roman',
-          icon: 'assets/img/icons/sport-wrestling-greco-roman.svg',
-          venues: makeRandomVenues(0)
-        }
+    // {
+    //     category: 'Commuter Rail',
+    //     icon: 'assets/img/icons/trans-commuter.svg',
+    //     venues: makeRandomVenues(0)
+    // }, {
+    //     category: 'Cruise Ships',
+    //     icon: 'assets/img/icons/trans-ports.svg',
+    //     venues: makeRandomVenues(0)
+    // }, {
+    //     category: 'Ferries',
+    //     icon: 'assets/img/icons/trans-ferry.svg',
+    //     venues: makeRandomVenues(0)
+    // }, {
+    //     category: 'Amtrak Trains',
+    //     icon: 'assets/img/icons/trans-trains.svg',
+    //     venues: makeRandomVenues(0)
+    // }
     ]
-      }, {
-        category: 'Event Venues',
-        color: '#c0372c',
-        subCategories: [{
-          category: 'Athletes Village',
-          icon: 'assets/img/icons/acc-athletes-village.svg',
-          venues: makeRandomVenues(0)
-        },
-        {
-          category: 'Intl. Broadcast Center',
-          icon: 'assets/img/icons/acc-IBC.svg',
-          venues: makeRandomVenues(0)
-        },
-        {
-          category: 'IOC Hotel',
-          icon: 'assets/img/icons/acc-IOC-hotel.svg',
-          venues: makeRandomVenues(0)
-        },
-        {
-          category: 'Hotel Cluster',
-          icon: 'assets/img/icons/acc-media-hotel.svg',
-          venues: makeRandomVenues(0)
-        },
-        {
-          category: 'Media Village',
-          icon: 'assets/img/icons/acc-media-village.svg',
-          venues: makeRandomVenues(0)
-        },
-        {
-          category: 'Olympic Stadium',
-          icon: 'assets/img/icons/acc-ceremonies.svg',
-          venues:
-          [
-            {name: 'Olympic Stadium | Baylands Oly. Park', lat: 37.702625, lng: -122.39742, image:'assets/img/venues/acc-ceremonies.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'} ]
-        },        
-        {
-          category: 'Olympic Village',
-          icon: 'assets/img/icons/acc-olympic-village.svg',
-          venues:
-          [
-            {name: 'Olympic Village | Hunters Point', lat: 37.727609, lng: -122.370261, image:'assets/img/venues/acc-olympic-village.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'} ]
-        },
-        {
-          category: 'Ref. & Judges Village',
-          icon: 'assets/img/icons/acc-referees-village.svg',
-          venues: makeRandomVenues(0)
-        }
-    ]
-      }, {
-        category: 'Transportation',
-        color: '#c0732c',
-        subCategories: [
-        {
-          category: 'Airports - Intl',
-          icon: 'assets/img/icons/trans-airports-intl.svg',
-          venues: [
-            {name: 'Airports - Int’l | Oakland', lat: 37.712569, lng: -122.219743, image:'assets/img/venues/trans-airports-intl-oak.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
-            {name: 'Airports - Int’l | Mineta San José', lat: 37.3638873, lng: -121.9284981, image:'assets/img/venues/trans-airports-intl-sj.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
-            {name: 'Airports - Int’l | San Francisco', lat: 37.621313, lng: -122.378955, image:'assets/img/venues/trans-airports-intl-sf.png', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
-             ]
-        },
-        {
-          category: 'Airports - Regional',
-          icon: 'assets/img/icons/trans-airports.svg',
-          venues: makeRandomVenues(0)
-        },
-        {
-          category: 'Commuter Rail',
-          icon: 'assets/img/icons/trans-commuter.svg',
-          venues: makeRandomVenues(0)
-        },
-        {
-          category: 'Ferries',
-          icon: 'assets/img/icons/trans-ferry.svg',
-          venues: makeRandomVenues(0)
-        },
-        {
-          category: 'Ports',
-          icon: 'assets/img/icons/trans-ports.svg',
-          venues: makeRandomVenues(0)
-        },
-        {
-          category: 'Amtrak Trains',
-          icon: 'assets/img/icons/trans-trains.svg',
-          venues: makeRandomVenues(0)
-        }
-    ]
-      }];
+}];
     </script>
 
+    <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-minimap/v1.0.0/Control.MiniMap.js'></script>
+
 	<!-- WOW.js - loading animations -->
-	<!--[if gt IE 8]>    
     	<script src="http://cdnjs.cloudflare.com/ajax/libs/wow/0.1.6/wow.min.js"></script>
         <script>
             /*=== WOW - Loading animations ===*/
@@ -2417,7 +2187,6 @@
                 mobile: false
             }).init(); 
         </script>
-    <![endif]-->
 
 	<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
 	<script src="assets/plugins/slider-revolution/examples&amp;source/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
