@@ -2598,7 +2598,7 @@ fieldset[disabled] .navbar-trn .btn-link:focus {
 	overflow: hidden;
 	z-index: 100;
 	cursor: pointer;
-	top: 35px;
+	top: 95px;
 	right: 35px;
 }
 .icon-close:after {
