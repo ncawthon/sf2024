@@ -2,13 +2,19 @@
 <html lang="en">
 
 <head>
-	<title>San Francisco Olympic Bid for the Summer Games of 2024</title>
+	<title>San Francisco 2024 Olympic Bid</title>
+
+    <!--[if lte IE 8]>
+    <script type="text/javascript">
+        window.location = "http://sf2024.org/IE8";
+    </script>
+    <![endif]-->
 
 	<!-- Meta Tags -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Official website for the San Francisco 2024 Olympic Bid for the Summer Olympic and Paralympic Games. ">
-	<meta name="keywords" content="San Francisco Olympic Bid, San Francisco Olympics, USOC 2024 Bid, SF Olympic Bid, SF Olympics, SF Olympic Bid, 2024 Olympic Bid, USOC Olympic Bid.">
+	<meta name="keywords" content="2024 Olympics, San Francisco Olympic Bid, San Francisco Olympics, USOC 2024 Bid, SF Olympic Bid, SF Olympics, SF Olympic Bid, 2024 Olympic Bid, USOC Olympic Bid.">
 
 	<meta name="google-site-verification" content="8bYGI48NsTIshzEVlso7N0BlzgymJIhLLHFsvYVOYL0" />
 
@@ -622,7 +628,6 @@
               '533669062488772609', // Positive Coaching quote
               '532231863721820160', // USTA banner
               '532216309837070336', // USOpen Flag
-              '534887111434838017', // Curry on BART
               '519114673611100160', // Helen Willis Moody
               '533756669612658689', // Water Polo match
               '534687580886138880', // IOC agenda
@@ -640,6 +645,7 @@
               '535874208463474689', // Bolt and Bridge Ma quote
               '535577038669611008', // Mariya Quote
               '536157294912737280', // Mascots
+              '540962925469396992', // US Volleyball
 
             ],
 				instagram: [
@@ -650,6 +656,11 @@
               '856830180017960689_324599988', // Warriors on BART
               '809594478847194594_324599988', // Curry with trophy
               '856142649920002531_414390709', // Rowing Oakland Estuary
+              '830430571713313463_144111581', // gymnast stretch
+              '720998000433346562_144111581', // Tokyo 2020
+              // '854301664476956456_181732848', // medal kiss
+              // '843481027311339501_181732848', // Lochte Medal
+
             ],
 				vine: [
               '1014231022251970560', // senior rowing
@@ -2083,13 +2094,13 @@
                 zoom: 10,
                  minZoom: 10,
                  maxZoom: 16,
-                center: [37.763738, -122.272541]
+                center: [37.763738, -122.260641]
             };
             // Cluster options (https://github.com/Leaflet/Leaflet.markercluster#all-options)
             window.interactiveVenueMap.clusterOptions = {
                 showCoverageOnHover: false,
                 removeOutsideVisibleBounds: true,
-                maxClusterRadius: 100,
+                maxClusterRadius: 120,
                 disableClusteringAtZoom: 12,
             };
 
@@ -2199,8 +2210,8 @@
               icon: 'assets/img/icons/comp-venues.svg',
               venues: [{
                   name: 'Edwards Stadium',
-                  lat: 37.869261,
-                  lng: -122.264904,
+                  lat: 37.868261,
+                  lng: -122.274904,
                   image: 'assets/img/venues/edwards.png',
                   description: 'Designed in 1932, this 22,000 seat, Art Deco-styled stadium has hosted eight NCAA championship meets,a National AAU Championship, and the 1971 and ’78 USA vs. USSR dual-meets, among others, as well as 12 world, 26 American and 24 collegiate records being set. This stadium also offers panoramic views of Berkeley Hills and Strawberry Canyon to the east, and the San Francisco Bay, Golden Gate Bridge, and San Francisco skyline to the west.'
               }, {
@@ -2282,7 +2293,7 @@
               }]
           }]
       }, {
-          category: 'Transportation',
+          category: 'Transportation Overlaps',
           color: '#c0732c',
           icon: 'assets/img/icons/trans-all.svg',
           disabled: true,
@@ -2349,7 +2360,7 @@
               name: 'BART : Berkeley Station',
               lat: 37.869867,
               lng: -122.268045,
-              image: 'assets/img/venues/trans-bart-berk.png',
+              image: 'assets/img/venues/trans-bart-berkeley.png',
               description: 'BARTs rapid transit system operates five routes on over 100 miles of track, with 44 stations across four counties. With an average of 400,000 weekday passengers, BART is the fifth-busiest heavy rail rapid transit system in the United States. BART is continuing with its planned expansion, connecting San José with Oakland and San Francisco. In 2014, BART opened it’s connector to Oakland International Airport. '
           }, {
               name: 'BART : Coliseum Station',

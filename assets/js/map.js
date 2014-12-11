@@ -44,7 +44,7 @@
 
 
      var imageUrl = 'http://gaugedesign.com/white-logo.svg',
-         imageBounds = [[37.605738, -122.310541], [37.705738, -122.210541]];
+         imageBounds = [[37.595738, -122.309541], [37.705738, -122.210541]];
 
     L.imageOverlay(imageUrl, imageBounds).addTo(this.map);
 
