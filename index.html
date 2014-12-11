@@ -73,19 +73,6 @@
 	<!--=== CSS  ===-->
 	<link href="assets/css/themes/custom.css" rel="stylesheet" id="stylesheet">
 
-	<!--[if lte IE 8]>
-		<link href="assets/css/ie8.css" rel="stylesheet">
-        <style type="text/css" rel="stylesheet" id="stylesheet">
-            .IE8hide {
-                display:none !important;
-            }
-
-            .nonIE8show {
-                display:visible !important;
-            }
-        </style>
-    <![endif]-->
-
 </head>
 
 <body>
@@ -93,7 +80,7 @@
 	<!-- Main Navigation -->
 	<div class="navbar navbar-trn navbar-fixed-top navbar-height" role="navigation" id="navbarSettings" style="background-color:rgba(255, 255, 255, 0.498039);">
 		<div class="container">
-			<div class="hidden-sm hidden-md hidden-lg IE8hide">
+			<div class="hidden-sm hidden-md hidden-lg">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
 						<span class="sr-only">Toggle navigation</span>
@@ -167,14 +154,9 @@
 		</div>
 	</div>
 
-	<!--[if lte IE 8]>
-    <div class="row nonIE8show">
-            <img class="col-sm-12 img-responsive nonIE8show" src='assets/video/bridge-cover.jpg'>
-    </div>
-    <![endif]-->
 
 	<div class="row visible-xs visible-sm">
-		<img class="col-sm-12 img-responsive IE8hide" src='assets/video/bridge-cover.jpg' alt="San Francisco Olympic Bid thumbnail">
+		<img class="col-sm-12 img-responsive" src='assets/video/bridge-cover.jpg' alt="San Francisco Olympic Bid thumbnail">
 	</div>
 
 	<!--  Welcome Section  -->
@@ -583,7 +565,7 @@
 		</div>
 	</div>
 
-	<div class="bg-warning visible-sm visible-md visible-lg visible-xl IE8hide" style="margin-bottom:0px; margin-top:0px;">
+	<div class="bg-warning visible-sm visible-md visible-lg visible-xl" style="margin-bottom:0px; margin-top:0px;">
 		<section id="social-connections-popup-overlay"></section>
 
 		<section id="social-connections-popup"></section>
@@ -597,18 +579,11 @@
 					containerClass: 'pure-u-1 pure-u-md-1-6 pure-u-sm-1-2'
 				},
 				twitter: [
-              '529319143925772289', // Larry Baer & Olympic Bid
-              '530092699744206848', // Moscow Olypics
-              '530072422364745728', // Day in the life Paralympian
-              '528904358982078464', // Marathon Fun Fact
-              '530488632940187650', // USAArchery
-              '532198992625430528', // US Swimming Flag
-              '532621617453481985', // USA Cycling
-              '527269686527164416', // Civic Center Giants
-              '532303909268647936', // Raiders flag
-              '529809406737661952', // Quakes stadium
-              '529273022218502144', // squash woman
-              '501226327111135233', // cartwright quote
+              '532231863721820160', // USTA banner
+              '532216309837070336', // USOpen Flag
+              '519114673611100160', // Helen Willis Moody
+              '533756669612658689', // Water Polo match
+              '234565749962854401', // MJ quote
               '325395836416688129', // swim club
               '312705360911814657', // Youth Soccer at Civic Center
               '532647385613078529', // World Cup Fencing
@@ -619,59 +594,71 @@
               '480690442607292417', // row2k m8
               '531884062961459200', // Congrats USA Gymnasts
               '530739158218596352', // Longest Triple Jump Ever
+              '314896825394008065', // Wilma Rudolph Quote
               '254036975768719360', // Martina Quote
               '532678173277044736', // ML Retton
               '532203927690047488', // US Rowing Paralmypians
-              '532741142555934721', // Jack Nicklaus Quote
-              '501037657695088640', // Heather Petri
-              '534407910164406272', // USPTA quote
-              '533669062488772609', // Positive Coaching quote
-              '532231863721820160', // USTA banner
-              '532216309837070336', // USOpen Flag
-              '519114673611100160', // Helen Willis Moody
-              '533756669612658689', // Water Polo match
-              '534687580886138880', // IOC agenda
-              '535125329430720512', // Boxing Shields
-              '314896233707753472', // Agasi Quote
-              '314895896284393472', // Kerri Walsh Quote
-              '314896825394008065', // Wilma Rudolph Quote
-              '314897359559598081', // Miss Franklin Quote
-              '296769550949707776', // Dara Torres Quote
-              '266663810641850368', // Coubertin Quote
-              '234565749962854401', // MJ quote
-              '236137919331569665', // Jesse Owens quote
-              '536937367446122496', // Falling Olympic quote
               '533631008273219586', // Molly Huddle
               '535874208463474689', // Bolt and Bridge Ma quote
               '535577038669611008', // Mariya Quote
               '536157294912737280', // Mascots
+              '266663810641850368', // Coubertin Quote
               '540962925469396992', // US Volleyball
-
+              '540586866899025920', // ICYMI swimming
+              '314895896284393472', // Kerri Walsh Quote
+              '540289197475512320', // cyclist rio favorite
+              '540170019800227840', // woman waterpolo
+              '537609577114894336', // table tennis
+              '534769963689455616', // wrestling
+              '236137919331569665', // Jesse Owens quote
+              '533631008273219586', // molly huddle
+              '529319143925772289', // Larry Baer & Olympic Bid
+              '296769550949707776', // Dara Torres Quote
+              '530092699744206848', // Moscow Olypics
+              '530072422364745728', // Day in the life Paralympian
+              '528904358982078464', // Marathon Fun Fact
+              '530488632940187650', // USAArchery
+              '532198992625430528', // US Swimming Flag
+              '532621617453481985', // USA Cycling
+              '527269686527164416', // Civic Center Giants
+              '532303909268647936', // Raiders flag
+              '536937367446122496', // Falling Olympic quote
+              '529809406737661952', // Quakes stadium
+              '529273022218502144', // squash woman
+              '501226327111135233', // cartwright quote
+              '532741142555934721', // Jack Nicklaus Quote
+              '501037657695088640', // Heather Petri
+              '534407910164406272', // USPTA quote
+              '533669062488772609', // Positive Coaching quote
+              '314897359559598081', // Miss Franklin Quote
+              '534687580886138880', // IOC agenda
+              '535125329430720512', // Boxing Shields
+              '314896233707753472', // Agasi Quote
             ],
 				instagram: [
+              '809594478847194594_324599988', // Curry with trophy
+              '856142649920002531_414390709', // Rowing Oakland Estuary
+              '830430571713313463_144111581', // gymnast stretch
+              '720998000433346562_144111581', // Tokyo 2020
               '831502367136870028_226991466', //USA crowd
               '842265904753859896_6389534', // USA Halloween
               '778139349212488162_42016047', // Kerri Walsh
               '248345692830677816_8222797', // Tickets
               '856830180017960689_324599988', // Warriors on BART
-              '809594478847194594_324599988', // Curry with trophy
-              '856142649920002531_414390709', // Rowing Oakland Estuary
-              '830430571713313463_144111581', // gymnast stretch
-              '720998000433346562_144111581', // Tokyo 2020
               // '854301664476956456_181732848', // medal kiss
               // '843481027311339501_181732848', // Lochte Medal
 
             ],
 				vine: [
+              '1145080692842340352', // Slappin Chests
+              '1123031518315446272', // Rudy Gay
+              '1142163703488475136', // Usain Bolt
+              '490952440582123520', // Bets Armstrong medal
               '1014231022251970560', // senior rowing
               '1132019746318262272', // Diving
               '1141714334050123776', // Screaming
               '1143648797151592448', // 70s Gymnast
               '1141212915698139136', // Hunter Pence
-              '1145080692842340352', // Slappin Chests
-              '1123031518315446272', // Rudy Gay
-              '1142163703488475136', // Usain Bolt
-              '490952440582123520', // Bets Armstrong medal
             ]
 			};
 		</script>
@@ -1495,8 +1482,8 @@
                             <h5>2008, 2012</h5>
                         </li>
                         <li class="col-lg-2 col-md-4 col-sm-4 col-xs-6" itemscope itemtype="http://data-vocabulary.org/Person">
-                            <img itemprop="photo" class="img-responsive" alt="Johnny Moesely | San Francisco 2024 Olympic Bid Supporter" src="assets/img/faces/jmoesely.jpg"> 
-                            <h4><span itemprop="name">Johnny Moesely</span></h4>
+                            <img itemprop="photo" class="img-responsive" alt="Jonny Moseley | San Francisco 2024 Olympic Bid Supporter" src="assets/img/faces/jmoesely.jpg"> 
+                            <h4><span itemprop="name">Jonny Moseley</span></h4>
                             <h5>Freestyle Skiing</h5>
                             <h5>1998</h5>
                         </li>
@@ -2075,19 +2062,6 @@
     <script src="assets/js/map.js"></script>
    
  <script>
-      var makeRandomVenues = function (number) {
-        var venues = [];
-        for (var i = 0; i < number; i++) {
-          venues.push({
-            name: 'Random Location',
-            description: 'Aute incididunt officia magna tempor ad id nulla incididunt Lorem non eiusmod culpa adipisicing voluptate. Laboris veniam duis do sit ea nostrud esse ea irure in cupidatat. Irure irure cillum Lorem ex cillum anim sit exercitation eu laboris culpa proident eiusmod.',
-            image: 'http://i.imgur.com/TWhC7.jpg',
-            lat: Math.floor(Math.random()*10),
-            lng: Math.floor(Math.random()*10)
-          });
-        }
-        return venues;
-      };
             window.interactiveVenueMap = {};
             // Leaflet map options (see http://leafletjs.com/reference.html#map-center)
             window.interactiveVenueMap.mapOptions = {
@@ -2235,7 +2209,7 @@
               }, {
                   name: 'Oracle Arena',
                   lat: 37.750043,
-                  lng: -122.20314,
+                  lng: -122.20514,
                   image: 'assets/img/venues/oracle.png',
                   description: 'The newly renovated, 20,000 seat Oracle Arena is located right next to the O.co Coliseum. Despite being one of the largest venues in the NBA, Oracle retains an intimate setting, great for spectators and athletes alike. Among its claim to fame, Oracle hosted the largest crowd to ever watch a basketball game in the state of California at a game between the Utah Jazz and Golden State Warriors.'
               }, {
@@ -2293,7 +2267,7 @@
               }]
           }]
       }, {
-          category: 'Transportation Overlaps',
+          category: 'Transportation Hubs',
           color: '#c0732c',
           icon: 'assets/img/icons/trans-all.svg',
           disabled: true,
