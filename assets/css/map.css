@@ -274,6 +274,10 @@ color:#3a66b5;
   border-bottom: 1px solid #aaa;
 }
 
+.leaflet-image-layer {
+  opacity: 0.3 !important;
+}
+
 .filter .pure-u-1-1 {
   margin-left:2px;
   text-indent: 5px;

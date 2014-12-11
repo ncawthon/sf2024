@@ -28,7 +28,7 @@
       position: 'topleft'
     }).addTo(this.map);
 
-    new L.Control.MiniMap(L.mapbox.tileLayer('examples.map-i86nkdio'), {
+    new L.Control.MiniMap(L.mapbox.tileLayer('nickcawthon.17457827'), {
                 position: 'topright',
                 toggleDisplay: false,
                 zoomLevelOffset: -5,
@@ -38,7 +38,7 @@
                 width: 150,
                 height: 150,
                 aimingRectOptions: {color: "#ff7800", weight: 1, clickable: false},
-                shadowRectOptions: {color: "#000000", weight: 1, clickable: false, opacity:0, fillOpacity:0},
+                shadowRectOptions: {color: "#000000", weight: 0, clickable: false, opacity:0, fillOpacity:0},
             })
             .addTo(this.map);
 
@@ -144,12 +144,22 @@
 
     var children = [];
     angular.forEach(window.interactiveVenueMap.venues, function (mv) {
-      children = children.concat(mv.subCategories[0].venues);
+      console.log(mv.category, mv.hidden);
+      angular.forEach(mv.subCategories, function (sub) {
+        angular.forEach(sub.venues, function (v) {
+          // console.log(sub.category, sub.hidden);
+          if (mv.hidden !== true || sub.hidden !== true) {
+            children.push(v);
+          }
+        });
+      });
     });
 
     if(children.length){
       var i = children.indexOf(venue);
     }
+
+    console.log(children.length, i);
 
 
     if (i > 0) {
