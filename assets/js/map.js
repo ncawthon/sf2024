@@ -144,10 +144,8 @@
 
     var children = [];
     angular.forEach(window.interactiveVenueMap.venues, function (mv) {
-      console.log(mv.category, mv.hidden);
       angular.forEach(mv.subCategories, function (sub) {
         angular.forEach(sub.venues, function (v) {
-          // console.log(sub.category, sub.hidden);
           if (mv.hidden !== true || sub.hidden !== true) {
             children.push(v);
           }
@@ -158,9 +156,6 @@
     if(children.length){
       var i = children.indexOf(venue);
     }
-
-    console.log(children.length, i);
-
 
     if (i > 0) {
       // setup prev link
@@ -219,6 +214,7 @@
     venue._marker = marker;
     marker.bindPopup(this._venueToPopup(venue), {
       // closeButton: false
+      autoPanPadding: L.point(50, 200)
     });
     this.venueClusterGroup.addLayer(marker);
   }
