@@ -17,6 +17,8 @@
 
     mapOptions.zoomControl = mapOptions.zoomControl || false;
     mapOptions.scrollWheelZoom = mapOptions.scrollWheelZoom || false;
+ //   mapOptions.dragging = mapOptions.dragging || false;
+
 
     this.map = L.mapbox.map(this.mapElement, mapOptions.mapboxId, mapOptions);
 

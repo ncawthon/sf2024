@@ -156,7 +156,7 @@
 
 
 	<div class="row visible-xs visible-sm">
-		<img class="col-sm-12 img-responsive" src='assets/video/bridge-cover.jpg' alt="San Francisco Olympic Bid thumbnail">
+		<img class="col-sm-12 img-responsive" src='assets/video/bridge-cover.jpg' alt="San Francisco 2024 Olympic Bid thumbnail">
 	</div>
 
 	<!--  Welcome Section  -->
@@ -686,7 +686,7 @@
 
 
     <!-- BACKGROUND IMAGE -->
-    <div class="bg-16 bg-center bg-fixed bg-cover visible-md visible-lg visible-xl">
+    <div class="bg-16 bg-center bg-fixed bg-cover hidden-xs hidden-sm visible-md visible-lg visible-xl">
         <div class="filling-section bg-filter"></div>
     </div>
     <!--/END BACKGROUND IMAGE -->
@@ -698,7 +698,7 @@
         </div>
     </div>
 
-            <div id="interactive-venue-map" ng-app="InteractiveVenueMap">
+            <div class="visible-sm visible-md visible-lg visible-xl" id="interactive-venue-map" ng-app="InteractiveVenueMap">
              
               <div style="visibility:none;" class="filter" ng-controller="FilterCtrl" ng-class="{'active': showFilter}">
                 <header class="pure-g">
@@ -747,6 +747,11 @@
                         <div>Open source mapping via <a href="#" target="_blank">MapBox</a>, with some venue descriptions comprised from <a href="#" target="_blank">Wikipedia</a>.</div>
                     </div>
                 </div>
+            </div>
+
+            <div class="row visible-xs">
+                <a href="assets/img/venues/mobile-placeholder-big.png" target="blank"><img class="col-sm-12 img-responsive" src='assets/img/venues/mobile-placeholder.png' alt="San Francisco 2024 Olympic Bid Venue Map" /></a>
+                <p class="container text-grey text-center">In hosting the 2024 Olympic and Paralympic games, the venues, transportation and accommodation in the Bay Area will form three main clusters; San Francisco, East Bay and South Bay. Each venue will be accessible through multiple public transit options.</p>                 
             </div>
 
 
@@ -1146,6 +1151,9 @@
                                                    <h2 class="title" style="margin-bottom:0px; margin-top:0px;">Anne Warner Cribbs</h2>
                                                     <h2 style="margin-bottom:0px; margin-top:5px;">Bid Leader & Olympian</h2>
                                                     <h2 style="margin-bottom:0px; margin-top:5px;">CEO, BASOC</h2>
+                                                    <p class="text-block-v1" style="color:#333;"><i>
+                                                    "Hope...Dreams....Inspiration.....Friendship...Fair Play.....Joy in Effort... these are the words used to describe the Olympic Games. The Olympic Games  inspire us.. They bring people of all nations and cultures together.. The Olympic Games are a showcase for the best in people: discipline, dedication, perseverance, teamwork and mutual respect. The Olympic and Paralympic Games give us a glimpse of the way we want the world to be.. I want to see the Games in the San Francisco Bay Area in 2024 - to inspire the youth of all ages in our region, our nation and the world.”</i>
+                                                    </p>
                                                     <p class="text-block-v1">Anne Warner Cribbs’ swimming career started when she was six at the local pool in Menlo Park, California. Anne went on to win gold as a 14 year-old swimmer at the 1959 Pan American Games. A year later, she competed at the 1960 Rome Olympic Games. Holder of the American records in both the one hundred and two hundred meter breaststroke events, she placed fifth in the 200 Meter Breaststroke at the Rome Olympics and was a member of the gold medal-winning, 400-meter medley relay team. Anne retired from competitive swimming at the age of fifteen. Few high schools and no universities had women’s competitive swimming teams, Title IX did not exist and so there were no more athletic mountains to climb.</p>
                                                     <p class="text-block-v1">Anne Cribbs’ professional career has been dedicated to serving sport and the community. In 1995, Anne co-founded the American Basketball League (ABL), the first women’s professional basketball league in the United States. During its existence, the ABL set the standard for what women’s professional sports could and should become, creating a permanent legacy and forever changing the paradigm. Cribbs became President and CEO of the San Francisco Bay Area Sports Organizing Committee (BASOC) in 1999, and led the San Francisco 2012 Olympic Bid. San Francisco won the silver medal to New York City in the voting for the 2012 U.S. Candidate City but Anne Cribbs’ work left a legacy, which continues to be felt in Northern California.</p>
                                                     <p class="text-block-v1">BASOC, under Cribbs’ leadership, organized the 2006 FINA World Masters Championships – 7800 competitors from 75 countries. Cribbs organized the 2007 World Junior Table Tennis Championships, held at Stanford University featuring 196 competitors from 36 countries. Anne served as the President and CEO of the 2009 Summer National Senior Games, (10,000 competitors over age fifty in 25 sports, the largest multi-sport event in the United States).Cribbs served as the Chair of the 40th Celebration of Ping Pong Diplomacy (June 2011). This historic event showcased the Chinese Olympic Committee and their delegation and the US Table Tennis Team.</p>
@@ -1544,8 +1552,8 @@
         </div>
     </div>
 
-            <div class="container text-center">
-               <img alt="Northern Californian Olympic and Paralympic Association logo | San Francisco 2024 Olympic Bid Supporter" src="assets/img/logos/nor-cal.png">
+            <div class="container text-center col-sm-12">
+               <img class="img-responsive"alt="Northern Californian Olympic and Paralympic Association logo | San Francisco 2024 Olympic Bid Supporter" src="assets/img/logos/nor-cal.png">
             </div>
 
     <div class="section-md">
@@ -2095,6 +2103,12 @@
                   image: 'assets/img/venues/at-t.png',
                   description: 'Since opening in 2000, AT&T Park has been widely praised as one of the "best ballparks ever built" and was the first privately-financed Major League ballpark. Today, AT&T plays host to a wide-range of sporting and cultural events, and in 2008 was named Sports Business Journal’s Sports Facility of the Year. '
               }, {
+                  name: 'Aquatic Park',
+                  lat: 37.807465,
+                  lng: -122.420886,
+                  image: 'assets/img/venues/aquatic-park.png',
+                  description: 'Aquatic Park Historic District is a National Historic Landmark and building complex located on the San Francisco Bay waterfront within San Francisco Maritime National Historical Park. The protected waterfront includes a beach, a WPA-era bathhouse, municipal pier, restrooms, concessions stand, stadia, and two speaker towers. Its beach is one of the cleanest in the state.'
+              }, {
                   name: 'Baylands Olympic Stadium',
                   lat: 37.699995,
                   lng: -122.397621,
@@ -2130,12 +2144,12 @@
                   lng: -122.420697,
                   image: 'assets/img/venues/mc-laren.png',
                   description: 'McLaren Park is a park in south-eastern San Francisco offering many outdoor recreation facilities. McLaren Park has a number of sports fields, tennis courts, playgrounds, and an amphitheater. The park’s trails meander through 100 acres of serene, natural areas with amazing views of San Francisco and the ocean.'
-              }, {
-                  name: 'Marina Green',
-                  lat: 37.806624,
-                  lng: -122.439114,
-                  image: 'assets/img/venues/marina-green.png',
-                  description: 'Situated along the Embarcadero, the Marina Green resides on one of the most commonly walked routes in San Francisco — between Pier 39 and Crissy Field. It features some of the most picturesque backdrops in the world, as seen through such events as Fleet Week, The America’s Cup, San Francisco Marathon, Nike Women’s Marathon and many others.'
+              // }, {
+              //     name: 'Marina Green',
+              //     lat: 37.806624,
+              //     lng: -122.439114,
+              //     image: 'assets/img/venues/marina-green.png',
+              //     description: 'Situated along the Embarcadero, the Marina Green resides on one of the most commonly walked routes in San Francisco — between Pier 39 and Crissy Field. It features some of the most picturesque backdrops in the world, as seen through such events as Fleet Week, The America’s Cup, San Francisco Marathon, Nike Women’s Marathon and many others.'
               }, {
                   name: 'Moscone Center',
                   lat: 37.784173,
@@ -2259,12 +2273,20 @@
                   image: 'assets/img/venues/sjcc.png',
                   description: 'The San José Convention Center, located in close proximity to several others of San José’s athletic and cultural structures, offers 143,000 square feet of exhibit space, 31 meeting rooms and banquet facilities for some 5,000 persons. With the ability to take advantage of the adjacent and newer atrium area in the South Hall, it can boast a combined total of 223,000 square feet.'
               }, {
-                  name: 'Stanford Stadium',
-                  lat: 37.434749,
-                  lng: -122.161098,
-                  image: 'assets/img/venues/stanford-stadium.png',
-                  description: 'Built in 1921 and completely renovated in 2005, the 50,000 seat Stanford Stadium has a long-legacy of being a centerpiece for amatuer and professional sporting competitions. The stadium has hosted a number of large-scale, global events including soccer matches for the 1984 Summer Olympics (as one of three venues outside Southern California for that Olympiad), Super Bowl XIX (1985) the 1994 FIFA World Cup, and the 1999 FIFA Women’s World Cup.'
-              }]
+               //    name: 'Stanford Stadium',
+               //    lat: 37.434749,
+               //    lng: -122.161098,
+               //    image: 'assets/img/venues/stanford-stadium.png',
+               //    description: 'Built in 1921 and completely renovated in 2005, the 50,000 seat Stanford Stadium has a long-legacy of being a centerpiece for amatuer and professional sporting competitions. The stadium has hosted a number of large-scale, global events including soccer matches for the 1984 Summer Olympics (as one of three venues outside Southern California for that Olympiad), Super Bowl XIX (1985) the 1994 FIFA World Cup, and the 1999 FIFA Women’s World Cup.'
+               // }, {                 
+                  name: 'Woodside Horse Park',
+                  lat: 37.419013,
+                  lng: -122.235782,
+                  image: 'assets/img/venues/woodside.png',
+                  description: 'The Horse Park at Woodside is a non-profit organization dedicated to land preservation and equestrian sport. Woodside boasts 272 beautiful acres, right in the heart of the San Francisco Bay Area, conveniently 2 min from a major highway. Their facilities is a premier equestrian facility - featuring an international level cross country course, state-of-the-art footing, a covered arena, and nine arenas.'
+
+              }
+              ]
           }]
       }, {
           category: 'Transportation Hubs',
