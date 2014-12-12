@@ -214,6 +214,7 @@
     venue._marker = marker;
     marker.bindPopup(this._venueToPopup(venue), {
       // closeButton: false
+      autoPanPadding: L.point(50, 200)
     });
     this.venueClusterGroup.addLayer(marker);
   }
