@@ -2652,6 +2652,12 @@ fieldset[disabled] .navbar-trn .btn-link:focus {
 	display: block;
 	min-height: 330px;
 }
+
+@media (max-width: 1199px) {
+	.olympians ul li {
+	min-height: 290px;
+	}
+}
 .olympians h4,
 .olympians h5,
 .olympians h6 {
