@@ -360,6 +360,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/faces\/abartosik.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12292,
+		"inputAbbreviatedPath": "\/assets\/img\/faces\/abartosik.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/faces\/abartosik.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/faces\/acribbs-2009.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -389,6 +400,17 @@
 		"initialSize": 11218,
 		"inputAbbreviatedPath": "\/assets\/img\/faces\/aortiz.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/faces\/aortiz.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/faces\/awagner.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15245,
+		"inputAbbreviatedPath": "\/assets\/img\/faces\/awagner.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/faces\/awagner.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -745,6 +767,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/faces\/gmeinhardt.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8159,
+		"inputAbbreviatedPath": "\/assets\/img\/faces\/gmeinhardt.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/faces\/gmeinhardt.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/faces\/gmeinhart.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -851,6 +884,17 @@
 		"initialSize": 14521,
 		"inputAbbreviatedPath": "\/assets\/img\/faces\/jmunoz.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/faces\/jmunoz.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/faces\/jnichols.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12669,
+		"inputAbbreviatedPath": "\/assets\/img\/faces\/jnichols.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/faces\/jnichols.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1625,6 +1669,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/news\/cities.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 33662,
+		"inputAbbreviatedPath": "\/assets\/img\/news\/cities.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/news\/cities.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/news\/cities.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 556382,
+		"inputAbbreviatedPath": "\/assets\/img\/news\/cities.png",
+		"outputAbbreviatedPath": "\/assets\/img\/news\/cities.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/news\/fencing.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1753,17 +1819,6 @@
 		"initialSize": 18509,
 		"inputAbbreviatedPath": "\/assets\/img\/news\/superbowl.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/news\/superbowl.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/news\/venue-map.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/assets\/img\/news\/venue-map.png",
-		"outputAbbreviatedPath": "\/assets\/img\/news\/venue-map.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
