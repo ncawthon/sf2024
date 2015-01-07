@@ -2663,12 +2663,12 @@ fieldset[disabled] .navbar-trn .btn-link:focus {
 }
 .olympians ul li {
 	display: block;
-	min-height: 330px;
+	min-height: 340px;
 }
 
 @media (max-width: 1199px) {
 	.olympians ul li {
-	min-height: 290px;
+	min-height: 320px;
 	}
 }
 .olympians h4,
@@ -2706,7 +2706,7 @@ fieldset[disabled] .navbar-trn .btn-link:focus {
 		width: 164px;
 	}
 	.olympians ul li {
-		min-height: 360px;
+		min-height: 380px;
 	}	
 }
 @media (max-width: 768px) {
@@ -2723,7 +2723,7 @@ fieldset[disabled] .navbar-trn .btn-link:focus {
 		min-height: 320px;
 	}
 	.olympians ul li {
-		min-height: 360px;
+		min-height: 380px;
 	}
 }
 .teams img {
