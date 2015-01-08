@@ -976,6 +976,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/faces\/kyamaguchi.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16833,
+		"inputAbbreviatedPath": "\/assets\/img\/faces\/kyamaguchi.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/faces\/kyamaguchi.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/faces\/lbaer.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1779,6 +1790,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/news\/runners.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 23821,
+		"inputAbbreviatedPath": "\/assets\/img\/news\/runners.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/news\/runners.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/news\/sfo.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1830,6 +1852,17 @@
 		"initialSize": 13670,
 		"inputAbbreviatedPath": "\/assets\/img\/news\/vlahos.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/news\/vlahos.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/news\/volleyball.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 31973,
+		"inputAbbreviatedPath": "\/assets\/img\/news\/volleyball.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/news\/volleyball.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -15953,15 +15986,6 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 1
-		},
-	"\/index.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [
